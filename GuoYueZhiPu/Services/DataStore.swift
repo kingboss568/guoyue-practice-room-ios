@@ -7,7 +7,11 @@ final class OrchestraStore: ObservableObject {
     @Published private(set) var isLoaded = false
     @Published private(set) var loadError: String?
 
-    init() {
+    init() {}
+
+    func loadIfNeeded() async {
+        guard !isLoaded, loadError == nil else { return }
+        await Task.yield()
         load()
     }
 

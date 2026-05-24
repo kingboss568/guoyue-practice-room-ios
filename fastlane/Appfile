@@ -1,0 +1,5 @@
+app_identifier("com.yuhsiangjiang.GuoYueZhiPu")
+team_id("7H7ZUG2WX8")
+
+apple_id(ENV.fetch("FASTLANE_APPLE_ID", "jushiung@gmail.com"))
+itc_team_id(ENV["FASTLANE_ITC_TEAM_ID"]) if ENV["FASTLANE_ITC_TEAM_ID"]

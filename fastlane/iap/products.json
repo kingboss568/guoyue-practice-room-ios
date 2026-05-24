@@ -1,0 +1,20 @@
+{
+  "bundle_id": "com.yuhsiangjiang.GuoYueZhiPu",
+  "team_id": "7H7ZUG2WX8",
+  "products": [
+    {
+      "product_id": "com.yuhsiangjiang.GuoYueZhiPu.pro",
+      "reference_name": "國樂團練習室 Pro",
+      "type": "non_consumable",
+      "cleared_for_sale": true,
+      "price_note": "Suggested App Store Connect price: NT$190",
+      "localizations": {
+        "zh-Hant": {
+          "display_name": "國樂團練習室 Pro",
+          "description": "解鎖專家聽辨題庫、個人化練習路線、舞台編制分析與完整離線聲音包訓練提示。"
+        }
+      },
+      "review_notes": "請前往 Pro 頁籤查看購買與恢復購買入口。若商品尚在 App Store Connect 處理中，App 會顯示可理解的狀態訊息，不會阻擋免費內容。"
+    }
+  ]
+}

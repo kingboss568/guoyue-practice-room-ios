@@ -1,0 +1,132 @@
+require "shellwords"
+
+default_platform(:ios)
+
+platform :ios do
+  ROOT = File.expand_path("..", __dir__)
+  APP_IDENTIFIER = "com.yuhsiangjiang.GuoYueZhiPu"
+  TEAM_ID = "7H7ZUG2WX8"
+  SCHEME = "GuoYueZhiPu"
+  PROJECT = File.join(ROOT, "GuoYueZhiPu.xcodeproj")
+  VERSION = "1.0"
+  IPA_OUTPUT = File.join(ROOT, "Build/AppStore")
+  METADATA_PATH = File.join(ROOT, "fastlane/metadata")
+  SCREENSHOTS_PATH = File.join(ROOT, "fastlane/screenshots")
+  VALIDATION_SCRIPT = File.join(ROOT, "fastlane/scripts/validate_submission_ready.sh")
+
+  private_lane :api_key_options do
+    key_path = ENV["ASC_API_KEY_PATH"] || ENV["APP_STORE_CONNECT_API_KEY_PATH"]
+    if key_path && !key_path.empty?
+      {
+        api_key: app_store_connect_api_key(
+          key_filepath: key_path,
+          duration: 1200,
+          in_house: false
+        )
+      }
+    else
+      {}
+    end
+  end
+
+  desc "Local preflight: plist, JSON, IAP manifest, and screenshot dimensions. Allows known missing sixth screenshots."
+  lane :validate_local do
+    sh("STRICT_READY=0 #{Shellwords.escape(VALIDATION_SCRIPT)}")
+  end
+
+  desc "Strict pre-submit gate. Fails if screenshots, git push, or required files are incomplete."
+  lane :validate_submission do
+    sh("STRICT_READY=1 #{Shellwords.escape(VALIDATION_SCRIPT)}")
+  end
+
+  desc "Upload App Store metadata and screenshots only. Does not upload a binary or submit review."
+  lane :upload_metadata do
+    validate_local
+    deliver(
+      **api_key_options,
+      app_identifier: APP_IDENTIFIER,
+      app_version: VERSION,
+      metadata_path: METADATA_PATH,
+      screenshots_path: SCREENSHOTS_PATH,
+      skip_binary_upload: true,
+      skip_metadata: false,
+      skip_screenshots: false,
+      submit_for_review: false,
+      automatic_release: true,
+      force: true,
+      overwrite_screenshots: true,
+      run_precheck_before_submit: true
+    )
+  end
+
+  desc "Build an App Store IPA using Xcode automatic signing."
+  lane :build_ipa do
+    validate_local
+    increment_build_number(
+      xcodeproj: PROJECT,
+      build_number: ENV.fetch("GYZP_BUILD_NUMBER", Time.now.strftime("%Y%m%d%H%M")),
+      skip_info_plist: true
+    )
+    build_app(
+      project: PROJECT,
+      scheme: SCHEME,
+      clean: true,
+      configuration: "Release",
+      export_method: "app-store",
+      export_team_id: TEAM_ID,
+      output_directory: IPA_OUTPUT,
+      output_name: "GuoYueZhiPu.ipa",
+      xcargs: "-allowProvisioningUpdates DEVELOPMENT_TEAM=#{TEAM_ID}",
+      export_xcargs: "-allowProvisioningUpdates"
+    )
+  end
+
+  desc "Upload the IPA only. Requires a built IPA at Build/AppStore/GuoYueZhiPu.ipa unless IPA_PATH is set."
+  lane :upload_ipa do
+    validate_local
+    ipa_path = ENV.fetch("IPA_PATH", File.join(IPA_OUTPUT, "GuoYueZhiPu.ipa"))
+    UI.user_error!("IPA not found: #{ipa_path}") unless File.exist?(ipa_path)
+
+    deliver(
+      **api_key_options,
+      app_identifier: APP_IDENTIFIER,
+      ipa: ipa_path,
+      skip_binary_upload: false,
+      skip_metadata: true,
+      skip_screenshots: true,
+      submit_for_review: false,
+      automatic_release: true,
+      force: true,
+      run_precheck_before_submit: true
+    )
+  end
+
+  desc "Build and upload metadata, screenshots, and IPA, but stop before final App Review submission."
+  lane :release_candidate do
+    upload_metadata
+    build_ipa
+    upload_ipa
+  end
+
+  desc "Final strict submit for review. Requires CONFIRM_SUBMIT_FOR_REVIEW=yes and strict readiness."
+  lane :submit_review do
+    UI.user_error!("Set CONFIRM_SUBMIT_FOR_REVIEW=yes to submit for App Review.") unless ENV["CONFIRM_SUBMIT_FOR_REVIEW"] == "yes"
+    validate_submission
+    deliver(
+      **api_key_options,
+      app_identifier: APP_IDENTIFIER,
+      app_version: VERSION,
+      submit_for_review: true,
+      automatic_release: true,
+      force: true,
+      run_precheck_before_submit: true,
+      submission_information: {
+        add_id_info_uses_idfa: false,
+        export_compliance_uses_encryption: false,
+        export_compliance_is_exempt: true,
+        content_rights_contains_third_party_content: false,
+        content_rights_has_rights: true
+      }
+    )
+  end
+end

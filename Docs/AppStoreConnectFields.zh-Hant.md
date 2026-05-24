@@ -63,6 +63,8 @@ Copyright © 2026 Yu Shiung Jiang
 - Display Name zh-Hant: 國樂團練習室 Pro
 - Description zh-Hant: 解鎖專家聽辨題庫、個人化練習路線、舞台編制分析與完整離線聲音包訓練提示。
 - Suggested Price: NT$190
+- Must be attached to this App Store version before final review submission.
+- Review screenshot must show the Pro purchase page with the unlock and restore purchase controls.
 
 ## App Privacy
 
@@ -116,3 +118,12 @@ Pro 付費功能使用 Apple StoreKit：
 - Instrument artwork: Original generated image assets bundled in the project.
 - Audio: Original generated WAV samples bundled in the project.
 - Third-party media: None bundled.
+
+## fastlane Lanes
+
+- `fastlane ios validate_local`
+- `fastlane ios upload_metadata`
+- `fastlane ios build_ipa`
+- `fastlane ios upload_ipa`
+- `fastlane ios release_candidate`
+- `CONFIRM_SUBMIT_FOR_REVIEW=yes fastlane ios submit_review`

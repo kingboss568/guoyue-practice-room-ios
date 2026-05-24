@@ -21,3 +21,9 @@ Create this product in App Store Connect before submitting the first review buil
 ## Review Dependency
 
 The app handles missing products gracefully, but paid unlock must be created and attached to the version before final submission.
+
+## fastlane 注意事項
+
+- `fastlane deliver` 不會建立 IAP 產品。
+- 送審前需先在 App Store Connect 建立 `com.yuhsiangjiang.GuoYueZhiPu.pro`，設定價格，加入 zh-Hant localization，附上 review screenshot，並將此 IAP 加到目前 App version 的審查項目。
+- 本 repo 的 IAP manifest 位於 `fastlane/iap/products.json`，用於讓 product ID、名稱、描述與程式碼保持一致。
