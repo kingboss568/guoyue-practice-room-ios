@@ -5,13 +5,15 @@ import os
 import wave
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "GuoYueZhiPu" / "Resources" / "chinese_orchestra_data_export.json"
 ASSET_ROOT = ROOT / "GuoYueZhiPu" / "Assets.xcassets"
 AUDIO_ROOT = ROOT / "GuoYueZhiPu" / "Resources" / "Audio" / "Instruments"
+POSTER_SOURCE = ROOT / "Design" / "Source" / "guoyue-gptimage-poster.png"
+RESAMPLE = getattr(Image, "Resampling", Image).LANCZOS
 
 PALETTE = {
     "ink": (31, 36, 36),
@@ -297,13 +299,19 @@ def draw_app_icon(size):
     return img.convert("RGB")
 
 
+def poster_art(size):
+    source = Image.open(POSTER_SOURCE).convert("RGB")
+    return ImageOps.fit(source, (size, size), method=RESAMPLE, centering=(0.5, 0.5))
+
+
 def write_app_icons():
     appicon = ASSET_ROOT / "AppIcon.appiconset"
     ensure_dir(appicon)
     images = []
     for idiom, point_size, scale, filename in ICON_IMAGES:
         pixels = int(float(point_size.split("x")[0]) * scale)
-        draw_app_icon(pixels).save(appicon / filename)
+        icon = poster_art(pixels) if POSTER_SOURCE.exists() else draw_app_icon(pixels)
+        icon.save(appicon / filename)
         entry = {
             "idiom": idiom,
             "size": point_size,
@@ -370,7 +378,8 @@ def main():
 
     brand_set = ASSET_ROOT / "brand_hero.imageset"
     ensure_dir(brand_set)
-    draw_brand_art(1600).save(brand_set / "brand_hero.png")
+    brand_art = poster_art(1800) if POSTER_SOURCE.exists() else draw_brand_art(1600)
+    brand_art.save(brand_set / "brand_hero.png")
     write_asset_contents(brand_set, "brand_hero.png")
 
     for instrument in data["instruments"]:
