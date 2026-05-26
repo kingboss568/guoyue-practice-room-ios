@@ -148,6 +148,9 @@ private enum AppTab: String, Hashable, CaseIterable, Identifiable {
         guard let tabName = ProcessInfo.processInfo.environment["GYZP_SCREENSHOT_TAB"] else {
             return .dashboard
         }
+        if tabName == "payment" {
+            return .pro
+        }
         return AppTab(rawValue: tabName) ?? .dashboard
     }
 }

@@ -2,8 +2,22 @@ require "shellwords"
 
 default_platform(:ios)
 
+ROOT_PATH = File.expand_path("..", __dir__)
+ENV_FASTLANE = File.join(ROOT_PATH, ".env.fastlane")
+
+if File.exist?(ENV_FASTLANE)
+  File.readlines(ENV_FASTLANE, chomp: true).each do |line|
+    next if line.strip.empty? || line.lstrip.start_with?("#")
+
+    key, value = line.split("=", 2)
+    next if key.to_s.strip.empty? || value.nil?
+
+    ENV[key.strip] ||= value.strip.gsub(/\A['"]|['"]\z/, "")
+  end
+end
+
 platform :ios do
-  ROOT = File.expand_path("..", __dir__)
+  ROOT = ROOT_PATH
   APP_IDENTIFIER = "com.yuhsiangjiang.GuoYueZhiPu"
   TEAM_ID = "7H7ZUG2WX8"
   SCHEME = "GuoYueZhiPu"
@@ -14,21 +28,21 @@ platform :ios do
   SCREENSHOTS_PATH = File.join(ROOT, "fastlane/screenshots")
   VALIDATION_SCRIPT = File.join(ROOT, "fastlane/scripts/validate_submission_ready.sh")
 
-	  private_lane :api_key_options do
-	    key_path = ENV["ASC_API_KEY_PATH"] || ENV["APP_STORE_CONNECT_API_KEY_PATH"]
-	    key_id = ENV["ASC_API_KEY_ID"] || ENV["APP_STORE_CONNECT_API_KEY_ID"]
-	    issuer_id = ENV["ASC_ISSUER_ID"] || ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"]
-	    if key_path && !key_path.empty?
-	      UI.user_error!("ASC_API_KEY_ID is required when ASC_API_KEY_PATH is set.") if key_id.to_s.empty?
-	      UI.user_error!("ASC_ISSUER_ID is required when ASC_API_KEY_PATH is set.") if issuer_id.to_s.empty?
+  private_lane :api_key_options do
+    key_path = ENV["ASC_KEY_FILE"] || ENV["ASC_API_KEY_PATH"] || ENV["APP_STORE_CONNECT_API_KEY_PATH"]
+    key_id = ENV["ASC_KEY_ID"] || ENV["ASC_API_KEY_ID"] || ENV["APP_STORE_CONNECT_API_KEY_ID"]
+    issuer_id = ENV["ASC_ISSUER_ID"] || ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"]
+    if key_path && !key_path.empty?
+      UI.user_error!("ASC_KEY_ID is required when ASC_KEY_FILE is set.") if key_id.to_s.empty?
+      UI.user_error!("ASC_ISSUER_ID is required when ASC_KEY_FILE is set.") if issuer_id.to_s.empty?
 
-	      {
-	        api_key: app_store_connect_api_key(
-	          key_id: key_id,
-	          issuer_id: issuer_id,
-	          key_filepath: key_path,
-	          duration: 1200,
-	          in_house: false
+      {
+        api_key: app_store_connect_api_key(
+          key_id: key_id,
+          issuer_id: issuer_id,
+          key_filepath: key_path,
+          duration: 1200,
+          in_house: false
         )
       }
     else
@@ -62,7 +76,8 @@ platform :ios do
       automatic_release: true,
       force: true,
       overwrite_screenshots: true,
-      run_precheck_before_submit: true
+      run_precheck_before_submit: true,
+      precheck_include_in_app_purchases: false
     )
   end
 
@@ -104,7 +119,8 @@ platform :ios do
       submit_for_review: false,
       automatic_release: true,
       force: true,
-      run_precheck_before_submit: true
+      run_precheck_before_submit: true,
+      precheck_include_in_app_purchases: false
     )
   end
 
@@ -127,6 +143,7 @@ platform :ios do
       automatic_release: true,
       force: true,
       run_precheck_before_submit: true,
+      precheck_include_in_app_purchases: false,
       submission_information: {
         add_id_info_uses_idfa: false,
         export_compliance_uses_encryption: false,

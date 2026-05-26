@@ -7,9 +7,16 @@ struct PremiumView: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 18) {
-                    hero
-                    valueStack
-                    purchasePanel
+                    if isPaymentScreenshotMode {
+                        purchasePanel
+                        paymentReviewPanel
+                        valueStack
+                    } else {
+                        hero
+                        valueStack
+                        purchasePanel
+                        paymentReviewPanel
+                    }
                     reviewSafeNote
                 }
                 .padding(16)
@@ -20,6 +27,10 @@ struct PremiumView: View {
         .task {
             await premiumStore.loadProducts()
         }
+    }
+
+    private var isPaymentScreenshotMode: Bool {
+        ProcessInfo.processInfo.environment["GYZP_SCREENSHOT_TAB"] == "payment"
     }
 
     private var hero: some View {
@@ -76,10 +87,16 @@ struct PremiumView: View {
                         .fixedSize(horizontal: false, vertical: true)
                 }
 
+                Text("商品 ID：\(PremiumStore.proProductID)")
+                    .font(.caption.monospaced())
+                    .foregroundStyle(.secondary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.75)
+
                 Button {
                     Task { await premiumStore.purchasePro() }
                 } label: {
-                    Label(premiumStore.isProUnlocked ? "已解鎖" : "解鎖 Pro", systemImage: premiumStore.isProUnlocked ? "checkmark" : "sparkles")
+                    Label(premiumStore.isProUnlocked ? "已解鎖" : "使用 Apple StoreKit 付款", systemImage: premiumStore.isProUnlocked ? "checkmark" : "creditcard")
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 12)
@@ -97,6 +114,40 @@ struct PremiumView: View {
                 }
                 .buttonStyle(.bordered)
                 .disabled(premiumStore.isLoading)
+            }
+        }
+    }
+
+    private var paymentReviewPanel: some View {
+        AppSurface {
+            VStack(alignment: .leading, spacing: 12) {
+                Label("Apple StoreKit 付款頁面", systemImage: "creditcard")
+                    .font(.headline)
+
+                VStack(alignment: .leading, spacing: 10) {
+                    paymentRow("解鎖內容", "專家題庫、練習路線、舞台編制分析與完整離線聲音包")
+                    paymentRow("付款方式", "一次性 App 內購買，由 App Store 安全處理")
+                    paymentRow("恢復購買", "更換裝置或重新安裝後，可用同一 Apple ID 恢復")
+                    paymentRow("隱私", "不建立帳號、不追蹤、不收集付款資料")
+                }
+            }
+        }
+    }
+
+    private func paymentRow(_ title: String, _ detail: String) -> some View {
+        HStack(alignment: .top, spacing: 10) {
+            Image(systemName: "checkmark.seal.fill")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(AppTheme.jade)
+                .frame(width: 20)
+
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title)
+                    .font(.subheadline.weight(.semibold))
+                Text(detail)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
             }
         }
     }

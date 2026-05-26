@@ -39,7 +39,7 @@ struct DashboardView: View {
                     .font(.largeTitle.weight(.black))
                     .foregroundStyle(.white)
 
-                Text("從樂器圖鑑、名曲導聆到聽辨練習，一次建立華樂團的完整地圖。")
+                Text("從樂器圖鑑、名曲導聆到聽辨練習，一次建立國樂團的完整地圖。")
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(.white.opacity(0.9))
                     .fixedSize(horizontal: false, vertical: true)

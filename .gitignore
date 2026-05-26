@@ -14,5 +14,6 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.html
 fastlane/test_output/
 fastlane/.env
+Gemfile.lock
 *.ipa
 *.xcarchive

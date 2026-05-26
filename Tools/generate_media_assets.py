@@ -13,6 +13,7 @@ DATA_PATH = ROOT / "GuoYueZhiPu" / "Resources" / "chinese_orchestra_data_export.
 ASSET_ROOT = ROOT / "GuoYueZhiPu" / "Assets.xcassets"
 AUDIO_ROOT = ROOT / "GuoYueZhiPu" / "Resources" / "Audio" / "Instruments"
 POSTER_SOURCE = ROOT / "Design" / "Source" / "guoyue-gptimage-poster.png"
+INSTRUMENT_SOURCE_ROOT = ROOT / "Design" / "Source" / "GeneratedInstruments"
 RESAMPLE = getattr(Image, "Resampling", Image).LANCZOS
 
 PALETTE = {
@@ -304,6 +305,14 @@ def poster_art(size):
     return ImageOps.fit(source, (size, size), method=RESAMPLE, centering=(0.5, 0.5))
 
 
+def instrument_source_art(instrument_id, size=900):
+    source = INSTRUMENT_SOURCE_ROOT / f"instrument_{instrument_id}.png"
+    if not source.exists():
+        return None
+    image = Image.open(source).convert("RGB")
+    return ImageOps.fit(image, (size, size), method=RESAMPLE, centering=(0.5, 0.5))
+
+
 def write_app_icons():
     appicon = ASSET_ROOT / "AppIcon.appiconset"
     ensure_dir(appicon)
@@ -386,7 +395,8 @@ def main():
         image_name = f"instrument_{instrument['id']}"
         imageset = ASSET_ROOT / f"{image_name}.imageset"
         ensure_dir(imageset)
-        draw_instrument_image(instrument).save(imageset / f"{image_name}.png")
+        art = instrument_source_art(instrument["id"]) or draw_instrument_image(instrument)
+        art.save(imageset / f"{image_name}.png")
         write_asset_contents(imageset, f"{image_name}.png")
         write_audio(instrument)
 
