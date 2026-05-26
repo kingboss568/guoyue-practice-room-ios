@@ -142,6 +142,8 @@ platform :ios do
       metadata_path: METADATA_PATH,
       screenshots_path: SCREENSHOTS_PATH,
       skip_binary_upload: true,
+      skip_metadata: true,
+      skip_screenshots: true,
       submit_for_review: true,
       automatic_release: true,
       force: true,
