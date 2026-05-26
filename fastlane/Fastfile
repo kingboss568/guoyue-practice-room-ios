@@ -139,6 +139,8 @@ platform :ios do
       **api_key_options,
       app_identifier: APP_IDENTIFIER,
       app_version: VERSION,
+      metadata_path: METADATA_PATH,
+      screenshots_path: SCREENSHOTS_PATH,
       submit_for_review: true,
       automatic_release: true,
       force: true,
