@@ -144,13 +144,19 @@ struct DashboardView: View {
                             .background(Color(hex: section.colorHex), in: Circle())
 
                         VStack(alignment: .leading, spacing: 6) {
-                            HStack {
-                                Text(section.nameZh)
-                                    .font(.headline)
-                                Text(section.nameEn)
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                                Spacer()
+                            HStack(alignment: .firstTextBaseline, spacing: 10) {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(section.nameZh)
+                                        .font(.headline)
+                                    Text(section.nameEn)
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.85)
+                                }
+
+                                Spacer(minLength: 12)
+
                                 Text("\(section.instrumentCount) 件")
                                     .font(.caption.weight(.semibold))
                                     .foregroundStyle(Color(hex: section.colorHex))

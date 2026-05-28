@@ -58,7 +58,12 @@ private struct MainTabView: View {
 }
 
 private struct AppTabBar: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Binding var selectedTab: AppTab
+
+    private var isRegularWidth: Bool {
+        horizontalSizeClass == .regular
+    }
 
     var body: some View {
         HStack(spacing: 0) {
@@ -66,17 +71,17 @@ private struct AppTabBar: View {
                 Button {
                     selectedTab = tab
                 } label: {
-                    VStack(spacing: 4) {
+                    VStack(spacing: isRegularWidth ? 6 : 4) {
                         Image(systemName: tab.systemImage)
-                            .font(.title3.weight(.semibold))
-                            .frame(height: 24)
+                            .font((isRegularWidth ? Font.title2 : Font.title3).weight(.semibold))
+                            .frame(height: isRegularWidth ? 28 : 24)
                         Text(tab.title)
-                            .font(.caption2.weight(.semibold))
+                            .font((isRegularWidth ? Font.caption : Font.caption2).weight(.semibold))
                             .lineLimit(1)
                             .minimumScaleFactor(0.8)
                     }
                     .frame(maxWidth: .infinity)
-                    .frame(height: 54)
+                    .frame(height: isRegularWidth ? 62 : 54)
                     .foregroundStyle(selectedTab == tab ? AppTheme.cinnabar : .primary)
                     .background {
                         if selectedTab == tab {
@@ -99,9 +104,11 @@ private struct AppTabBar: View {
                 .stroke(Color(.separator).opacity(0.32), lineWidth: 0.5)
         }
         .shadow(color: .black.opacity(0.12), radius: 16, y: 8)
-        .padding(.horizontal, 14)
+        .frame(maxWidth: isRegularWidth ? 720 : .infinity)
+        .padding(.horizontal, isRegularWidth ? 32 : 14)
         .padding(.top, 8)
-        .padding(.bottom, 6)
+        .padding(.bottom, isRegularWidth ? 10 : 6)
+        .frame(maxWidth: .infinity)
     }
 }
 

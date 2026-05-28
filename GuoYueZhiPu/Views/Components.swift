@@ -61,6 +61,7 @@ struct AppSurface<Content: View>: View {
 
     var body: some View {
         content
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(18)
             .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: 8))
     }

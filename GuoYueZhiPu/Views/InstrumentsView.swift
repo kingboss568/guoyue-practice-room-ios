@@ -1,14 +1,24 @@
 import SwiftUI
 
 struct InstrumentsView: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @EnvironmentObject private var store: OrchestraStore
     @EnvironmentObject private var progressStore: LearningProgressStore
     @State private var selectedSectionID: String?
     @State private var searchText = ""
 
-    private let columns = [
-        GridItem(.adaptive(minimum: 158), spacing: 14)
-    ]
+    private var isRegularWidth: Bool {
+        horizontalSizeClass == .regular
+    }
+
+    private var columns: [GridItem] {
+        [
+            GridItem(
+                .adaptive(minimum: isRegularWidth ? 230 : 158, maximum: isRegularWidth ? 310 : .infinity),
+                spacing: isRegularWidth ? 18 : 14
+            )
+        ]
+    }
 
     private var filteredInstruments: [Instrument] {
         let scoped = store.instruments(in: selectedSectionID)
@@ -29,7 +39,7 @@ struct InstrumentsView: View {
                 SectionFilterBar(sections: store.sections, selectedSectionID: $selectedSectionID)
 
                 ScrollView {
-                    LazyVGrid(columns: columns, spacing: 14) {
+                    LazyVGrid(columns: columns, spacing: isRegularWidth ? 18 : 14) {
                         ForEach(filteredInstruments) { instrument in
                             NavigationLink {
                                 InstrumentDetailView(instrument: instrument)
@@ -43,7 +53,7 @@ struct InstrumentsView: View {
                             .buttonStyle(.plain)
                         }
                     }
-                    .padding(16)
+                    .padding(isRegularWidth ? 24 : 16)
                 }
             }
             .background(AppTheme.background)
@@ -54,15 +64,20 @@ struct InstrumentsView: View {
 }
 
 private struct InstrumentCard: View {
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     let instrument: Instrument
     let section: OrchestraSection?
     let isFavorite: Bool
+
+    private var isRegularWidth: Bool {
+        horizontalSizeClass == .regular
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .bottomLeading) {
                 InstrumentArtwork(instrument: instrument)
-                    .frame(height: 150)
+                    .frame(height: isRegularWidth ? 178 : 150)
 
                 VStack(alignment: .leading, spacing: 5) {
                     if let section {
@@ -93,7 +108,7 @@ private struct InstrumentCard: View {
                 Text(instrument.descriptionBriefZh)
                     .font(.subheadline)
                     .foregroundStyle(.primary)
-                    .lineLimit(3)
+                    .lineLimit(isRegularWidth ? 4 : 3)
                     .fixedSize(horizontal: false, vertical: true)
 
                 HStack(spacing: 6) {
@@ -103,6 +118,7 @@ private struct InstrumentCard: View {
             }
             .padding(12)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: 8))
     }
 }
