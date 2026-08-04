@@ -3,12 +3,12 @@
   "updated_at": "2026-08-04",
   "bundle_id": "com.yuhsiangjiang.GuoYueZhiPu",
   "product_id": "com.yuhsiangjiang.GuoYueZhiPu.pro",
-  "status": "pending_app_store_connect_attachment",
+  "status": "ready_for_review",
   "review_requirements": {
     "app_store_connect_product_created": true,
     "price_tier_confirmed": true,
     "zh_hant_localization_confirmed": true,
-    "iap_attached_to_app_version": false,
+    "iap_attached_to_app_version": true,
     "review_screenshot_current_after_redesign": true,
     "paywall_shows_purchase_button": true,
     "paywall_shows_restore_button": true,
@@ -39,11 +39,11 @@
   },
   "app_store_connect_manual_steps": [
     "Confirm non-consumable IAP com.yuhsiangjiang.GuoYueZhiPu.pro remains APPROVED.",
-    "The correct zh-Hant localization is PREPARE_FOR_SUBMISSION; attach it with the IAP to app version 1.1 only after strict asset gates pass.",
-    "Replace the obsolete approved-product review note on the editable 1.1 review surface.",
+    "The correct zh-Hant localization is PREPARE_FOR_REVIEW and is included in the iOS review submission draft for app version 1.1.",
+    "Keep the current conservative review note on the editable IAP review surface.",
     "Use the current iPhone 6.9 and iPad 13 Pro/payment screenshots captured after verified-media checks.",
     "Upload the current Pro/payment review screenshot to the 1.1 review surface.",
-    "Attach the IAP to the editable app version before final review submission."
+    "Submit the existing APPROVED non-consumable IAP together with the editable iOS app version 1.1."
   ],
-  "notes": "ASC API verified the exact app, APPROVED non-consumable IAP, price schedule, and matching conservative zh-Hant localization on 2026-08-04. Current Simulator screenshots show the live $5.99 product connection, purchase and restore controls, 23 instruments x 50 questions, 230 foundation questions, and 48 questions derived only from 16 approved real-instrument recordings. Seven rarer instruments remain external-reference-only and are not bundled or quiz-eligible. Before final submission, attach the IAP and editable localization to app version 1.1 and upload the current review screenshot."
+  "notes": "ASC API verified the exact app, APPROVED non-consumable IAP, price schedule, and matching conservative zh-Hant localization on 2026-08-04. App Store Connect UI then confirmed the revised zh-Hant localization as PREPARE_FOR_REVIEW inside an iOS review submission draft that will be reviewed with the latest app version 1.1. Current Simulator screenshots show the live $5.99 product connection, purchase and restore controls, 23 instruments x 50 questions, 230 foundation questions, and 48 questions derived only from 16 approved real-instrument recordings. Seven rarer instruments remain external-reference-only and are not bundled or quiz-eligible."
 }

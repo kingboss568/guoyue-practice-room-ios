@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-08-03T18:31:07Z",
+  "checked_at": "2026-08-04T17:05:15Z",
   "bundle_id": "com.yuhsiangjiang.GuoYueZhiPu",
   "product_id": "com.yuhsiangjiang.GuoYueZhiPu.pro",
   "checks": {
@@ -9,7 +9,7 @@
     "product_type_matches": true,
     "zh_hant_localization_matches": true,
     "price_schedule_present": true,
-    "iap_attached_to_app_version": false
+    "iap_attached_to_app_version": true
   },
   "app": {
     "id": "6772708738",
@@ -52,8 +52,19 @@
   "api_errors": [
 
   ],
+  "manual_ui_evidence": {
+    "observed_at": "2026-08-04T17:05:15Z",
+    "account": "jushiung@gmail.com",
+    "app_store_connect_app_id": "6772708738",
+    "app_version": "1.1",
+    "iap_state": "APPROVED",
+    "revised_localization_state": "PREPARE_FOR_REVIEW",
+    "review_submission_draft_platform": "IOS",
+    "review_submission_draft_contains_iap": true,
+    "ui_message": "Items added below will be reviewed together with the latest version for the selected platform."
+  },
   "manual_follow_up": [
-    "Confirm the IAP is attached to the current editable App Store version in the App Store Connect version page.",
-    "Upload the final Pro/payment review screenshot after verified audio and artwork gates pass."
+    "Keep the exact APPROVED non-consumable IAP in the iOS review submission draft with app version 1.1.",
+    "Use the final Pro/payment screenshot captured after verified audio and artwork gates passed."
   ]
 }
