@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status": "review_cards_current",
+  "scope": "Source-backed visual review cards for high-risk Chinese orchestra instrument artwork candidates.",
+  "policy": "These cards are not approvals. They convert reference-source morphology into reviewer-facing acceptance and rejection tests. A candidate remains blocked until a professional reviewer confirms the card and import_approved_artwork.py --approve completes.",
+  "high_risk_instrument_ids": [
+    "gehu",
+    "suona",
+    "sheng",
+    "banhu",
+    "erhu",
+    "gaohu",
+    "zhonghu"
+  ],
+  "shared_thumbnail_tests": [
+    "The instrument remains identifiable at App card size without relying on text labels.",
+    "The silhouette still shows the defining family: bowed huqin/gehu body, suona shawm profile, or sheng pipe-and-wind-chest profile.",
+    "No performer hand, decorative prop, lighting effect, or background shape hides the defining construction.",
+    "No visible callout, watermark, Chinese/English label, or fantasy marking appears inside the candidate image."
+  ],
+  "cards": [
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+      "primary_reference_urls": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gehu/",
+        "https://www.cello.org/Newsletter/Articles/gehu.htm"
+      ],
+      "source_backed_features": [
+        "Eason describes gehu as a lower-register Chinese orchestra instrument created to cover missing low bowed sounds.",
+        "Eason describes gehu as a hybrid between western cello and erhu, bowed like a cello.",
+        "Eason notes the gehu has body, bridge, spine, bow, and animal-skin-covered body.",
+        "The bass gehu / digehu relationship means the candidate must read as much larger than ordinary huqin entries."
+      ],
+      "acceptance_tests": [
+        "Large vertical bowed body clearly reads as low-register instrument.",
+        "Body is not a plain western cello copy; it keeps Chinese bowed-instrument character.",
+        "Bridge, strings, long neck/spine, bow, and low support/endpin are plausible.",
+        "Body is visibly larger than zhonghu, erhu, gaohu, and banhu candidates.",
+        "At thumbnail size it reads as bass/low bowed Chinese orchestra instrument."
+      ],
+      "rejection_tests": [
+        "Reject if the resonator is small like erhu, gaohu, banhu, or zhonghu.",
+        "Reject if the image is simply a western cello with no Chinese morphology.",
+        "Reject if it lacks bridge, strings, long vertical structure, or low support.",
+        "Reject if it looks like fantasy bass, viola da gamba, or electric cello.",
+        "Reject if scale does not clearly exceed zhonghu."
+      ],
+      "reviewer_question": "Would a Chinese orchestra bowed-string player identify this as gehu without reading the label?"
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_suona.png",
+      "primary_reference_urls": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1249",
+        "https://www.metmuseum.org/art/collection/search/505216"
+      ],
+      "source_backed_features": [
+        "Grinnell identifies suona as a Chinese double-reed aerophone / shawm.",
+        "Grinnell describes a scalloped hardwood body with conical bore, seven fingerholes, one thumbhole, and a loosely attached flaring metal bell.",
+        "Grinnell describes a metal staple/bocal, pirouette disc, and small double reed at the top.",
+        "The Met notes suona varieties and the player's mouth covering the small reeds, reinforcing that it is not a brass trumpet."
+      ],
+      "acceptance_tests": [
+        "Short conical wooden body is visible and not cylindrical.",
+        "Front finger holes are visible along the body.",
+        "Small double reed, staple/bocal, or pirouette area is visible at the top.",
+        "Loose flared metal bell is visually distinct from the wooden body.",
+        "Overall silhouette reads as shawm/laba/suona rather than brass."
+      ],
+      "rejection_tests": [
+        "Reject if it has trumpet, bugle, or saxophone tubing.",
+        "Reject if it has a clarinet/oboe-like long straight western profile.",
+        "Reject if the whole instrument is metal.",
+        "Reject if the reed end and bell end are not distinguishable.",
+        "Reject if there are no finger holes."
+      ],
+      "reviewer_question": "Are reed, conical body, holes, and flared bell all credible enough for a suona player?"
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+      "primary_reference_urls": [
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1248",
+        "https://www.britannica.com/art/sheng-musical-instrument"
+      ],
+      "source_backed_features": [
+        "Grinnell describes a free-reed aerophone with an incomplete circle of seventeen bamboo pipes.",
+        "Grinnell describes pipes mounted in a wooden bowl-shaped windchest with a short curved blowpipe.",
+        "Grinnell notes fingerholes around the circle of pipes just above the windchest.",
+        "Modernized sheng may add exterior resonator tubes, so the candidate may show traditional or modern pipe details if wind chest and mouthpiece remain clear."
+      ],
+      "acceptance_tests": [
+        "Many vertical pipes of varied height dominate the silhouette.",
+        "Pipes are visibly inserted into a wind chest, bowl, or rounded air chamber.",
+        "A short curved or angled mouthpiece is attached to the wind chest.",
+        "Pipes are grouped as a Chinese mouth organ, not as a flat panpipe row.",
+        "Free-reed instrument identity is visible through pipe-and-wind-chest construction.",
+        "Wind chest and mouthpiece remain legible at thumbnail size."
+      ],
+      "rejection_tests": [
+        "Reject if it looks like panpipes with no wind chest.",
+        "Reject if it resembles a pipe organ or bagpipe.",
+        "Reject if the pipes are random bamboo decoration not connected to an air chamber.",
+        "Reject if there is no visible blowpipe/mouthpiece.",
+        "Reject if the pipe cluster hides the wind chest entirely."
+      ],
+      "reviewer_question": "Does the image read as sheng, with pipes, wind chest, and mouthpiece all visible?"
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+      "primary_reference_urls": [
+        "https://www.britannica.com/art/banhu",
+        "https://en.wikipedia.org/wiki/Huqin"
+      ],
+      "source_backed_features": [
+        "Britannica describes banhu as a bowed Chinese fiddle and a type of huqin.",
+        "Britannica states its two strings stretch over a bamboo bridge resting on a wooden soundboard.",
+        "Britannica distinguishes banhu from most Chinese string instruments that use snakeskin membranes.",
+        "Britannica describes upright performance, bow passing between two strings, and semicircular resonator made of wood or coconut shell."
+      ],
+      "acceptance_tests": [
+        "Vertical huqin-family form is clear.",
+        "Two strings and bow hair passing between strings are plausible.",
+        "Small resonator shows wooden soundboard identity rather than snakeskin erhu face.",
+        "Wood or coconut-shell body character is visible.",
+        "Candidate remains distinct from erhu, gaohu, zhonghu, and western violin."
+      ],
+      "rejection_tests": [
+        "Reject if it is a standard snakeskin erhu with a different label.",
+        "Reject if the body is large like zhonghu or gehu.",
+        "Reject if it has a western violin/lute body.",
+        "Reject if wooden board or coconut-shell identity is absent.",
+        "Reject if bow/string geometry is impossible."
+      ],
+      "reviewer_question": "Could this pass as banhu to a huqin-family player without relying on the name label?"
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+      "primary_reference_urls": [
+        "https://www.metmuseum.org/art/collection/search/500616",
+        "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings"
+      ],
+      "source_backed_features": [
+        "The Met identifies erhu as a huqin; bow hairs pass between the strings and the instrument is played vertically on the knee.",
+        "The Met notes the erhu typically has a round or hexagonal sound box and a snakeskin belly.",
+        "Timbre and Orchestration identifies erhu as a core Chinese orchestra bowed string instrument.",
+        "Huqin construction includes wood soundbox, membrane, bridge, long thin neck, two tuning pegs, and bow fitted between strings."
+      ],
+      "acceptance_tests": [
+        "Standard middle-size huqin vertical bowed form is clear.",
+        "Small round/hexagonal resonator with snakeskin membrane is visible.",
+        "Two strings, two pegs, bridge, long neck, and bow are plausible.",
+        "Bow hair appears between the strings rather than outside like a western violin bow.",
+        "It remains visually between smaller gaohu and larger zhonghu."
+      ],
+      "rejection_tests": [
+        "Reject if the body is wooden-board banhu identity.",
+        "Reject if it is as small as gaohu or as large as zhonghu/gehu.",
+        "Reject if it looks like western violin/viola/cello.",
+        "Reject if bow hair is not between the strings.",
+        "Reject if no snakeskin/membrane resonator identity is visible."
+      ],
+      "reviewer_question": "Is this the neutral erhu reference image against which gaohu and zhonghu can be compared?"
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+      "primary_reference_urls": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gaohu/",
+        "https://wesomeka.wesleyan.edu/vim2/items/show/71"
+      ],
+      "source_backed_features": [
+        "Eason describes gaohu as higher-pitched than erhu and relatively smaller than erhu.",
+        "Eason associates gaohu with Cantonese music and soprano voicings in orchestra.",
+        "Timbre and Orchestration says gaohu is similar in construction to erhu, with orchestral versions often using baseplate/fabric like erhu and zhonghu.",
+        "Timbre and Orchestration states gaohu is tuned a fifth higher and has a smaller, more taut soundbox/membrane than erhu."
+      ],
+      "acceptance_tests": [
+        "Small high-register huqin silhouette is visible.",
+        "Resonator is smaller and lighter than erhu candidate.",
+        "Two strings, bow hair between strings, pegs, and long neck are plausible.",
+        "Image implies brighter/soprano huqin role without needing a performer.",
+        "Candidate remains distinct from erhu and zhonghu in side-by-side review."
+      ],
+      "rejection_tests": [
+        "Reject if it is the same size as erhu.",
+        "Reject if body is larger/lower like zhonghu.",
+        "Reject if it uses banhu wooden-board identity.",
+        "Reject if it turns into gehu or western violin family.",
+        "Reject if the high-register compact character is not visible."
+      ],
+      "reviewer_question": "If labels are removed, can a reviewer still see this as the smaller/higher gaohu?"
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_zhonghu.png",
+      "primary_reference_urls": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/zhonghu/",
+        "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings"
+      ],
+      "source_backed_features": [
+        "Eason states zhonghu is typically assigned the alto voice in the Chinese orchestra bowed string section.",
+        "Eason describes zhonghu as slightly bigger than erhu, with wood soundbox shapes ranging from circular to octagonal.",
+        "Eason describes zhonghu as middle-to-lower range with thick timbre and deep tone.",
+        "Timbre and Orchestration says zhonghu open strings are a fifth lower than erhu and that zhonghu has thicker strings and a larger body."
+      ],
+      "acceptance_tests": [
+        "Larger lower-register huqin silhouette is clear.",
+        "Resonator body and neck are more robust than erhu and gaohu candidates.",
+        "Two strings, pegs, bridge, membrane/soundbox, and bow are plausible.",
+        "Image reads as alto/lower huqin, not bass gehu.",
+        "Candidate remains distinct from erhu in side-by-side review."
+      ],
+      "rejection_tests": [
+        "Reject if it is the same size as erhu.",
+        "Reject if it is tiny like gaohu.",
+        "Reject if it becomes gehu/cello-sized.",
+        "Reject if it uses banhu wooden-board identity.",
+        "Reject if the body is not visibly larger than erhu."
+      ],
+      "reviewer_question": "Does the candidate clearly communicate zhonghu's larger, lower alto role without becoming gehu?"
+    }
+  ]
+}

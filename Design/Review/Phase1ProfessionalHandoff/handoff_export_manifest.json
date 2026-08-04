@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status": "export_ready_for_external_delivery",
+  "purpose": "Defines the sanitized performer/reviewer package for phase-1 real recording delivery and high-risk artwork review.",
+  "policy": "This export is a work packet only. It is not approval evidence and must not be treated as App Store readiness.",
+  "source_manifest": "Design/Review/Phase1ProfessionalHandoff/phase1_professional_handoff_manifest.json",
+  "output_root": "Build/Phase1ProfessionalHandoff",
+  "package_slug": "guoyue-phase1-real-audio-artwork-handoff",
+  "zip_filename": "guoyue-phase1-real-audio-artwork-handoff.zip",
+  "required_instrument_ids": [
+    "erhu",
+    "gaohu",
+    "zhonghu",
+    "gehu",
+    "sheng",
+    "suona",
+    "banhu"
+  ],
+  "shared_source_files": [
+    "Docs/Phase1ProfessionalHandoff.zh-Hant.md",
+    "Docs/AssetLicenses/Phase1PerformerRequest.zh-Hant.md",
+    "Docs/AssetLicenses/Priority1RecordingDeliveryPack.zh-Hant.md",
+    "Docs/AssetLicenses/Phase1RecordingInboxValidation.zh-Hant.md",
+    "Docs/AssetLicenses/ProfessionalListeningReview.zh-Hant.md",
+    "Docs/InstrumentArtworkVisualReviewCards.zh-Hant.md",
+    "Docs/InstrumentArtworkCorrectionPlan.zh-Hant.md",
+    "Design/Review/Phase1ProfessionalHandoff/phase1_professional_handoff_manifest.json",
+    "Design/Source/VerifiedAudio/procurement/priority1_recording_delivery_pack.json",
+    "Design/Source/VerifiedAudio/procurement/professional_listening_review_scorecard.json",
+    "Design/Source/InstrumentReferenceAudit/professional_visual_review_cards.json",
+    "Design/Source/InstrumentReferenceAudit/high_risk_artwork_review_scorecard.json",
+    "Design/Review/ArtworkCandidates/candidate_manifest.json",
+    "Design/Review/ArtworkCandidates/candidate_contact_sheet.png",
+    "Design/Review/ArtworkCandidates/approval_template.json"
+  ],
+  "per_instrument_exports": [
+    {
+      "instrument_id": "erhu",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/erhu.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/erhu.approval.draft.json"
+    },
+    {
+      "instrument_id": "gaohu",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/gaohu.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/gaohu.approval.draft.json"
+    },
+    {
+      "instrument_id": "zhonghu",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/zhonghu.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_zhonghu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/zhonghu.approval.draft.json"
+    },
+    {
+      "instrument_id": "gehu",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/gehu.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/gehu.approval.draft.json"
+    },
+    {
+      "instrument_id": "sheng",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/sheng.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/sheng.approval.draft.json"
+    },
+    {
+      "instrument_id": "suona",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/suona.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_suona.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/suona.approval.draft.json"
+    },
+    {
+      "instrument_id": "banhu",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/banhu.release.template.json",
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/banhu.approval.draft.json"
+    }
+  ],
+  "forbidden_export_path_tokens": [
+    ".git",
+    ".env",
+    "._",
+    "AuthKey",
+    ".p8",
+    "fastlane/report.xml",
+    "DerivedData"
+  ],
+  "required_generated_files": [
+    "README.md",
+    "PACKAGE_MANIFEST.json",
+    "recording_inbox/README.md",
+    "artwork_review/README.md"
+  ]
+}

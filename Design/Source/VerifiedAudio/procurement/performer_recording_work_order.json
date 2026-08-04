@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "status": "ready_to_send_to_performers",
+  "purpose": "Optional future work order for commissioning redistributable real-instrument recordings that may replace current external-only references after the release.",
+  "source_pack": "Design/Source/VerifiedAudio/procurement/full_open_recording_delivery_pack.json",
+  "release_template_folder": "Design/Source/VerifiedAudio/procurement/full_release_templates/",
+  "delivery_root": "Design/Source/VerifiedAudio/inbox/full/",
+  "reverify_root": "Design/Source/VerifiedAudio/inbox/reverify/",
+  "phase_1_required_instrument_ids": [
+    "zhonghu",
+    "gehu"
+  ],
+  "phase_1_reverify_instrument_ids": [],
+  "phase_2_required_instrument_ids": [
+    "guanzi",
+    "konghou"
+  ],
+  "phase_3_required_instrument_ids": [
+    "bianzhong",
+    "tanggu",
+    "paigu"
+  ],
+  "performer_requirements": {
+    "must_be_primary_orchestra_performer": true,
+    "must_record_real_instrument": true,
+    "must_identify_instrument_make_or_type": true,
+    "must_confirm_no_ai_no_vst_no_sample_library": true,
+    "must_confirm_no_streaming_or_video_extraction": true,
+    "must_confirm_original_or_public_domain_gestures_only": true
+  },
+  "recording_environment": {
+    "room": "quiet room or studio with low background noise",
+    "microphone": "external microphone preferred; phone recording accepted only if noise floor and clipping pass review",
+    "processing": "dry recording only; no reverb, EQ, compression, noise reduction, pitch correction, time stretching, or backing track",
+    "format": "wav or aiff, 44.1 kHz or 48 kHz, 24-bit preferred, mono or stereo accepted before mastering",
+    "file_naming": "use exact filenames from full_open_recording_delivery_pack.json"
+  },
+  "legal_delivery": {
+    "required_release_file": "<instrument_id>.release.json",
+    "commercial_app_distribution": true,
+    "global_perpetual_use": true,
+    "derivative_processing_allowed": true,
+    "attribution": "record performer name, instrument, recording date, and license terms in release JSON",
+    "composition_rule": "single notes, scales, original gestures, percussion hits, or public-domain material only"
+  },
+  "acceptance_flow": [
+    "Receive all take files and <instrument_id>.release.json in the delivery folder.",
+    "Run check_recording_work_order.py and check_full_open_recording_pack.py.",
+    "Run import_verified_audio.py without --approve for technical conversion preview.",
+    "Complete professional_listening_review_scorecard.json for the instrument.",
+    "Only after license, technical, and professional review pass, rerun import_verified_audio.py with --approve."
+  ],
+  "hard_reject_conditions": [
+    "instrument identity is uncertain",
+    "recording contains AI, VST, sample library, keyboard, or synthesized tone",
+    "audio was ripped from YouTube, CD, streaming, broadcast, or social media",
+    "background music, accompaniment, applause, talking, traffic, or room noise masks the instrument",
+    "file is clipped, heavily compressed, reverbed, pitch corrected, or noise-reduced",
+    "release file is missing or does not grant commercial app distribution and derivative processing"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status_legend": {
+    "not_requested": "Not yet sent to a performer or organization.",
+    "requested": "Request sent, waiting for response.",
+    "received_pending_review": "Audio received but not imported.",
+    "imported_approved": "Imported through import_verified_audio.py and approved in manifest."
+  },
+  "items": [
+    {"instrument_id": "erhu", "name_zh": "二胡", "priority": 1, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["open string or sustained tone", "expressive slide", "short phrase"]},
+    {"instrument_id": "gaohu", "name_zh": "高胡", "priority": 1, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["bright sustained tone", "Cantonese-style short phrase"]},
+    {"instrument_id": "zhonghu", "name_zh": "中胡", "priority": 1, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["lower sustained tone", "lyrical short phrase"]},
+    {"instrument_id": "gehu", "name_zh": "革胡", "priority": 1, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["low sustained bowed tone", "short bass gesture"]},
+    {"instrument_id": "sheng", "name_zh": "笙", "priority": 1, "status": "imported_approved", "required_files": ["public_cc0_original", "license_page_snapshot", "app_master_wav"], "takes": ["chromatic scale on 36-reed soprano sheng"]},
+    {"instrument_id": "suona", "name_zh": "嗩吶", "priority": 1, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["sustained tone", "short ornament", "strong attack"]},
+    {"instrument_id": "banhu", "name_zh": "板胡", "priority": 1, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["bright attack", "sustained tone", "northern-style short phrase"]},
+    {"instrument_id": "xiao", "name_zh": "簫", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["breathy sustained tone", "short descending phrase"]},
+    {"instrument_id": "guanzi", "name_zh": "管子", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["sustained double-reed tone", "short phrase"]},
+    {"instrument_id": "pipa", "name_zh": "琵琶", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single pluck", "lunzhi color", "short phrase"]},
+    {"instrument_id": "guzheng", "name_zh": "古箏", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single note", "glissando or slide", "short phrase"]},
+    {"instrument_id": "yangqin", "name_zh": "揚琴", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single strike", "tremolo", "short phrase"]},
+    {"instrument_id": "liuqin", "name_zh": "柳琴", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single pluck", "fast high-register short phrase"]},
+    {"instrument_id": "zhongruan", "name_zh": "中阮", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single pluck", "chord", "short phrase"]},
+    {"instrument_id": "sanxian", "name_zh": "三弦", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single pluck", "slide", "short phrase"]},
+    {"instrument_id": "konghou", "name_zh": "箜篌", "priority": 2, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single pluck", "arpeggio", "short phrase"]},
+    {"instrument_id": "bianzhong", "name_zh": "編鐘", "priority": 3, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single bell strike with full decay"]},
+    {"instrument_id": "tanggu", "name_zh": "堂鼓", "priority": 3, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["center hit", "rim or edge hit", "short roll"]},
+    {"instrument_id": "luo", "name_zh": "鑼", "priority": 3, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single strike with full decay"]},
+    {"instrument_id": "bo", "name_zh": "鈸", "priority": 3, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["crash", "choke", "soft touch"]},
+    {"instrument_id": "muyu", "name_zh": "木魚", "priority": 3, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["single hit", "short repeated pattern"]},
+    {"instrument_id": "paigu", "name_zh": "排鼓", "priority": 3, "status": "not_requested", "required_files": ["audio_wav_or_aiff", "signed_release_or_release_json"], "takes": ["three drum pitches", "short roll"]}
+  ]
+}

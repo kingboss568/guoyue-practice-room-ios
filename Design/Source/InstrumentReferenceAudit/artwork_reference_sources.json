@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "policy": "References are used to constrain morphology. They do not grant permission to copy photos unless a separate license entry explicitly allows it.",
+  "sources": [
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "reference_urls": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gehu/",
+        "https://www.cello.org/Newsletter/Articles/gehu.htm",
+        "https://en.wikipedia.org/wiki/Gehu"
+      ],
+      "morphology_constraints": [
+        "hybrid between huqin family and cello",
+        "large low bowed instrument",
+        "body covered by animal skin",
+        "bowed like a cello",
+        "not a small erhu-like huqin"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gehu",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "20th-century Chinese bowed instrument",
+            "fusion of huqin family and cello",
+            "four strings tuned C-G-D-A",
+            "not a small two-string erhu silhouette"
+          ]
+        },
+        {
+          "url": "https://www.cello.org/Newsletter/Articles/gehu.htm",
+          "source_type": "specialized article",
+          "substantiated_features": [
+            "Chinese cello/bass role",
+            "large low bowed instrument",
+            "distinct from western cello substitution"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "large low bowed Chinese orchestra instrument",
+          "cello-like scale",
+          "Chinese resonator/body character",
+          "long neck and strings",
+          "low support or endpin"
+        ],
+        "forbidden_confusions": [
+          "small erhu resonator",
+          "generic zhonghu",
+          "plain western cello copy",
+          "violin or viola",
+          "fantasy bass"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::gehu"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "reference_urls": [
+        "https://en.wikipedia.org/wiki/Suona",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1249",
+        "https://www.metmuseum.org/art/collection/search/505216",
+        "https://en.wikipedia.org/wiki/List_of_Chinese_musical_instruments"
+      ],
+      "morphology_constraints": [
+        "traditional Chinese double-reed shawm",
+        "conical wooden body",
+        "small double reed on a bocal",
+        "detachable flared metal bell",
+        "not a trumpet or saxophone"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Suona",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "traditional Chinese double-reeded horn",
+            "loud high-pitched shawm family instrument",
+            "not a brass trumpet"
+          ]
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Chinese_musical_instruments",
+          "source_type": "instrument list",
+          "substantiated_features": [
+            "double-reed wind instrument",
+            "flaring metal bell",
+            "also called haidi/laba"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "short conical wooden body",
+          "front finger holes",
+          "small double reed and bocal",
+          "flared metal bell",
+          "shawm silhouette"
+        ],
+        "forbidden_confusions": [
+          "trumpet tubing",
+          "saxophone curve",
+          "western oboe proportions",
+          "clarinet cylinder",
+          "all-metal horn"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::suona"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "reference_urls": [
+        "https://www.britannica.com/art/sheng-musical-instrument",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1248",
+        "https://en.wikipedia.org/wiki/Sheng_(instrument)",
+        "https://www.metmuseum.org/art/collection/search/500658"
+      ],
+      "morphology_constraints": [
+        "Chinese free-reed mouth organ",
+        "usually around 17 bamboo pipes in traditional form",
+        "pipes mounted into a small wind chest",
+        "short curved or angled mouthpiece",
+        "not panpipes"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sheng_(instrument)",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "Chinese mouth-blown polyphonic free reed instrument",
+            "vertical pipes",
+            "pipes connected to wind chamber and mouthpiece"
+          ]
+        },
+        {
+          "url": "https://www.metmuseum.org/art/collection/search/500658",
+          "source_type": "museum collection",
+          "substantiated_features": [
+            "sheng-related sho has seventeen pipes",
+            "pipes arranged in a circle",
+            "wind chamber and mouth pipe are defining features"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "many vertical pipes of varied heights",
+          "rounded wind chest",
+          "angled mouthpiece",
+          "clustered mouth-organ structure",
+          "free-reed Chinese silhouette"
+        ],
+        "forbidden_confusions": [
+          "panpipes only",
+          "pipe organ",
+          "bagpipe",
+          "single flute bundle",
+          "random bamboo decoration"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::sheng"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "reference_urls": [
+        "https://chinesemusic.mtsu.edu/instrument-gallery/",
+        "https://www.britannica.com/art/banhu",
+        "https://en.wikipedia.org/wiki/Banhu",
+        "https://en.wikipedia.org/wiki/Huqin"
+      ],
+      "morphology_constraints": [
+        "huqin-family two-string bowed instrument",
+        "bow hair passes between the two strings",
+        "soundbox often coconut shell or spherical form",
+        "thin wooden board sound surface rather than snakeskin",
+        "not a generic erhu"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Banhu",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "huqin family bowed instrument",
+            "two strings",
+            "bow hair passes between strings",
+            "soundbox often coconut shell",
+            "thin wooden board sound surface"
+          ]
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Huqin",
+          "source_type": "instrument family reference",
+          "substantiated_features": [
+            "vertical spike fiddle family",
+            "two strings and horizontal pegs",
+            "soundbox variations distinguish family members"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "huqin vertical bowed form",
+          "two strings",
+          "bow hair between strings",
+          "wooden board sound surface",
+          "coconut shell or wood-shell resonator"
+        ],
+        "forbidden_confusions": [
+          "standard erhu snakeskin face",
+          "generic erhu relabel",
+          "western violin body",
+          "large zhonghu body",
+          "gehu bass scale"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::banhu"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "reference_urls": [
+        "https://chinesemusic.mtsu.edu/instrument-gallery/",
+        "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings",
+        "https://en.wikipedia.org/wiki/Erhu",
+        "https://www.metmuseum.org/art/collection/search/500616"
+      ],
+      "morphology_constraints": [
+        "most common huqin family member",
+        "bow made of bamboo and horsehair placed between two strings",
+        "small resonator",
+        "expressive bowed sound",
+        "middle reference size for gaohu and zhonghu differentiation"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Erhu",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "Chinese two-stringed bowed spike fiddle",
+            "used as solo and ensemble instrument",
+            "member of huqin family"
+          ]
+        },
+        {
+          "url": "https://www.metmuseum.org/art/collection/search/500616",
+          "source_type": "museum collection",
+          "substantiated_features": [
+            "huqin played vertically on the knee",
+            "left hand fingers, right hand bow",
+            "bow hair passes between strings"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "standard huqin vertical bowed form",
+          "small snakeskin-covered resonator",
+          "two strings",
+          "bow hair between strings",
+          "two tuning pegs"
+        ],
+        "forbidden_confusions": [
+          "oversized zhonghu body",
+          "tiny gaohu body",
+          "low bass gehu scale",
+          "banhu wooden-board resonator"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::erhu"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "reference_urls": [
+        "https://wesomeka.wesleyan.edu/vim2/items/show/71",
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gaohu/",
+        "https://wmic.net/china-gaohu-yuehu/",
+        "https://en.wikipedia.org/wiki/Gaohu",
+        "https://en.wikipedia.org/wiki/List_of_Chinese_musical_instruments"
+      ],
+      "morphology_constraints": [
+        "higher-pitched huqin developed from erhu",
+        "slightly smaller soundbox than erhu",
+        "traditional form held between knees",
+        "brighter and lighter tone",
+        "not larger than erhu"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gaohu",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "high-pitched huqin",
+            "developed from erhu",
+            "used in Cantonese music and opera",
+            "traditional Guangdong type may be held between knees"
+          ]
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Chinese_musical_instruments",
+          "source_type": "instrument list",
+          "substantiated_features": [
+            "two-stringed fiddle",
+            "higher pitch than erhu",
+            "also called yuehu"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "small high-register huqin",
+          "compact resonator smaller than erhu",
+          "slender neck",
+          "two strings and bow",
+          "brighter higher-register character"
+        ],
+        "forbidden_confusions": [
+          "same size as erhu",
+          "larger zhonghu body",
+          "banhu wooden-board body",
+          "gehu bass silhouette"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::gaohu"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "reference_urls": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/zhonghu/",
+        "https://www.britannica.com/art/zhonghu",
+        "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings",
+        "https://en.wikipedia.org/wiki/Zhonghu",
+        "https://en.wikipedia.org/wiki/Chinese_orchestra"
+      ],
+      "morphology_constraints": [
+        "larger lower-pitched version of erhu",
+        "alto voice in Chinese orchestra bowed strings",
+        "larger body and thicker strings than erhu",
+        "lower open strings than erhu",
+        "not as large as gehu"
+      ],
+      "source_notes": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Zhonghu",
+          "source_type": "encyclopedia",
+          "substantiated_features": [
+            "low-pitched Chinese bowed string instrument",
+            "alto member of huqin family",
+            "slightly larger and lower pitched than erhu",
+            "body covered with snakeskin"
+          ]
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chinese_orchestra",
+          "source_type": "orchestra context",
+          "substantiated_features": [
+            "zhonghu is the lower-pitched huqin in Chinese orchestra",
+            "gaohu and zhonghu sit around erhu sections",
+            "role must differ from erhu"
+          ]
+        }
+      ],
+      "image_generation_constraints": {
+        "required_positive_terms": [
+          "larger lower-register huqin",
+          "larger resonator than erhu",
+          "two strings",
+          "bow hair between strings",
+          "robust alto proportions"
+        ],
+        "forbidden_confusions": [
+          "same-size erhu copy",
+          "tiny gaohu body",
+          "gehu-sized bass body",
+          "banhu wooden-board identity"
+        ],
+        "review_against_spec": "high_risk_artwork_morphology_specs.json::zhonghu"
+      },
+      "copy_policy": "Reference morphology only; do not copy a source photo or museum object image one-to-one."
+    }
+  ],
+  "minimum_reference_urls_per_instrument": 2,
+  "image_generation_policy": {
+    "use_references_for": "morphology and differentiation only",
+    "do_not_copy": "Do not copy composition, lighting, cropping, or protected photo expression from any reference image.",
+    "professional_gate": "Generated artwork remains blocked until a knowledgeable Chinese orchestra reviewer approves every morphology criterion."
+  }
+}

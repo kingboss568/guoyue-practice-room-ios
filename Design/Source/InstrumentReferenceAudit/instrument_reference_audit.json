@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "review_policy": "App artwork uses exact, commercially reusable real-instrument photographs with auditable source records. Internal source and contact-sheet visual QC is complete for 22 instruments; named professional morphology review remains required before submission. Paigu stays blocked until an exact reusable group photo is licensed.",
+  "items": [
+    {
+      "instrument_id": "dizi",
+      "name_zh": "笛",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "horizontal bamboo flute",
+        "visible finger holes",
+        "not a western concert flute"
+      ]
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "high",
+      "required_checks": [
+        "pipe cluster",
+        "wind chest",
+        "mouthpiece angle",
+        "not panpipes"
+      ]
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "high",
+      "required_checks": [
+        "wooden conical body",
+        "double reed",
+        "flared metal bell",
+        "not trumpet or saxophone"
+      ]
+    },
+    {
+      "instrument_id": "xiao",
+      "name_zh": "簫",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "vertical end-blown bamboo flute",
+        "simple dark bamboo body",
+        "not recorder"
+      ]
+    },
+    {
+      "instrument_id": "guanzi",
+      "name_zh": "管子",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "short double-reed cylindrical body",
+        "front finger holes",
+        "not western oboe"
+      ]
+    },
+    {
+      "instrument_id": "pipa",
+      "name_zh": "琵琶",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "pear-shaped body",
+        "four strings",
+        "raised frets",
+        "not lute or guitar"
+      ]
+    },
+    {
+      "instrument_id": "guzheng",
+      "name_zh": "古箏",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "long zither body",
+        "movable bridges",
+        "many strings"
+      ]
+    },
+    {
+      "instrument_id": "yangqin",
+      "name_zh": "揚琴",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "trapezoid hammered dulcimer",
+        "many strings",
+        "paired bamboo beaters"
+      ]
+    },
+    {
+      "instrument_id": "liuqin",
+      "name_zh": "柳琴",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "small pear-shaped body",
+        "four strings",
+        "higher-register pipa family",
+        "not pipa-sized"
+      ]
+    },
+    {
+      "instrument_id": "zhongruan",
+      "name_zh": "中阮",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "round moon-shaped body",
+        "long neck",
+        "four strings",
+        "not yueqin"
+      ]
+    },
+    {
+      "instrument_id": "sanxian",
+      "name_zh": "三弦",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "long fretless neck",
+        "small snakeskin-covered resonator",
+        "three strings"
+      ]
+    },
+    {
+      "instrument_id": "konghou",
+      "name_zh": "箜篌",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "Chinese harp silhouette",
+        "paired string rows if modern konghou",
+        "not western orchestral harp only"
+      ]
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "high",
+      "required_checks": [
+        "small resonator",
+        "two strings",
+        "bow hair between strings",
+        "distinguish from gaohu and zhonghu"
+      ]
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "high",
+      "required_checks": [
+        "smaller higher huqin",
+        "often held between knees",
+        "distinguish from erhu"
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "high",
+      "required_checks": [
+        "larger lower huqin body",
+        "longer neck/body proportion",
+        "distinguish from erhu"
+      ]
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "high",
+      "required_checks": [
+        "wooden or coconut shell resonator",
+        "wooden soundboard",
+        "bright huqin form",
+        "not generic erhu"
+      ]
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "critical",
+      "required_checks": [
+        "large cello-like bowed bass instrument",
+        "large resonator body",
+        "endpin or seated low position",
+        "not erhu or zhonghu"
+      ]
+    },
+    {
+      "instrument_id": "bianzhong",
+      "name_zh": "編鐘",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "medium",
+      "required_checks": [
+        "set of bronze bells",
+        "rack frame",
+        "not single bell"
+      ]
+    },
+    {
+      "instrument_id": "tanggu",
+      "name_zh": "堂鼓",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "low",
+      "required_checks": [
+        "barrel drum",
+        "skin heads",
+        "wooden body"
+      ]
+    },
+    {
+      "instrument_id": "luo",
+      "name_zh": "鑼",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "low",
+      "required_checks": [
+        "flat circular gong",
+        "rim",
+        "mallet if shown"
+      ]
+    },
+    {
+      "instrument_id": "bo",
+      "name_zh": "鈸",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "low",
+      "required_checks": [
+        "paired cymbals",
+        "central dome",
+        "hand straps"
+      ]
+    },
+    {
+      "instrument_id": "muyu",
+      "name_zh": "木魚",
+      "status": "approved_after_source_and_internal_visual_qc",
+      "risk": "low",
+      "required_checks": [
+        "woodblock fish shape or temple woodblock",
+        "slot",
+        "striker"
+      ]
+    },
+    {
+      "instrument_id": "paigu",
+      "name_zh": "排鼓",
+      "status": "blocked_no_reusable_real_photo",
+      "risk": "medium",
+      "required_checks": [
+        "set of tuned drums",
+        "arranged in a row or arc",
+        "not single drum"
+      ]
+    }
+  ]
+}

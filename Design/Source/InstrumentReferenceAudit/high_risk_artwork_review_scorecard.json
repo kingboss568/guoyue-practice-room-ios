@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status": "template_pending_professional_reviews",
+  "applies_to_high_risk_instrument_ids": [
+    "gehu",
+    "suona",
+    "sheng",
+    "banhu",
+    "erhu",
+    "gaohu",
+    "zhonghu"
+  ],
+  "score_policy": {
+    "score_scale": "1-5",
+    "minimum_score_per_criterion": 4,
+    "minimum_average_score": 4.25,
+    "minimum_professional_reviewers_for_import": 1,
+    "preferred_professional_reviewers": 2,
+    "reviewer_profile": "Chinese orchestra performer, conductor, instrument teacher, instrument maker, or ensemble administrator familiar with the instrument family.",
+    "approval_requires_import_tool": true,
+    "final_import_tool": "python3 fastlane/scripts/import_approved_artwork.py --approve"
+  },
+  "shared_criteria": [
+    {
+      "criterion_id": "instrument_identity",
+      "label": "Instrument identity",
+      "required_minimum_score": 4,
+      "description": "The image must read as the named Chinese orchestra instrument without relying on text labels."
+    },
+    {
+      "criterion_id": "morphology_accuracy",
+      "label": "Morphology accuracy",
+      "required_minimum_score": 4,
+      "description": "Body, resonator, pipes, reed, strings, bow, bell, or other defining construction details must match the source-backed morphology spec."
+    },
+    {
+      "criterion_id": "differentiation_from_neighbors",
+      "label": "Differentiation from similar instruments",
+      "required_minimum_score": 4,
+      "description": "The image must remain distinct from adjacent Chinese orchestra instruments, especially within the huqin family."
+    },
+    {
+      "criterion_id": "thumbnail_legibility",
+      "label": "Thumbnail legibility",
+      "required_minimum_score": 4,
+      "description": "The defining features must remain visible at app card and App Store screenshot scale."
+    },
+    {
+      "criterion_id": "no_fantasy_details",
+      "label": "No fantasy details",
+      "required_minimum_score": 4,
+      "description": "The image must not add sci-fi, decorative, western substitute, or impossible construction details."
+    },
+    {
+      "criterion_id": "app_store_fit",
+      "label": "App Store fit",
+      "required_minimum_score": 4,
+      "description": "The image must be clean, single-instrument, non-misleading, and suitable for the review build."
+    }
+  ],
+  "differentiation_matrix": [
+    {
+      "instrument_id": "gehu",
+      "must_distinguish_from": [
+        "erhu",
+        "gaohu",
+        "zhonghu",
+        "western cello"
+      ],
+      "pass_condition": "Reads as a large low-register Chinese bowed instrument, not a small huqin and not a plain western cello.",
+      "reject_if_confused_with": [
+        "plain western cello",
+        "oversized erhu",
+        "generic zhonghu"
+      ]
+    },
+    {
+      "instrument_id": "suona",
+      "must_distinguish_from": [
+        "trumpet",
+        "saxophone",
+        "oboe",
+        "clarinet"
+      ],
+      "pass_condition": "Shows conical wooden body, double reed and bocal, finger holes, and flared metal bell.",
+      "reject_if_confused_with": [
+        "trumpet",
+        "bugle",
+        "saxophone",
+        "western oboe"
+      ]
+    },
+    {
+      "instrument_id": "sheng",
+      "must_distinguish_from": [
+        "panpipes",
+        "pipe organ",
+        "bagpipe",
+        "flute bundle"
+      ],
+      "pass_condition": "Shows pipe cluster inserted into a visible wind chest with a mouthpiece.",
+      "reject_if_confused_with": [
+        "panpipes",
+        "organ pipes",
+        "random bamboo bundle"
+      ]
+    },
+    {
+      "instrument_id": "banhu",
+      "must_distinguish_from": [
+        "erhu",
+        "gaohu",
+        "zhonghu",
+        "western violin"
+      ],
+      "pass_condition": "Shows a small huqin-family bowed instrument with wooden board or coconut-shell body character.",
+      "reject_if_confused_with": [
+        "generic erhu",
+        "snakeskin erhu identity",
+        "western violin"
+      ]
+    },
+    {
+      "instrument_id": "erhu",
+      "must_distinguish_from": [
+        "gaohu",
+        "zhonghu",
+        "banhu",
+        "gehu"
+      ],
+      "pass_condition": "Reads as the standard middle-size two-string huqin with snakeskin resonator and bow hair between strings.",
+      "reject_if_confused_with": [
+        "gaohu",
+        "zhonghu",
+        "banhu",
+        "gehu"
+      ]
+    },
+    {
+      "instrument_id": "gaohu",
+      "must_distinguish_from": [
+        "erhu",
+        "zhonghu",
+        "banhu",
+        "gehu"
+      ],
+      "pass_condition": "Reads as the smaller, high-register huqin, visibly more compact than erhu and zhonghu.",
+      "reject_if_confused_with": [
+        "same-size erhu",
+        "zhonghu",
+        "banhu",
+        "gehu"
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "must_distinguish_from": [
+        "erhu",
+        "gaohu",
+        "banhu",
+        "gehu"
+      ],
+      "pass_condition": "Reads as the larger lower-register huqin, bigger than erhu but not gehu-sized.",
+      "reject_if_confused_with": [
+        "same-size erhu",
+        "tiny gaohu",
+        "banhu",
+        "gehu"
+      ]
+    }
+  ],
+  "per_instrument_reviews": [
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+      "morphology_spec_id": "gehu",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/gehu.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "large low-register bowed instrument",
+        "cello-like vertical body scale",
+        "large resonator body with Chinese orchestra character",
+        "long neck and strings",
+        "endpin or low seated support"
+      ],
+      "reject_if": [
+        "small erhu-like resonator",
+        "generic zhonghu body",
+        "plain western cello with no Chinese morphology",
+        "tiny huqin proportions"
+      ],
+      "differentiation_targets": [
+        "erhu",
+        "gaohu",
+        "zhonghu",
+        "western cello"
+      ]
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_suona.png",
+      "morphology_spec_id": "suona",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/suona.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "short conical wooden body",
+        "front finger holes",
+        "small double reed and bocal at the top",
+        "detachable flared metal bell at the bottom",
+        "overall shawm silhouette"
+      ],
+      "reject_if": [
+        "trumpet or bugle tubing",
+        "saxophone curves",
+        "western oboe or clarinet proportions",
+        "all-metal horn body"
+      ],
+      "differentiation_targets": [
+        "trumpet",
+        "saxophone",
+        "oboe",
+        "clarinet"
+      ]
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+      "morphology_spec_id": "sheng",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/sheng.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "many vertical pipes of varied heights",
+        "pipes inserted into a wind chest",
+        "mouthpiece attached to the wind chest",
+        "clustered mouth-organ structure",
+        "free-reed Chinese instrument silhouette"
+      ],
+      "reject_if": [
+        "panpipes with no wind chest",
+        "pipe organ",
+        "bagpipe",
+        "random bamboo decoration",
+        "single flute bundle"
+      ],
+      "differentiation_targets": [
+        "panpipes",
+        "pipe organ",
+        "bagpipe",
+        "flute bundle"
+      ]
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+      "morphology_spec_id": "banhu",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/banhu.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "huqin-family vertical bowed form",
+        "two strings",
+        "bow hair passing between strings",
+        "small resonator with wooden board sound surface",
+        "coconut shell or wood-shell body character"
+      ],
+      "reject_if": [
+        "snakeskin-covered erhu resonator as the main identity",
+        "generic erhu with different label",
+        "western violin or lute body",
+        "large zhonghu or gehu body"
+      ],
+      "differentiation_targets": [
+        "erhu",
+        "gaohu",
+        "zhonghu",
+        "western violin"
+      ]
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+      "morphology_spec_id": "erhu",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/erhu.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "standard huqin vertical bowed form",
+        "small snakeskin-covered resonator",
+        "two strings",
+        "bow hair between the two strings",
+        "two tuning pegs"
+      ],
+      "reject_if": [
+        "gaohu held-between-knees emphasis",
+        "zhonghu-sized large resonator",
+        "gehu bass scale",
+        "banhu wooden-board resonator"
+      ],
+      "differentiation_targets": [
+        "gaohu",
+        "zhonghu",
+        "banhu",
+        "gehu"
+      ]
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+      "morphology_spec_id": "gaohu",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/gaohu.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "small high-register huqin form",
+        "small resonator, visibly smaller than erhu",
+        "two strings",
+        "bow hair between strings",
+        "slender neck and compact proportions"
+      ],
+      "reject_if": [
+        "same size as erhu without differentiation",
+        "larger zhonghu body",
+        "banhu wooden-board body",
+        "gehu bass silhouette"
+      ],
+      "differentiation_targets": [
+        "erhu",
+        "zhonghu",
+        "banhu",
+        "gehu"
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "candidate_path": "Design/Review/ArtworkCandidates/candidate_zhonghu.png",
+      "morphology_spec_id": "zhonghu",
+      "approval_draft_path": "Design/Review/ArtworkCandidates/approval_drafts/zhonghu.approval.draft.json",
+      "required_reference_count": 2,
+      "must_validate": [
+        "larger lower-register huqin form",
+        "larger resonator than erhu",
+        "two strings",
+        "bow hair between strings",
+        "more robust body and neck proportions"
+      ],
+      "reject_if": [
+        "same-size erhu copy",
+        "tiny gaohu body",
+        "gehu-sized bass body",
+        "banhu wooden-board identity"
+      ],
+      "differentiation_targets": [
+        "erhu",
+        "gaohu",
+        "banhu",
+        "gehu"
+      ]
+    }
+  ],
+  "review_records": []
+}

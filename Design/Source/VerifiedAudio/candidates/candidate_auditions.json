@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "policy": {
+    "status": "audition_only",
+    "note": "These files are for expert listening review only. They must not be copied into GuoYueZhiPu/Resources/Audio/Instruments until professional review, attribution, license treatment, and the approved manifest are complete.",
+    "required_audition_format": {
+      "container": "wav",
+      "channels": 1,
+      "sample_rate_hz": 44100,
+      "bit_depth": 16
+    }
+  },
+  "items": [
+    {
+      "instrument_id": "pipa",
+      "instrument_name_zh": "琵琶",
+      "source_title": "Pipa - sound.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pipa_-_sound.ogg",
+      "author": "Francesc Fort",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "local_original_path": "Design/Source/VerifiedAudio/candidates/originals/pipa.commons.Pipa_-_sound.ogg",
+      "local_audition_wav_path": "Design/Source/VerifiedAudio/candidates/audition_wav/pipa.audition.wav",
+      "original_sha256": "284dd9cbf70a273ebab540fe8cf2a2893ab8ce33bc6844dc04c608349dff2b3c",
+      "audition_sha256": "fc940b133b939a39794b4cc5ea74566b82e290d2370f5c37ce041abab846a549",
+      "duration_seconds": 11.417687,
+      "status": "local_audition_ready",
+      "must_not_bundle_reason": "CC BY-SA attribution/share-alike treatment and professional instrument-fit review are not complete."
+    },
+    {
+      "instrument_id": "suona",
+      "instrument_name_zh": "嗩吶",
+      "source_title": "Suona.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Suona.ogg",
+      "author": "Francesc Fort",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "local_original_path": "Design/Source/VerifiedAudio/candidates/originals/suona.commons.Suona.ogg",
+      "local_audition_wav_path": "Design/Source/VerifiedAudio/candidates/audition_wav/suona.audition.wav",
+      "original_sha256": "a951604033d0004caabff3dacc71d05dd4462be93e1014b3cbb48d9ba5784cff",
+      "audition_sha256": "87efbb5e46ec605543f4b255682f5a0a7e7a03af8f4f2bf2f7e6371bd86cdd5c",
+      "duration_seconds": 21.802517,
+      "status": "local_audition_ready",
+      "must_not_bundle_reason": "High-risk suona timbre requires professional listening review plus CC BY-SA attribution/share-alike treatment."
+    },
+    {
+      "instrument_id": "zhongruan",
+      "instrument_name_zh": "中阮",
+      "source_title": "Zhongruan.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zhongruan.ogg",
+      "author": "Francesc Fort",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "local_original_path": "Design/Source/VerifiedAudio/candidates/originals/zhongruan.commons.Zhongruan.ogg",
+      "local_audition_wav_path": "Design/Source/VerifiedAudio/candidates/audition_wav/zhongruan.audition.wav",
+      "original_sha256": "1ac41973620dd7be0a620c19168edee0ddc531aadbf3b523634948b7323a5bc7",
+      "audition_sha256": "61e1314dc88d25c127325649f67fbc626714cc844496ea86838ff187b8f3e065",
+      "duration_seconds": 31.529342,
+      "status": "local_audition_ready",
+      "must_not_bundle_reason": "CC BY-SA attribution/share-alike treatment and professional instrument-fit review are not complete."
+    },
+    {
+      "instrument_id": "banhu",
+      "instrument_name_zh": "板胡",
+      "source_title": "Banhu.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Banhu.ogg",
+      "author": "Francesc Fort",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "local_original_path": "Design/Source/VerifiedAudio/candidates/originals/banhu.commons.Banhu.ogg",
+      "local_audition_wav_path": "Design/Source/VerifiedAudio/candidates/audition_wav/banhu.audition.wav",
+      "original_sha256": "c90f2a98d673a9ea8c5cbe2f144ee52878480ded7a3ff22724c2712fa73d0f64",
+      "audition_sha256": "e3a4e27e4e98ce0726377fad677849928163ef58afcd3b9079cbe25e736c32cd",
+      "duration_seconds": 43.231451,
+      "status": "local_audition_ready",
+      "must_not_bundle_reason": "High-risk banhu/huqin-family timbre requires professional listening review plus CC BY-SA attribution/share-alike treatment."
+    }
+  ]
+}

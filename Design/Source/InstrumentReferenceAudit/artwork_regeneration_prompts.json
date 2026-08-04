@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "usage": "Generate candidate 900x900 instrument artwork only after checking real references. Every generated image must remain blocked until reviewed by a knowledgeable Chinese orchestra musician or administrator.",
+  "global_style": {
+    "format": "single instrument centered, 900x900 PNG, clean warm neutral background, realistic teaching-reference product image",
+    "do_not_include": [
+      "fantasy details",
+      "sci-fi materials",
+      "extra instruments",
+      "performer hands that hide the instrument morphology",
+      "incorrect text labels",
+      "western substitute instruments"
+    ]
+  },
+  "prompts": [
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "priority": "critical",
+      "prompt": "Realistic product-style teaching reference image of a Chinese gehu, a large low bowed Chinese orchestra bass instrument. Show a cello-like seated/standing low bowed instrument with a large resonating body, long neck, endpin or low support, bowed string setup, warm wood finish, accurate proportions. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it look like erhu, zhonghu, banhu, violin, viola, western cello copy with no Chinese orchestra character, fantasy instrument, or tiny huqin.",
+      "reference_urls_required": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gehu/",
+        "https://www.cello.org/Newsletter/Articles/gehu.htm"
+      ],
+      "required_positive_terms": [
+        "large low bowed Chinese orchestra instrument",
+        "cello-like scale",
+        "Chinese resonator/body character",
+        "long neck and strings",
+        "low support or endpin"
+      ],
+      "forbidden_confusions": [
+        "small erhu resonator",
+        "generic zhonghu",
+        "plain western cello copy",
+        "violin or viola",
+        "fantasy bass"
+      ],
+      "must_show_checklist": [
+        "large low-register bowed instrument",
+        "cello-like vertical body scale",
+        "large resonator body with Chinese orchestra character",
+        "long neck and strings",
+        "endpin or low seated support"
+      ],
+      "must_not_show_checklist": [
+        "small erhu-like resonator",
+        "generic zhonghu body",
+        "plain western cello with no Chinese morphology",
+        "tiny huqin proportions"
+      ],
+      "approval_required_before_bundle": true
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "priority": "critical",
+      "prompt": "Realistic product-style teaching reference image of a traditional Chinese suona. Show a short conical wooden body, finger holes, small double reed mouthpiece at the top, and a flared metal bell at the bottom. The bell-to-body proportion should clearly read as suona. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it look like trumpet, saxophone, western oboe, clarinet, bugle, fantasy brass, or a long metal horn.",
+      "reference_urls_required": [
+        "https://en.wikipedia.org/wiki/Suona",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1249"
+      ],
+      "required_positive_terms": [
+        "short conical wooden body",
+        "front finger holes",
+        "small double reed and bocal",
+        "flared metal bell",
+        "shawm silhouette"
+      ],
+      "forbidden_confusions": [
+        "trumpet tubing",
+        "saxophone curve",
+        "western oboe proportions",
+        "clarinet cylinder",
+        "all-metal horn"
+      ],
+      "must_show_checklist": [
+        "short conical wooden body",
+        "front finger holes",
+        "small double reed and bocal at the top",
+        "detachable flared metal bell at the bottom",
+        "overall shawm silhouette"
+      ],
+      "must_not_show_checklist": [
+        "trumpet or bugle tubing",
+        "saxophone curves",
+        "western oboe or clarinet proportions",
+        "all-metal horn body"
+      ],
+      "approval_required_before_bundle": true
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "priority": "critical",
+      "prompt": "Realistic product-style teaching reference image of a Chinese sheng mouth organ. Show many vertical bamboo or metal pipes inserted into a rounded wind chest, with a clear angled mouthpiece. Pipes have different heights and are arranged in a cluster. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it look like panpipes, pipe organ, bagpipe, fantasy pipe cluster, or generic bamboo decoration.",
+      "reference_urls_required": [
+        "https://www.britannica.com/art/sheng-musical-instrument",
+        "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1248"
+      ],
+      "required_positive_terms": [
+        "many vertical pipes of varied heights",
+        "rounded wind chest",
+        "angled mouthpiece",
+        "clustered mouth-organ structure",
+        "free-reed Chinese silhouette"
+      ],
+      "forbidden_confusions": [
+        "panpipes only",
+        "pipe organ",
+        "bagpipe",
+        "single flute bundle",
+        "random bamboo decoration"
+      ],
+      "must_show_checklist": [
+        "many vertical pipes of varied heights",
+        "pipes inserted into a wind chest",
+        "mouthpiece attached to the wind chest",
+        "clustered mouth-organ structure",
+        "free-reed Chinese instrument silhouette"
+      ],
+      "must_not_show_checklist": [
+        "panpipes with no wind chest",
+        "pipe organ",
+        "bagpipe",
+        "random bamboo decoration",
+        "single flute bundle"
+      ],
+      "approval_required_before_bundle": true
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "priority": "critical",
+      "prompt": "Realistic product-style teaching reference image of a Chinese banhu. Show a huqin-family bowed instrument with a bright small resonator, wooden soundboard or coconut/wood shell body, two strings, long neck, pegs, and bow. Make the resonator visibly different from erhu snakeskin resonator. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it a generic erhu, gaohu, zhonghu, violin, or lute. Do not use a snakeskin erhu resonator as the main visual.",
+      "reference_urls_required": [
+        "https://chinesemusic.mtsu.edu/instrument-gallery/",
+        "https://www.britannica.com/art/banhu"
+      ],
+      "required_positive_terms": [
+        "huqin vertical bowed form",
+        "two strings",
+        "bow hair between strings",
+        "wooden board sound surface",
+        "coconut shell or wood-shell resonator"
+      ],
+      "forbidden_confusions": [
+        "standard erhu snakeskin face",
+        "generic erhu relabel",
+        "western violin body",
+        "large zhonghu body",
+        "gehu bass scale"
+      ],
+      "must_show_checklist": [
+        "huqin-family vertical bowed form",
+        "two strings",
+        "bow hair passing between strings",
+        "small resonator with wooden board sound surface",
+        "coconut shell or wood-shell body character"
+      ],
+      "must_not_show_checklist": [
+        "snakeskin-covered erhu resonator as the main identity",
+        "generic erhu with different label",
+        "western violin or lute body",
+        "large zhonghu or gehu body"
+      ],
+      "approval_required_before_bundle": true
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "priority": "high",
+      "prompt": "Realistic product-style teaching reference image of a standard Chinese erhu. Show a small hexagonal or round snakeskin-covered resonator, long slender neck, two tuning pegs, two strings, and bow hair passing between the strings. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it oversized like zhonghu, tiny like gaohu, or low bass-like gehu. Do not omit the bow relationship to the two strings.",
+      "reference_urls_required": [
+        "https://chinesemusic.mtsu.edu/instrument-gallery/",
+        "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings"
+      ],
+      "required_positive_terms": [
+        "standard huqin vertical bowed form",
+        "small snakeskin-covered resonator",
+        "two strings",
+        "bow hair between strings",
+        "two tuning pegs"
+      ],
+      "forbidden_confusions": [
+        "oversized zhonghu body",
+        "tiny gaohu body",
+        "low bass gehu scale",
+        "banhu wooden-board resonator"
+      ],
+      "must_show_checklist": [
+        "standard huqin vertical bowed form",
+        "small snakeskin-covered resonator",
+        "two strings",
+        "bow hair between the two strings",
+        "two tuning pegs"
+      ],
+      "must_not_show_checklist": [
+        "gaohu held-between-knees emphasis",
+        "zhonghu-sized large resonator",
+        "gehu bass scale",
+        "banhu wooden-board resonator"
+      ],
+      "approval_required_before_bundle": true
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "priority": "high",
+      "prompt": "Realistic product-style teaching reference image of a Chinese gaohu. Show a smaller, higher-register huqin-family instrument with a small resonator, slender neck, two strings and bow, visually more compact and brighter than erhu. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it identical to erhu or zhonghu. Do not make the resonator large or bass-like.",
+      "reference_urls_required": [
+        "https://wesomeka.wesleyan.edu/vim2/items/show/71",
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gaohu/"
+      ],
+      "required_positive_terms": [
+        "small high-register huqin",
+        "compact resonator smaller than erhu",
+        "slender neck",
+        "two strings and bow",
+        "brighter higher-register character"
+      ],
+      "forbidden_confusions": [
+        "same size as erhu",
+        "larger zhonghu body",
+        "banhu wooden-board body",
+        "gehu bass silhouette"
+      ],
+      "must_show_checklist": [
+        "small high-register huqin form",
+        "small resonator, visibly smaller than erhu",
+        "two strings",
+        "bow hair between strings",
+        "slender neck and compact proportions"
+      ],
+      "must_not_show_checklist": [
+        "same size as erhu without differentiation",
+        "larger zhonghu body",
+        "banhu wooden-board body",
+        "gehu bass silhouette"
+      ],
+      "approval_required_before_bundle": true
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "priority": "high",
+      "prompt": "Realistic product-style teaching reference image of a Chinese zhonghu. Show a lower-register huqin-family instrument with a larger resonator and more robust proportions than erhu, long neck, two strings and bow. Single instrument only, centered, neutral background, 900x900.",
+      "negative_prompt": "Do not make it tiny like gaohu, identical to erhu, or as large as gehu. Avoid generic violin-family shapes.",
+      "reference_urls_required": [
+        "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/zhonghu/",
+        "https://www.britannica.com/art/zhonghu"
+      ],
+      "required_positive_terms": [
+        "larger lower-register huqin",
+        "larger resonator than erhu",
+        "two strings",
+        "bow hair between strings",
+        "robust alto proportions"
+      ],
+      "forbidden_confusions": [
+        "same-size erhu copy",
+        "tiny gaohu body",
+        "gehu-sized bass body",
+        "banhu wooden-board identity"
+      ],
+      "must_show_checklist": [
+        "larger lower-register huqin form",
+        "larger resonator than erhu",
+        "two strings",
+        "bow hair between strings",
+        "more robust body and neck proportions"
+      ],
+      "must_not_show_checklist": [
+        "same-size erhu copy",
+        "tiny gaohu body",
+        "gehu-sized bass body",
+        "banhu wooden-board identity"
+      ],
+      "approval_required_before_bundle": true
+    }
+  ],
+  "reference_manifest": "Design/Source/InstrumentReferenceAudit/artwork_reference_sources.json",
+  "approval_gate": "Candidate output is not app-ready until import_approved_artwork.py validates professional approval metadata."
+}

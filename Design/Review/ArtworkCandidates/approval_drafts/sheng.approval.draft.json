@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "draft_only": true,
+  "instrument_id": "sheng",
+  "instrument_name_zh": "笙",
+  "reviewed_at": "TO_BE_FILLED_YYYY-MM-DD",
+  "candidate_path": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+  "candidate_sha256": "7af8aeabfe3f258bec16e98577751e48f98714a92438c495e858b74a8191cc63",
+  "candidate_size": "900x900",
+  "reviewer": {
+    "name": "TO_BE_FILLED",
+    "role": "TO_BE_FILLED Chinese orchestra performer / teacher / instrument specialist",
+    "organization": "TO_BE_FILLED"
+  },
+  "reference_urls_reviewed": [
+    "https://www.britannica.com/art/sheng-musical-instrument",
+    "https://omeka-s.grinnell.edu/s/MusicalInstruments/item/1248"
+  ],
+  "source_features_to_verify": [
+    "Chinese mouth-blown polyphonic free reed instrument",
+    "vertical pipes",
+    "pipes connected to wind chamber and mouthpiece",
+    "sheng-related sho has seventeen pipes",
+    "pipes arranged in a circle",
+    "wind chamber and mouth pipe are defining features"
+  ],
+  "review_focus": "Confirm pipe cluster, wind chest, and angled mouthpiece; reject panpipe-like forms.",
+  "approved_must_show": [
+    "many vertical pipes of varied heights",
+    "pipes inserted into a wind chest",
+    "mouthpiece attached to the wind chest",
+    "clustered mouth-organ structure",
+    "free-reed Chinese instrument silhouette"
+  ],
+  "rejected_must_not_show": [
+    "panpipes with no wind chest",
+    "pipe organ",
+    "bagpipe",
+    "random bamboo decoration",
+    "single flute bundle"
+  ],
+  "relative_scale_rules_verified": [
+    "pipe cluster must dominate the silhouette",
+    "wind chest must be visible and connected to pipes",
+    "mouthpiece must be clear enough at small app-card size"
+  ],
+  "professional_review_questions": [
+    "Does this read as sheng rather than panpipes?",
+    "Are wind chest and mouthpiece visible?",
+    "Are pipe count and arrangement plausible for a traditional or modern sheng?"
+  ],
+  "confirmations": {
+    "professional_reviewer_confirmed": true,
+    "matches_morphology_spec": true,
+    "no_wrong_instrument_substitution": true,
+    "no_fantasy_or_generated_detail_errors": true,
+    "no_visible_internal_text_labels": true,
+    "approved_for_app_store_submission": true
+  },
+  "notes": "TO_BE_FILLED reviewer comments; keep this draft blocked until every TO_BE_FILLED value is replaced and draft_only is removed or set false in the final approval copy."
+}

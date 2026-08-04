@@ -1,0 +1,26 @@
+{
+  "template_only": true,
+  "instrument_id": "zhongruan",
+  "instrument_name_zh": "中阮",
+  "source_title": "中阮 real-instrument recording batch",
+  "source_type": "commissioned_real_recording",
+  "performer_or_source": "TO_BE_FILLED_performer_or_organization_name",
+  "recording_date": "TO_BE_FILLED_YYYY-MM-DD",
+  "recording_location": "TO_BE_FILLED_studio_or_room",
+  "source_url": "",
+  "original_source_url": "",
+  "license": "Direct commercial app distribution permission",
+  "license_url_or_document": "TO_BE_FILLED_signed_release_pdf_or_json",
+  "license_review": "Signed release confirms commercial iOS app distribution, editing, conversion, and perpetual worldwide use.",
+  "composition_rights_status": "single_notes_or_original_improvisation",
+  "confirmations": {
+    "real_instrument_recording": true,
+    "commercial_app_distribution": true,
+    "derivative_processing_allowed": true,
+    "global_perpetual_use": true,
+    "not_ai_generated": true,
+    "not_vst_or_sample_library": true,
+    "not_ripped_from_streaming_or_video": true
+  },
+  "notes": "Copy this template to Design/Source/VerifiedAudio/inbox/full/zhongruan/zhongruan.release.json and replace every TO_BE_FILLED value before import."
+}

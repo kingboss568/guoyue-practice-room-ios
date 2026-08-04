@@ -20,6 +20,24 @@ final class PremiumStore: ObservableObject {
         products.first(where: { $0.id == Self.proProductID })?.displayPrice ?? "App Store 商品設定後顯示"
     }
 
+    var isProProductLoaded: Bool {
+        products.contains { $0.id == Self.proProductID }
+    }
+
+    var proProductTitle: String {
+        products.first(where: { $0.id == Self.proProductID })?.displayName ?? "國樂團練習室 Pro"
+    }
+
+    var productAvailabilityText: String {
+        if isProUnlocked {
+            return "此 Apple ID 已解鎖 Pro。"
+        }
+        if isProProductLoaded {
+            return "App Store 商品已連線，可進行購買。"
+        }
+        return "等待 App Store Connect 商品設定；免費內容可照常使用。"
+    }
+
     init() {
         updatesTask = listenForTransactions()
         Task {
@@ -40,6 +58,8 @@ final class PremiumStore: ObservableObject {
             products = try await Product.products(for: [Self.proProductID])
             if products.isEmpty {
                 statusMessage = "尚未連到 App Store Connect 商品，請確認 IAP 產品 ID 已建立。"
+            } else if statusMessage?.contains("尚未連到") == true || statusMessage?.contains("無法載入") == true {
+                statusMessage = nil
             }
         } catch {
             statusMessage = "無法載入商品：\(error.localizedDescription)"

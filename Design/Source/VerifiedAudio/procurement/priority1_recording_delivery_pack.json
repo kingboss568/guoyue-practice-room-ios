@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status": "pending_delivery",
+  "purpose": "First recording batch for the seven instruments professional Chinese orchestra users are most likely to reject if the timbre is fake.",
+  "required_instrument_ids": [
+    "erhu",
+    "gaohu",
+    "zhonghu",
+    "gehu",
+    "sheng",
+    "suona",
+    "banhu"
+  ],
+  "global_delivery_rules": {
+    "minimum_takes_per_instrument": 3,
+    "minimum_clean_duration_seconds": 6,
+    "preferred_clean_duration_seconds": 10,
+    "accepted_source_format": "wav or aiff, 44.1 kHz or 48 kHz, 24-bit preferred, no reverb, no EQ, no compression",
+    "required_release_confirmations": [
+      "real_instrument_recording",
+      "commercial_app_distribution",
+      "derivative_processing_allowed",
+      "global_perpetual_use",
+      "not_ai_generated",
+      "not_vst_or_sample_library",
+      "not_ripped_from_streaming_or_video"
+    ],
+    "composition_rights": "Use single notes, scales, idiomatic gestures, or original improvisation only. Do not record copyrighted melodies unless a separate composition license is attached."
+  },
+  "items": [
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "priority_reason": "Bowed huqin timbre, slides, vibrato, and bow attack are immediately recognizable to professional users.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/erhu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/erhu/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "erhu_take1_open_string_or_sustained_tone.wav", "content": "open string or sustained tone with natural bow attack", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "erhu_take2_expressive_slide.wav", "content": "short expressive slide without copyrighted melody", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "erhu_take3_original_short_phrase.wav", "content": "original two- to four-bar idiomatic phrase", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "sounds like VST erhu",
+        "bow attack is missing",
+        "slide/vibrato is mechanically quantized",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "priority_reason": "Must sound brighter and higher than erhu; users will notice if it is only a pitch-shifted erhu.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/gaohu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/gaohu/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "gaohu_take1_bright_sustained_tone.wav", "content": "bright sustained tone showing high-register color", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "gaohu_take2_cantonese_style_ornament.wav", "content": "short Cantonese-style ornament, original and non-copyrighted", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "gaohu_take3_original_short_phrase.wav", "content": "original quick lyrical phrase", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "identical color to erhu",
+        "pitch-shifted or time-stretched source",
+        "synthetic vibrato",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "priority_reason": "Must provide the lower alto huqin color, not merely a slowed or EQ'd erhu.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/zhonghu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/zhonghu/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "zhonghu_take1_lower_sustained_tone.wav", "content": "lower sustained tone with natural bow resonance", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "zhonghu_take2_lyrical_short_phrase.wav", "content": "lyrical original phrase in lower register", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "zhonghu_take3_string_crossing_or_bow_change.wav", "content": "short gesture showing bow change or string crossing", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "sounds like pitch-shifted erhu",
+        "body resonance is too small",
+        "attack is synthetic",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "priority_reason": "Low bowed gehu is easy to misrepresent as cello, zhonghu, or synthesized bass.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/gehu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/gehu/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "gehu_take1_low_sustained_bowed_tone.wav", "content": "low sustained bowed tone with natural body resonance", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "gehu_take2_short_bass_gesture.wav", "content": "short bass gesture, no copyrighted melody", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "gehu_take3_bow_attack_and_decay.wav", "content": "clear bow attack and decay in lower register", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "western cello only with no gehu identity",
+        "synthetic bowed bass",
+        "too much room noise",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "priority_reason": "Free-reed chord breath, pipe response, and inhale/exhale continuity cannot be faked convincingly.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/sheng.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/reverify/sheng/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "sheng_take1_long_chord.wav", "content": "long chord with natural reed beating and breath", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "sheng_take2_single_pipe_tone.wav", "content": "single pipe tone or simple interval", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "sheng_take3_short_arpeggio.wav", "content": "short arpeggio or chordal gesture", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "sounds like harmonica or accordion preset",
+        "no breath/reed transition",
+        "generated pad texture",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "priority_reason": "Suona reed pressure, piercing attack, and ornamentation are impossible to hide from professional listeners.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/suona.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/suona/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "suona_take1_sustained_tone.wav", "content": "sustained tone with natural reed pressure", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "suona_take2_short_ornament.wav", "content": "short original ornament, no copyrighted melody", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "suona_take3_strong_attack.wav", "content": "strong attack and decay", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "sounds like trumpet, oboe, or synth lead",
+        "reed noise is absent",
+        "attack is sample-triggered or quantized",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "priority_reason": "Banhu must have a bright northern huqin attack and cannot be a renamed erhu.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/banhu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/banhu/",
+      "take_specs": [
+        {"take_id": "take1", "filename": "banhu_take1_bright_attack.wav", "content": "bright attack and short sustain", "minimum_clean_seconds": 6},
+        {"take_id": "take2", "filename": "banhu_take2_sustained_tone.wav", "content": "sustained tone showing wooden-board/coconut-shell resonance", "minimum_clean_seconds": 6},
+        {"take_id": "take3", "filename": "banhu_take3_northern_style_short_phrase.wav", "content": "original northern-style short phrase", "minimum_clean_seconds": 6}
+      ],
+      "reject_if": [
+        "sounds like standard erhu",
+        "wooden-board brightness is absent",
+        "synthetic vibrato",
+        "background accompaniment or backing track is present"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "source_record": "https://zenodo.org/records/8012071",
+  "source_doi": "10.5281/zenodo.8012071",
+  "license": "CC BY 4.0",
+  "policy_note": "These files are real isolated-instrument recordings with source, license, and signal QC. A named professional listening review remains a release gate.",
+  "entries": [
+    {
+      "instrument_id": "bo",
+      "instrument_name_zh": "鈸",
+      "dataset_label": "Ba",
+      "source_title": "China traditional music instrument dataset — bo/audio_535.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/bo/audio_535.mp3",
+      "source_mp3_sha256": "92f213565fff6c7044a54d5888cc0c3685c6042f06cab0d043f36473aff8d009",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/bo.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/bo.wav",
+      "master_wav_sha256": "8235fb8d850259bc9549197fb0d8ec2a176fc26bfab254e330be9d02165f33ca",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "xiao",
+      "instrument_name_zh": "簫",
+      "dataset_label": "Dongxiao",
+      "source_title": "China traditional music instrument dataset — xiao/audio_999.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/xiao/audio_999.mp3",
+      "source_mp3_sha256": "3e6b0d42cd96a60a21967a842a4166966153b31658ae56dd151b42b52bd1a78d",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/xiao.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/xiao.wav",
+      "master_wav_sha256": "19e8067f34dbf8ac7b599073917d7266b6dd5df721875859afe7cdb78e9c8f62",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "erhu",
+      "instrument_name_zh": "二胡",
+      "dataset_label": "Erhu",
+      "source_title": "China traditional music instrument dataset — erhu/audio_142.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/erhu/audio_142.mp3",
+      "source_mp3_sha256": "e6f679c69a6b875dae73d51fced5611bd4e04e608acd1ad4c4734595b2341484",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/erhu.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/erhu.wav",
+      "master_wav_sha256": "a2cc3398c8901dd4f776a121e92b8eb697c3672925dd08e5860e1eecdf1ecfbd",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "guzheng",
+      "instrument_name_zh": "古箏",
+      "dataset_label": "Guzheng",
+      "source_title": "China traditional music instrument dataset — guzheng/audio_1.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/guzheng/audio_1.mp3",
+      "source_mp3_sha256": "f65d8ceb39675d4dc0e075947108c4ad3dfc10a8d58eceffbc8af39c1f12e74a",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/guzheng.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/guzheng.wav",
+      "master_wav_sha256": "1dcdc18d1ddd3a40444aaa5ddfbd69f5724e26545be9abbb6fff73a359d5f1fc",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "liuqin",
+      "instrument_name_zh": "柳琴",
+      "dataset_label": "Liuqin",
+      "source_title": "China traditional music instrument dataset — liuqin/audio_99.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/liuqin/audio_99.mp3",
+      "source_mp3_sha256": "d887949cac44d93877e0f9f809ccd0f7d31964d08a55554178f4688d71f8f354",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/liuqin.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/liuqin.wav",
+      "master_wav_sha256": "21abfb1483af6a0b68ddf0cb114e0c54363250f9d9cc61b03b3955605dedf472",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "pipa",
+      "instrument_name_zh": "琵琶",
+      "dataset_label": "Pipa",
+      "source_title": "China traditional music instrument dataset — pipa/audio_1314.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/pipa/audio_1314.mp3",
+      "source_mp3_sha256": "1c5f7668c882ab9103bc1a8a921f910986d5eb8387977571f3331afa37b9bcdf",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/pipa.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/pipa.wav",
+      "master_wav_sha256": "915acbf9fa36ceccb0cc0a3556e153bc06b70222c5729090fe2d11ce0f5eb2f9",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "sanxian",
+      "instrument_name_zh": "三弦",
+      "dataset_label": "Sanxian",
+      "source_title": "China traditional music instrument dataset — sanxian/audio_1.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/sanxian/audio_1.mp3",
+      "source_mp3_sha256": "f2600f128ad46433a9a9cfbf0a77a3907c1b140f5ac7aa1fafb5572a038fbc97",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/sanxian.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/sanxian.wav",
+      "master_wav_sha256": "b9c29e2ffbee42f085f3e9d4afeaf36f572024c267a54c0d171c2d7ea15e68f5",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "suona",
+      "instrument_name_zh": "嗩吶",
+      "dataset_label": "Suona",
+      "source_title": "China traditional music instrument dataset — suona/audio_208.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/suona/audio_208.mp3",
+      "source_mp3_sha256": "0a08d5043e8c36e0b367a86e0bbf350788091ee396f7315edd13b96540546007",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/suona.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/suona.wav",
+      "master_wav_sha256": "db6e01caf808dcd7ef711d13b5e89841142858f3cb64355afd870e7df7e73c37",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "yangqin",
+      "instrument_name_zh": "揚琴",
+      "dataset_label": "Yangqin",
+      "source_title": "China traditional music instrument dataset — yangqin/audio_497.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/yangqin/audio_497.mp3",
+      "source_mp3_sha256": "b4b5ab7b49c5e07726046d6ae31e2052ae17ac38c55367c68ff9ac112859fa2b",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/yangqin.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/yangqin.wav",
+      "master_wav_sha256": "b0f3934aaf52211e5c99e7b97be7ed4b7b180b6f3c37cdb7539797f36934889b",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "instrument_name_zh": "中阮",
+      "dataset_label": "Zhongruan",
+      "source_title": "China traditional music instrument dataset — zhongruan/audio_1.mp3",
+      "source_url": "https://zenodo.org/records/8012071",
+      "doi": "10.5281/zenodo.8012071",
+      "authors": [
+        "Zhen Li",
+        "Hao Zhou",
+        "Shusong Xing",
+        "Binhui Wang"
+      ],
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_mp3_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/zhongruan/audio_1.mp3",
+      "source_mp3_sha256": "22c941c23a36b2a6ad786672acbd56a4afa9fa8701956b9273d386785aef5b8d",
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/zhongruan.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/zhongruan.wav",
+      "master_wav_sha256": "3e7ed39eb6f0430de4fe0ada8a5e6b3b76005fe9b18cdbf5ef43fce5759ff78d",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected from five evenly spaced isolated-instrument candidates using signal-quality screening",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied 20 ms fade-in and 80 ms fade-out"
+      ],
+      "status": "approved_source_license_format",
+      "professional_listening_review": "required_before_submission"
+    }
+  ]
+}

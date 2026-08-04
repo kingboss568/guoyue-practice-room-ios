@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "review_policy": "These specifications are mandatory acceptance criteria for high-risk Chinese orchestra instrument artwork. Candidate images are not production assets until a knowledgeable Chinese orchestra reviewer marks every criterion approved.",
+  "status": "pending_professional_review",
+  "high_risk_instrument_ids": [
+    "gehu",
+    "suona",
+    "sheng",
+    "banhu",
+    "erhu",
+    "gaohu",
+    "zhonghu"
+  ],
+  "global_rejection_rules": [
+    "visible incorrect text labels inside the image",
+    "fantasy or sci-fi material design",
+    "western substitute instrument used as the main silhouette",
+    "performer hands hiding the instrument's defining morphology",
+    "extra instruments or decorative props that confuse identification",
+    "shape copied from a reference photo without a usable license"
+  ],
+  "specs": [
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "priority": "critical",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "large low-register bowed instrument",
+        "cello-like vertical body scale",
+        "large resonator body with Chinese orchestra character",
+        "long neck and strings",
+        "endpin or low seated support"
+      ],
+      "must_not_show": [
+        "small erhu-like resonator",
+        "generic zhonghu body",
+        "plain western cello with no Chinese morphology",
+        "tiny huqin proportions"
+      ],
+      "relative_scale_rules": [
+        "larger than zhonghu",
+        "much larger body than erhu, gaohu, and banhu",
+        "reads as bass/low bowed instrument at small app-card size"
+      ],
+      "professional_review_questions": [
+        "Does the body read as gehu rather than western cello or oversized erhu?",
+        "Are bridge, strings, neck, and low support plausible for a gehu?",
+        "Would a Chinese orchestra player accept this as gehu at thumbnail size?"
+      ],
+      "reference_basis": [
+        "Eason Music School describes gehu as a hybrid between cello and erhu, bowed like a cello.",
+        "Existing project reference sources list gehu as a large low bowed instrument with animal-skin body surface."
+      ]
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "priority": "critical",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_suona.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "short conical wooden body",
+        "front finger holes",
+        "small double reed and bocal at the top",
+        "detachable flared metal bell at the bottom",
+        "overall shawm silhouette"
+      ],
+      "must_not_show": [
+        "trumpet or bugle tubing",
+        "saxophone curves",
+        "western oboe or clarinet proportions",
+        "all-metal horn body"
+      ],
+      "relative_scale_rules": [
+        "bell must be wider than the wooden body",
+        "body must remain short and conical rather than long cylindrical",
+        "reed end must be visually distinct from bell end"
+      ],
+      "professional_review_questions": [
+        "Does the instrument read as suona/laba rather than a brass instrument?",
+        "Are reed, body, holes, and bell all visible enough?",
+        "Is the bell-to-body proportion credible?"
+      ],
+      "reference_basis": [
+        "Grinnell describes suona as a Chinese double-reed shawm.",
+        "Reference sources describe conical wooden body, metal bocal, double reed, and detachable metal bell."
+      ]
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "priority": "critical",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "many vertical pipes of varied heights",
+        "pipes inserted into a wind chest",
+        "mouthpiece attached to the wind chest",
+        "clustered mouth-organ structure",
+        "free-reed Chinese instrument silhouette"
+      ],
+      "must_not_show": [
+        "panpipes with no wind chest",
+        "pipe organ",
+        "bagpipe",
+        "random bamboo decoration",
+        "single flute bundle"
+      ],
+      "relative_scale_rules": [
+        "pipe cluster must dominate the silhouette",
+        "wind chest must be visible and connected to pipes",
+        "mouthpiece must be clear enough at small app-card size"
+      ],
+      "professional_review_questions": [
+        "Does this read as sheng rather than panpipes?",
+        "Are wind chest and mouthpiece visible?",
+        "Are pipe count and arrangement plausible for a traditional or modern sheng?"
+      ],
+      "reference_basis": [
+        "Sheng references describe multiple pipes extending from a wind chest with a mouthpiece.",
+        "Grinnell describes an incomplete circle of bamboo pipes mounted in a wooden bowl."
+      ]
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "priority": "critical",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "huqin-family vertical bowed form",
+        "two strings",
+        "bow hair passing between strings",
+        "small resonator with wooden board sound surface",
+        "coconut shell or wood-shell body character"
+      ],
+      "must_not_show": [
+        "snakeskin-covered erhu resonator as the main identity",
+        "generic erhu with different label",
+        "western violin or lute body",
+        "large zhonghu or gehu body"
+      ],
+      "relative_scale_rules": [
+        "resonator smaller and brighter than zhonghu",
+        "wooden soundboard identity must be visible",
+        "must visually differ from erhu/gaohu/zhonghu candidates"
+      ],
+      "professional_review_questions": [
+        "Is the wooden board/coconut-shell banhu identity clear?",
+        "Could this be mistaken for a standard erhu?",
+        "Are strings, pegs, neck, and bow plausible?"
+      ],
+      "reference_basis": [
+        "Britannica and other references distinguish banhu by wooden soundboard.",
+        "Banhu references note coconut shell or wooden soundbox rather than typical snakeskin face."
+      ]
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "priority": "high",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "standard huqin vertical bowed form",
+        "small snakeskin-covered resonator",
+        "two strings",
+        "bow hair between the two strings",
+        "two tuning pegs"
+      ],
+      "must_not_show": [
+        "gaohu held-between-knees emphasis",
+        "zhonghu-sized large resonator",
+        "gehu bass scale",
+        "banhu wooden-board resonator"
+      ],
+      "relative_scale_rules": [
+        "middle reference size among erhu, gaohu, and zhonghu",
+        "larger than gaohu candidate",
+        "smaller than zhonghu candidate"
+      ],
+      "professional_review_questions": [
+        "Does the resonator read as standard erhu?",
+        "Is the bow/string relationship correct?",
+        "Can it serve as the middle-size comparison point for gaohu and zhonghu?"
+      ],
+      "reference_basis": [
+        "Grinnell erhu reference notes bow hair running between two playing strings.",
+        "Huqin references place erhu between higher gaohu and lower zhonghu roles."
+      ]
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "priority": "high",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "small high-register huqin form",
+        "small resonator, visibly smaller than erhu",
+        "two strings",
+        "bow hair between strings",
+        "slender neck and compact proportions"
+      ],
+      "must_not_show": [
+        "same size as erhu without differentiation",
+        "larger zhonghu body",
+        "banhu wooden-board body",
+        "gehu bass silhouette"
+      ],
+      "relative_scale_rules": [
+        "smallest body among erhu, gaohu, and zhonghu",
+        "brighter, lighter, higher-register visual character",
+        "may imply held-between-knees usage without adding a performer"
+      ],
+      "professional_review_questions": [
+        "Is it clearly smaller and higher-register than erhu?",
+        "Could it be mistaken for erhu if the label is removed?",
+        "Are the huqin features still correct?"
+      ],
+      "reference_basis": [
+        "Gaohu references describe a smaller soundbox and higher tuning than erhu.",
+        "Wesleyan notes the gaohu is held between the knees in performance."
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "priority": "high",
+      "candidate_file": "Design/Review/ArtworkCandidates/candidate_zhonghu.png",
+      "candidate_status": "candidate_not_app_asset",
+      "must_show": [
+        "larger lower-register huqin form",
+        "larger resonator than erhu",
+        "two strings",
+        "bow hair between strings",
+        "more robust body and neck proportions"
+      ],
+      "must_not_show": [
+        "same-size erhu copy",
+        "tiny gaohu body",
+        "gehu-sized bass body",
+        "banhu wooden-board identity"
+      ],
+      "relative_scale_rules": [
+        "larger than erhu and gaohu",
+        "smaller than gehu",
+        "reads as alto/lower huqin at app-card size"
+      ],
+      "professional_review_questions": [
+        "Is it recognizably zhonghu rather than erhu?",
+        "Are body size and lower-register character clear?",
+        "Does it remain distinct from gehu?"
+      ],
+      "reference_basis": [
+        "Zhonghu references describe a lower-pitched, slightly larger huqin than erhu.",
+        "Timbre and Orchestration notes thicker strings and larger body than erhu."
+      ]
+    }
+  ]
+}

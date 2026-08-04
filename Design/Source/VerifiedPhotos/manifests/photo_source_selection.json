@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "policy": {
+    "required_source": "Real instrument photograph with a source page and commercial-reuse license",
+    "disallowed": [
+      "AI-generated instrument illustration",
+      "unlicensed government or orchestra website media",
+      "photo of an adjacent or look-alike instrument"
+    ],
+    "processing": "Downloaded the licensed source image, auto-oriented, resized to fit within 1080 square, and padded without cropping."
+  },
+  "instruments": [
+    {
+      "instrument_id": "dizi",
+      "name_zh": "笛",
+      "commons_title": "File:Dizi (笛子 ) MET 89.4.61 slide.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "commons_title": "File:Sheng MET DP216617.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "commons_title": "File:Musical instruments in the Yunnan Nationalities Museum - DSC03842.JPG",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "xiao",
+      "name_zh": "簫",
+      "commons_title": "File:Xiao MET DP216557.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "guanzi",
+      "name_zh": "管子",
+      "commons_title": "File:Guanzi.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "pipa",
+      "name_zh": "琵琶",
+      "commons_title": "File:Pipa MET DP216711.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "guzheng",
+      "name_zh": "古箏",
+      "commons_title": "File:2008 Summer Olympics Musical Instrument- Guzheng.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "yangqin",
+      "name_zh": "揚琴",
+      "commons_title": "File:Yangqin, MIM PHX.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "liuqin",
+      "name_zh": "柳琴",
+      "commons_title": "File:Liuqin.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "name_zh": "中阮",
+      "commons_title": "File:Zhongruan.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "sanxian",
+      "name_zh": "三弦",
+      "commons_title": "File:Phoenix-Musical Instrument Museum-Sanxian-China.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "konghou",
+      "name_zh": "箜篌",
+      "commons_title": "File:Vertical Konghou (10096201556).jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "commons_title": "File:Erhu in the Mets.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "commons_title": "File:Gaohu 1.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "commons_title": "File:中胡.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "commons_title": "File:Banhu, Tengwangge (Prince of Teng Pavilion) (30730619533).jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "commons_title": null,
+      "source_title": "Antique Gehu Chinese bass",
+      "source_provider": "Flickr via Openverse",
+      "source_page": "https://www.flickr.com/photos/quinet/29924626624/",
+      "download_url": "https://live.staticflickr.com/5328/29924626624_e0ce5b10c1_b.jpg",
+      "openverse_id": "d5af0bfd-0dc9-4709-9f0a-b9d8ac8a75aa",
+      "author": "quinet",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_width": 683,
+      "source_height": 1024,
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "bianzhong",
+      "name_zh": "編鐘",
+      "commons_title": "File:Bianzhong.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "tanggu",
+      "name_zh": "堂鼓",
+      "commons_title": "File:Tánggǔ (堂鼓) MET DP219344.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "luo",
+      "name_zh": "鑼",
+      "commons_title": "File:Chinese gongs (34474311844).jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "bo",
+      "name_zh": "鈸",
+      "commons_title": "File:Aachinaclash.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "muyu",
+      "name_zh": "木魚",
+      "commons_title": "File:Chinese Muyu QM r.jpg",
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "paigu",
+      "name_zh": "排鼓",
+      "commons_title": null,
+      "status": "blocked_no_reusable_real_photo",
+      "reference_url": "https://www.lcsd.gov.hk/en/mo/musicguide/en/chinese_musical.html",
+      "note": "Official reference exists, but government non-text media requires written permission for commercial reuse."
+    }
+  ]
+}

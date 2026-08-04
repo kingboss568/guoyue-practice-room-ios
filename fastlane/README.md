@@ -37,31 +37,15 @@ Strict pre-submit gate. Fails if screenshots, git push, or required files are in
 [bundle exec] fastlane ios upload_metadata
 ```
 
-Upload App Store metadata and screenshots only. Does not upload a binary or submit review.
+Strict-gated upload of App Store metadata and screenshots only. Does not upload a binary or submit review.
 
-### ios build_ipa
-
-```sh
-[bundle exec] fastlane ios build_ipa
-```
-
-Build an App Store IPA using Xcode automatic signing.
-
-### ios upload_ipa
+### ios prepare_cloud_submission
 
 ```sh
-[bundle exec] fastlane ios upload_ipa
+[bundle exec] fastlane ios prepare_cloud_submission
 ```
 
-Upload the IPA only. Requires a built IPA at Build/AppStore/GuoYueZhiPu.ipa unless IPA_PATH is set.
-
-### ios release_candidate
-
-```sh
-[bundle exec] fastlane ios release_candidate
-```
-
-Build and upload metadata, screenshots, and IPA, but stop before final App Review submission.
+Run the strict gate, then upload metadata and screenshots for the Xcode Cloud route. Never creates or uploads a local binary.
 
 ### ios submit_review
 
@@ -69,7 +53,7 @@ Build and upload metadata, screenshots, and IPA, but stop before final App Revie
 [bundle exec] fastlane ios submit_review
 ```
 
-Final strict submit for review. Requires CONFIRM_SUBMIT_FOR_REVIEW=yes and strict readiness.
+Select an existing VALID Xcode Cloud build and submit. Requires ASC_BUILD_NUMBER, CONFIRM_SUBMIT_FOR_REVIEW=yes, and strict readiness.
 
 ----
 

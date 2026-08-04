@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "strategy": "Plan A: commission or obtain verified real-instrument recordings first; use public CC0/compatible sources only when the original recording and instrument authenticity are clear. Suno or other AI music tools are not accepted as instrument sample sources.",
+  "global_requirements": {
+    "delivery_format": "wav or aiff, 48 kHz or 44.1 kHz, 24-bit preferred, mono or stereo accepted before mastering",
+    "app_master_format": "mono 44.1 kHz 16-bit WAV",
+    "minimum_clean_duration_seconds": 6,
+    "preferred_clean_duration_seconds": 10,
+    "allowed_content": "single notes, short idiomatic phrase, open-string/scale color, percussion hits or rolls as appropriate",
+  "not_allowed": [
+    "VST or sample library playback",
+    "AI-generated instrument tone",
+    "Suno/Udio/generative music output",
+    "YouTube/CD/streaming extraction",
+    "unknown performer or unknown license",
+    "background music with unclear composition rights",
+    "environmental noise that obscures the instrument"
+  ]
+  },
+  "priority_groups": [
+    {
+      "name": "critical_listening_risk",
+      "instrument_ids": ["erhu", "gaohu", "zhonghu", "gehu", "sheng", "suona", "banhu"],
+      "reason": "Professional users can immediately detect fake huqin, sheng, and suona timbres."
+    },
+    {
+      "name": "core_orchestra_coverage",
+      "instrument_ids": ["xiao", "guanzi", "pipa", "guzheng", "yangqin", "liuqin", "zhongruan", "sanxian", "konghou"],
+      "reason": "These are central sound families and need real attacks, resonances, and playing gestures."
+    },
+    {
+      "name": "percussion_completion",
+      "instrument_ids": ["bianzhong", "tanggu", "luo", "bo", "muyu", "paigu"],
+      "reason": "Percussion samples are easier to commission cleanly but still need correct instruments."
+    }
+  ],
+  "items": [
+    {"instrument_id": "sheng", "name_zh": "笙", "priority": "critical", "recording_need": "long chord, single pipe tone, short arpeggio", "status": "approved", "candidate_source": "https://commons.wikimedia.org/wiki/File:Soprano_Sheng_Chromatic_Scale.ogg"},
+    {"instrument_id": "suona", "name_zh": "嗩吶", "priority": "critical", "recording_need": "sustained tone, short ornament, strong attack", "status": "candidate_license_review", "candidate_source": "https://commons.wikimedia.org/wiki/File:Suona.ogg"},
+    {"instrument_id": "xiao", "name_zh": "簫", "priority": "high", "recording_need": "breathy sustained tone, short descending phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "guanzi", "name_zh": "管子", "priority": "high", "recording_need": "sustained double-reed tone and short phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "pipa", "name_zh": "琵琶", "priority": "high", "recording_need": "single pluck, lunzhi color, short phrase", "status": "candidate_license_review", "candidate_source": "https://commons.wikimedia.org/wiki/File:Pipa_-_sound.ogg"},
+    {"instrument_id": "guzheng", "name_zh": "古箏", "priority": "high", "recording_need": "single note, glissando, short idiomatic phrase", "status": "candidate_original_download_required", "candidate_source": "https://freesound.org/people/nanliu_music/sounds/847157/"},
+    {"instrument_id": "yangqin", "name_zh": "揚琴", "priority": "high", "recording_need": "single strike, tremolo, short phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "liuqin", "name_zh": "柳琴", "priority": "high", "recording_need": "single pluck and short high-register phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "zhongruan", "name_zh": "中阮", "priority": "high", "recording_need": "single pluck, chord, short phrase", "status": "candidate_license_review", "candidate_source": "https://commons.wikimedia.org/wiki/File:Zhongruan.ogg"},
+    {"instrument_id": "sanxian", "name_zh": "三弦", "priority": "high", "recording_need": "single pluck, slide, short phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "konghou", "name_zh": "箜篌", "priority": "medium", "recording_need": "single pluck, arpeggio, short phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "erhu", "name_zh": "二胡", "priority": "critical", "recording_need": "open-string tone, expressive slide, short phrase", "status": "candidate_quality_review", "candidate_source": "https://freesound.org/people/Lenguaverde/sounds/423496/"},
+    {"instrument_id": "gaohu", "name_zh": "高胡", "priority": "critical", "recording_need": "bright sustained tone, short Cantonese-style phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "zhonghu", "name_zh": "中胡", "priority": "critical", "recording_need": "lower sustained tone and short lyrical phrase", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "banhu", "name_zh": "板胡", "priority": "critical", "recording_need": "bright attack, sustained tone, short northern-style phrase", "status": "candidate_license_review", "candidate_source": "https://commons.wikimedia.org/wiki/File:Banhu.ogg"},
+    {"instrument_id": "gehu", "name_zh": "革胡", "priority": "critical", "recording_need": "low sustained bowed tone, short bass gesture", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "bianzhong", "name_zh": "編鐘", "priority": "medium", "recording_need": "single bell strike and decay", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "tanggu", "name_zh": "堂鼓", "priority": "medium", "recording_need": "center hit, rim/edge hit, short roll", "status": "candidate_quality_review", "candidate_source": "https://freesound.org/people/sazanami12/sounds/856549/"},
+    {"instrument_id": "luo", "name_zh": "鑼", "priority": "medium", "recording_need": "single strike with full decay", "status": "candidate_license_review", "candidate_source": "https://freesound.org/people/ajaysm/sounds/222237/"},
+    {"instrument_id": "bo", "name_zh": "鈸", "priority": "medium", "recording_need": "crash, choke, soft touch", "status": "candidate_license_review", "candidate_source": "https://freesound.org/people/ajaysm/sounds/222274/"},
+    {"instrument_id": "muyu", "name_zh": "木魚", "priority": "medium", "recording_need": "single hit and repeated pattern", "status": "procure_real_recording", "candidate_source": null},
+    {"instrument_id": "paigu", "name_zh": "排鼓", "priority": "medium", "recording_need": "three drum pitches, short roll", "status": "procure_real_recording", "candidate_source": null}
+  ]
+}

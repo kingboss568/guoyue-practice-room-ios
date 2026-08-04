@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "status": "template_pending_reviews",
+  "purpose": "Professional Chinese-orchestra listening review gate for real-instrument recordings before they can be imported as approved app audio.",
+  "applies_to_open_instrument_ids": [
+    "guanzi",
+    "konghou",
+    "zhonghu",
+    "gehu",
+    "bianzhong",
+    "tanggu",
+    "paigu"
+  ],
+  "applies_to_reverify_instrument_ids": [],
+  "reviewer_requirements": {
+    "minimum_reviewers": 1,
+    "preferred_reviewers": 2,
+    "reviewer_profile": "professional Chinese-orchestra performer, conductor, teacher, arranger, or recording engineer familiar with guoyue timbre",
+    "conflict_rule": "performer may provide notes but cannot be the only final reviewer for their own recording"
+  },
+  "score_scale": {
+    "min": 1,
+    "max": 5,
+    "passing_minimum_per_criterion": 4,
+    "passing_average": 4.25
+  },
+  "criteria": [
+    {
+      "id": "instrument_identity",
+      "label_zh": "樂器辨識正確",
+      "description": "The sound is unmistakably the target instrument, not a neighboring instrument or generic preset."
+    },
+    {
+      "id": "professional_timbre",
+      "label_zh": "專業音色可信",
+      "description": "Attack, sustain, resonance, ornaments, and decay feel like a real trained performer."
+    },
+    {
+      "id": "technique_representation",
+      "label_zh": "技法代表性",
+      "description": "The required takes demonstrate the instrument gestures requested in the delivery pack."
+    },
+    {
+      "id": "noise_and_recording_quality",
+      "label_zh": "錄音乾淨度",
+      "description": "Noise, clipping, reverb, compression, room tone, and background sound do not distract."
+    },
+    {
+      "id": "app_training_fit",
+      "label_zh": "適合練習室訓練",
+      "description": "The recording is clear enough for identification, guided practice, and paid app use."
+    }
+  ],
+  "high_risk_differentiation_checks": [
+    {
+      "instrument_id": "erhu",
+      "must_distinguish_from": [
+        "gaohu",
+        "zhonghu",
+        "banhu",
+        "violin preset"
+      ],
+      "notes": "Erhu should not be too bright like gaohu or too low/dark like zhonghu."
+    },
+    {
+      "instrument_id": "gaohu",
+      "must_distinguish_from": [
+        "erhu",
+        "zhonghu",
+        "banhu"
+      ],
+      "notes": "Gaohu must preserve the brighter Cantonese high-register character."
+    },
+    {
+      "instrument_id": "zhonghu",
+      "must_distinguish_from": [
+        "erhu",
+        "gaohu",
+        "cello",
+        "viola preset"
+      ],
+      "notes": "Zhonghu should read as a lower huqin voice, not a cello substitute."
+    },
+    {
+      "instrument_id": "banhu",
+      "must_distinguish_from": [
+        "erhu",
+        "gaohu",
+        "jinghu"
+      ],
+      "notes": "Banhu needs its sharper board-resonance attack and northern color."
+    },
+    {
+      "instrument_id": "gehu",
+      "must_distinguish_from": [
+        "cello",
+        "double bass",
+        "synth strings"
+      ],
+      "notes": "Gehu cannot be replaced by generic western low strings."
+    },
+    {
+      "instrument_id": "suona",
+      "must_distinguish_from": [
+        "trumpet",
+        "oboe",
+        "synth lead"
+      ],
+      "notes": "Suona needs real reed pressure, piercing attack, and idiomatic ornament."
+    },
+    {
+      "instrument_id": "sheng",
+      "must_distinguish_from": [
+        "accordion",
+        "harmonica",
+        "synth pad"
+      ],
+      "notes": "Sheng is already approved but remains in reverify scope for professional trust."
+    }
+  ],
+  "review_records": []
+}

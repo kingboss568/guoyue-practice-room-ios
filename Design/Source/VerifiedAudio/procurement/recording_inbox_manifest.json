@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "status": "waiting_for_performer_delivery",
+  "purpose": "Validation manifest for real-instrument recording inbox deliveries before dry-run import or approved bundle import.",
+  "inbox_root": "Design/Source/VerifiedAudio/inbox/full/",
+  "reverify_root": "Design/Source/VerifiedAudio/inbox/reverify/",
+  "source_pack": "Design/Source/VerifiedAudio/procurement/full_open_recording_delivery_pack.json",
+  "professional_review_scorecard": "Design/Source/VerifiedAudio/procurement/professional_listening_review_scorecard.json",
+  "phase_1_watch_instrument_ids": [
+    "zhonghu",
+    "gehu"
+  ],
+  "phase_1_reverify_instrument_ids": [],
+  "expected_release_filename": "<instrument_id>.release.json",
+  "minimum_expected_takes": 3,
+  "minimum_clean_seconds_per_take": 6,
+  "accepted_audio_extensions": [
+    ".wav",
+    ".aiff",
+    ".aif"
+  ],
+  "required_release_confirmations": [
+    "real_instrument_recording",
+    "commercial_app_distribution",
+    "derivative_processing_allowed",
+    "global_perpetual_use",
+    "not_ai_generated",
+    "not_vst_or_sample_library",
+    "not_ripped_from_streaming_or_video"
+  ],
+  "banned_release_source_labels": [
+    "Suno",
+    "Udio",
+    "MusicGen",
+    "Stable Audio",
+    "AI-generated",
+    "VST",
+    "sample library",
+    "MIDI",
+    "synthesizer",
+    "GarageBand",
+    "YouTube",
+    "Spotify",
+    "Apple Music",
+    "CD rip",
+    "streaming extraction"
+  ],
+  "strict_mode_requires_professional_review": true,
+  "strict_mode_review_decisions_allowed": [
+    "approved_for_import"
+  ],
+  "accepted_empty_state": "No performer files have arrived yet; this is allowed in non-strict readiness checks and documented as an open procurement state."
+}

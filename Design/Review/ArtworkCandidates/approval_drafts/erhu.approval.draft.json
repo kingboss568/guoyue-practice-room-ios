@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "draft_only": true,
+  "instrument_id": "erhu",
+  "instrument_name_zh": "二胡",
+  "reviewed_at": "TO_BE_FILLED_YYYY-MM-DD",
+  "candidate_path": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+  "candidate_sha256": "7d7c55724c4543c9996b3917fa6ec693023be152594b7269abee9169e016521b",
+  "candidate_size": "900x900",
+  "reviewer": {
+    "name": "TO_BE_FILLED",
+    "role": "TO_BE_FILLED Chinese orchestra performer / teacher / instrument specialist",
+    "organization": "TO_BE_FILLED"
+  },
+  "reference_urls_reviewed": [
+    "https://chinesemusic.mtsu.edu/instrument-gallery/",
+    "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings"
+  ],
+  "source_features_to_verify": [
+    "Chinese two-stringed bowed spike fiddle",
+    "used as solo and ensemble instrument",
+    "member of huqin family",
+    "huqin played vertically on the knee",
+    "left hand fingers, right hand bow",
+    "bow hair passes between strings"
+  ],
+  "review_focus": "Confirm standard erhu proportions as the middle reference for gaohu and zhonghu.",
+  "approved_must_show": [
+    "standard huqin vertical bowed form",
+    "small snakeskin-covered resonator",
+    "two strings",
+    "bow hair between the two strings",
+    "two tuning pegs"
+  ],
+  "rejected_must_not_show": [
+    "gaohu held-between-knees emphasis",
+    "zhonghu-sized large resonator",
+    "gehu bass scale",
+    "banhu wooden-board resonator"
+  ],
+  "relative_scale_rules_verified": [
+    "middle reference size among erhu, gaohu, and zhonghu",
+    "larger than gaohu candidate",
+    "smaller than zhonghu candidate"
+  ],
+  "professional_review_questions": [
+    "Does the resonator read as standard erhu?",
+    "Is the bow/string relationship correct?",
+    "Can it serve as the middle-size comparison point for gaohu and zhonghu?"
+  ],
+  "confirmations": {
+    "professional_reviewer_confirmed": true,
+    "matches_morphology_spec": true,
+    "no_wrong_instrument_substitution": true,
+    "no_fantasy_or_generated_detail_errors": true,
+    "no_visible_internal_text_labels": true,
+    "approved_for_app_store_submission": true
+  },
+  "notes": "TO_BE_FILLED reviewer comments; keep this draft blocked until every TO_BE_FILLED value is replaced and draft_only is removed or set false in the final approval copy."
+}

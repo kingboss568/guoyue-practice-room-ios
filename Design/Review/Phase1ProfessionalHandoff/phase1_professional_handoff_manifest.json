@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status": "handoff_ready_for_external_professional_review",
+  "purpose": "Single handoff manifest for the first high-risk review batch: real-instrument recording delivery plus artwork morphology approval.",
+  "policy": "This package is not approval evidence. It is a reviewer/performer work packet. Final app assets still require approved release JSON, professional listening review, artwork approval JSON, import scripts, final screenshots, and StoreKit/App Store Connect verification.",
+  "required_instrument_ids": [
+    "erhu",
+    "gaohu",
+    "zhonghu",
+    "gehu",
+    "sheng",
+    "suona",
+    "banhu"
+  ],
+  "shared_files": {
+    "recording_delivery_pack": "Design/Source/VerifiedAudio/procurement/priority1_recording_delivery_pack.json",
+    "professional_listening_scorecard": "Design/Source/VerifiedAudio/procurement/professional_listening_review_scorecard.json",
+    "visual_review_cards": "Design/Source/InstrumentReferenceAudit/professional_visual_review_cards.json",
+    "artwork_scorecard": "Design/Source/InstrumentReferenceAudit/high_risk_artwork_review_scorecard.json",
+    "candidate_contact_sheet": "Design/Review/ArtworkCandidates/candidate_contact_sheet.png",
+    "candidate_manifest": "Design/Review/ArtworkCandidates/candidate_manifest.json",
+    "handoff_document": "Docs/Phase1ProfessionalHandoff.zh-Hant.md"
+  },
+  "global_recording_rules": [
+    "Record real Chinese orchestra instruments only.",
+    "Do not use Suno, AI-generated tone, VST, sample library, MIDI, YouTube, CD, streaming extraction, pitch-shifted neighboring instruments, backing tracks, or copyrighted melodies without a separate composition license.",
+    "Deliver WAV or AIFF, 44.1 kHz or 48 kHz, 24-bit preferred, no reverb, no EQ, no compression, no noise reduction baked into the raw file.",
+    "Each non-reverify instrument needs at least three clean takes of six seconds or longer.",
+    "Release JSON must confirm commercial app distribution, derivative processing, global perpetual use, real-instrument recording, and no AI/VST/sample-library/streaming extraction."
+  ],
+  "global_artwork_rules": [
+    "Review textless 900x900 candidate images only.",
+    "Do not approve annotated reference images, contact sheets, or images with visible internal labels.",
+    "Use the visual review card acceptance/rejection tests before filling an approval draft.",
+    "Every approved candidate must be recognizable without text at app-card size.",
+    "Approval JSON must be filled by a Chinese orchestra performer, teacher, conductor, instrument maker, or ensemble specialist before import."
+  ],
+  "items": [
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "recording_scope": "full_new_recording_required",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/full/erhu/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/erhu.release.template.json",
+      "required_recording_takes": [
+        "erhu_take1_open_string_or_sustained_tone.wav",
+        "erhu_take2_expressive_slide.wav",
+        "erhu_take3_original_short_phrase.wav"
+      ],
+      "recording_review_focus": [
+        "natural bow attack",
+        "expressive but non-mechanical slide/vibrato",
+        "standard erhu color distinct from gaohu, zhonghu, banhu, and violin presets"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/erhu.approval.draft.json",
+      "visual_review_focus": [
+        "standard middle-size huqin",
+        "small snakeskin-covered resonator",
+        "bow hair between two strings",
+        "distinct from smaller gaohu and larger zhonghu"
+      ]
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "recording_scope": "full_new_recording_required",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/full/gaohu/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/gaohu.release.template.json",
+      "required_recording_takes": [
+        "gaohu_take1_bright_sustained_tone.wav",
+        "gaohu_take2_cantonese_style_ornament.wav",
+        "gaohu_take3_original_short_phrase.wav"
+      ],
+      "recording_review_focus": [
+        "brighter high-register huqin tone",
+        "Cantonese-style ornament without copyrighted melody",
+        "not pitch-shifted erhu"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/gaohu.approval.draft.json",
+      "visual_review_focus": [
+        "smallest body among erhu, gaohu, zhonghu",
+        "compact high-register huqin",
+        "two strings and bow hair between strings",
+        "not same-size erhu"
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "recording_scope": "full_new_recording_required",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/full/zhonghu/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/zhonghu.release.template.json",
+      "required_recording_takes": [
+        "zhonghu_take1_lower_sustained_tone.wav",
+        "zhonghu_take2_lyrical_short_phrase.wav",
+        "zhonghu_take3_string_crossing_or_bow_change.wav"
+      ],
+      "recording_review_focus": [
+        "lower alto huqin color",
+        "larger body resonance than erhu",
+        "not EQ'd or slowed erhu"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_zhonghu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/zhonghu.approval.draft.json",
+      "visual_review_focus": [
+        "larger lower-register huqin",
+        "larger resonator than erhu",
+        "more robust neck/body",
+        "smaller than gehu"
+      ]
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "recording_scope": "full_new_recording_required",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/full/gehu/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/gehu.release.template.json",
+      "required_recording_takes": [
+        "gehu_take1_low_sustained_bowed_tone.wav",
+        "gehu_take2_short_bass_gesture.wav",
+        "gehu_take3_bow_attack_and_decay.wav"
+      ],
+      "recording_review_focus": [
+        "low bowed gehu body resonance",
+        "clear bow attack and decay",
+        "not generic western cello or synth strings"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/gehu.approval.draft.json",
+      "visual_review_focus": [
+        "large low-register Chinese bowed instrument",
+        "cello-like scale with Chinese character",
+        "long neck, bridge, strings, low support/endpin",
+        "much larger than zhonghu"
+      ]
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "recording_scope": "approved_source_reverify_or_new_recording",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/reverify/sheng/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/sheng.release.template.json",
+      "required_recording_takes": [
+        "sheng_take1_long_chord.wav",
+        "sheng_take2_single_pipe_tone.wav",
+        "sheng_take3_short_arpeggio.wav"
+      ],
+      "recording_review_focus": [
+        "free-reed chord breath and pipe response",
+        "inhale/exhale continuity if present",
+        "not harmonica, accordion, or synth pad"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/sheng.approval.draft.json",
+      "visual_review_focus": [
+        "many vertical pipes of varied heights",
+        "pipes inserted into wind chest",
+        "short curved or angled mouthpiece",
+        "not panpipes"
+      ]
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "recording_scope": "full_new_recording_required",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/full/suona/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/suona.release.template.json",
+      "required_recording_takes": [
+        "suona_take1_sustained_tone.wav",
+        "suona_take2_short_ornament.wav",
+        "suona_take3_strong_attack.wav"
+      ],
+      "recording_review_focus": [
+        "real reed pressure and piercing attack",
+        "idiomatic ornamentation",
+        "not trumpet, oboe, or synth lead"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_suona.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/suona.approval.draft.json",
+      "visual_review_focus": [
+        "short conical wooden body",
+        "small double reed and bocal/staple",
+        "front finger holes",
+        "flared metal bell, not brass trumpet tubing"
+      ]
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "recording_scope": "full_new_recording_required",
+      "recording_delivery_folder": "Design/Source/VerifiedAudio/inbox/full/banhu/",
+      "release_template": "Design/Source/VerifiedAudio/procurement/priority1_release_templates/banhu.release.template.json",
+      "required_recording_takes": [
+        "banhu_take1_bright_attack.wav",
+        "banhu_take2_sustained_tone.wav",
+        "banhu_take3_northern_style_short_phrase.wav"
+      ],
+      "recording_review_focus": [
+        "bright northern huqin attack",
+        "wooden-board/coconut-shell resonance",
+        "not standard erhu with label changed"
+      ],
+      "artwork_candidate": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+      "artwork_approval_draft": "Design/Review/ArtworkCandidates/approval_drafts/banhu.approval.draft.json",
+      "visual_review_focus": [
+        "small huqin form",
+        "wooden board or coconut-shell body character",
+        "two strings with bow hair between",
+        "not snakeskin erhu identity"
+      ]
+    }
+  ],
+  "required_next_steps_before_app_asset_import": [
+    "Collect real recording files and non-template release JSON in the listed inbox folders.",
+    "Run import_recording_inbox_batch.py or import_verified_audio.py dry-run for each delivered recording set.",
+    "Fill professional listening review records with passing scores and decision approved_for_import.",
+    "Fill artwork approval JSON from each draft after professional visual review.",
+    "Run import_approved_artwork.py dry-run for each approved image.",
+    "Only after all gates pass, run import scripts with --approve and recapture iPhone 6.9 / iPad 13 screenshots."
+  ]
+}

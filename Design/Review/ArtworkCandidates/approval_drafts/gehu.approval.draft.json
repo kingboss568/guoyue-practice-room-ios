@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "draft_only": true,
+  "instrument_id": "gehu",
+  "instrument_name_zh": "革胡",
+  "reviewed_at": "TO_BE_FILLED_YYYY-MM-DD",
+  "candidate_path": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+  "candidate_sha256": "38e861290673bea9ae7afd7a33bed6584bd18922b4d62eb9a48152d8a884adca",
+  "candidate_size": "900x900",
+  "reviewer": {
+    "name": "TO_BE_FILLED",
+    "role": "TO_BE_FILLED Chinese orchestra performer / teacher / instrument specialist",
+    "organization": "TO_BE_FILLED"
+  },
+  "reference_urls_reviewed": [
+    "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gehu/",
+    "https://www.cello.org/Newsletter/Articles/gehu.htm"
+  ],
+  "source_features_to_verify": [
+    "20th-century Chinese bowed instrument",
+    "fusion of huqin family and cello",
+    "four strings tuned C-G-D-A",
+    "not a small two-string erhu silhouette",
+    "Chinese cello/bass role",
+    "large low bowed instrument",
+    "distinct from western cello substitution"
+  ],
+  "review_focus": "Confirm large cello-like low bowed gehu body and reject small huqin proportions.",
+  "approved_must_show": [
+    "large low-register bowed instrument",
+    "cello-like vertical body scale",
+    "large resonator body with Chinese orchestra character",
+    "long neck and strings",
+    "endpin or low seated support"
+  ],
+  "rejected_must_not_show": [
+    "small erhu-like resonator",
+    "generic zhonghu body",
+    "plain western cello with no Chinese morphology",
+    "tiny huqin proportions"
+  ],
+  "relative_scale_rules_verified": [
+    "larger than zhonghu",
+    "much larger body than erhu, gaohu, and banhu",
+    "reads as bass/low bowed instrument at small app-card size"
+  ],
+  "professional_review_questions": [
+    "Does the body read as gehu rather than western cello or oversized erhu?",
+    "Are bridge, strings, neck, and low support plausible for a gehu?",
+    "Would a Chinese orchestra player accept this as gehu at thumbnail size?"
+  ],
+  "confirmations": {
+    "professional_reviewer_confirmed": true,
+    "matches_morphology_spec": true,
+    "no_wrong_instrument_substitution": true,
+    "no_fantasy_or_generated_detail_errors": true,
+    "no_visible_internal_text_labels": true,
+    "approved_for_app_store_submission": true
+  },
+  "notes": "TO_BE_FILLED reviewer comments; keep this draft blocked until every TO_BE_FILLED value is replaced and draft_only is removed or set false in the final approval copy."
+}

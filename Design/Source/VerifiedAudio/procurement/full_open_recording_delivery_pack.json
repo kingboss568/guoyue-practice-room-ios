@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "status": "pending_delivery",
+  "purpose": "Complete delivery specification for every instrument that still lacks approved, commercially usable, auditable real-instrument audio in the app bundle.",
+  "required_instrument_ids": [
+    "guanzi",
+    "konghou",
+    "zhonghu",
+    "gehu",
+    "bianzhong",
+    "tanggu",
+    "paigu"
+  ],
+  "global_delivery_rules": {
+    "minimum_takes_per_instrument": 3,
+    "minimum_clean_duration_seconds": 6,
+    "preferred_clean_duration_seconds": 10,
+    "accepted_source_format": "wav or aiff, 44.1 kHz or 48 kHz, 24-bit preferred, no reverb, no EQ, no compression",
+    "required_release_confirmations": [
+      "real_instrument_recording",
+      "commercial_app_distribution",
+      "derivative_processing_allowed",
+      "global_perpetual_use",
+      "not_ai_generated",
+      "not_vst_or_sample_library",
+      "not_ripped_from_streaming_or_video"
+    ],
+    "composition_rights": "Use single notes, scales, idiomatic gestures, percussion hits, or original improvisation only. Do not record copyrighted melodies unless a separate composition license is attached.",
+    "professional_review_gate": "Audio may be imported only after source/license review, technical audio review, and professional Chinese-orchestra listening approval."
+  },
+  "items": [
+    {
+      "instrument_id": "guanzi",
+      "name_zh": "管子",
+      "priority": 2,
+      "procurement_priority": "high",
+      "priority_reason": "Guanzi needs real double-reed pressure, nasal body, and pitch inflection.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/guanzi.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/guanzi/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "guanzi_take1_sustained_double_reed_tone.wav",
+          "content": "sustained double-reed tone with natural pressure",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "guanzi_take2_short_ornament.wav",
+          "content": "short original ornament or turn",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "guanzi_take3_lower_register_phrase.wav",
+          "content": "short lower-register original phrase",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "sounds like oboe preset",
+        "double-reed buzz is absent",
+        "pitch is mechanically corrected",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "konghou",
+      "name_zh": "箜篌",
+      "priority": 2,
+      "procurement_priority": "medium",
+      "priority_reason": "Konghou must sound like real Chinese harp with natural pluck, resonance, and glissando/arpeggio color.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/konghou.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/konghou/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "konghou_take1_single_pluck.wav",
+          "content": "single pluck with natural resonance",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "konghou_take2_arpeggio.wav",
+          "content": "short arpeggio",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "konghou_take3_glissando_or_phrase.wav",
+          "content": "short glissando or original phrase",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "sounds like generic western harp preset",
+        "attack/decay is looped",
+        "excessive reverb hides source",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "priority": 1,
+      "procurement_priority": "critical",
+      "priority_reason": "Must provide lower alto huqin body resonance, not a slowed or EQ altered erhu.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/zhonghu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/zhonghu/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "zhonghu_take1_lower_sustained_tone.wav",
+          "content": "lower sustained tone with natural bow resonance",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "zhonghu_take2_lyrical_short_phrase.wav",
+          "content": "lyrical original phrase in lower register",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "zhonghu_take3_string_crossing_or_bow_change.wav",
+          "content": "short gesture showing bow change or string crossing",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "sounds like pitch-shifted erhu",
+        "body resonance is too small",
+        "attack is synthetic",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "priority": 1,
+      "procurement_priority": "critical",
+      "priority_reason": "Low bowed gehu is easy to misrepresent as cello, zhonghu, or synthesized bass; body resonance must be clear.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/gehu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/gehu/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "gehu_take1_low_sustained_bowed_tone.wav",
+          "content": "low sustained bowed tone with natural body resonance",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "gehu_take2_short_bass_gesture.wav",
+          "content": "short bass gesture, no copyrighted melody",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "gehu_take3_bow_attack_and_decay.wav",
+          "content": "clear bow attack and decay in lower register",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "western cello only with no gehu identity",
+        "synthetic bowed bass",
+        "too much room noise",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "bianzhong",
+      "name_zh": "編鐘",
+      "priority": 3,
+      "procurement_priority": "medium",
+      "priority_reason": "Bianzhong requires real struck bell attack and long metallic decay; synth bell is not acceptable.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/bianzhong.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/bianzhong/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "bianzhong_take1_single_bell_strike_full_decay.wav",
+          "content": "single bell strike with full decay",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "bianzhong_take2_second_pitch_if_available.wav",
+          "content": "second pitch or second bell if available",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "bianzhong_take3_soft_and_strong_contrast.wav",
+          "content": "soft/strong contrast with full decay",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "sounds like synth bell",
+        "full decay is clipped",
+        "room or crowd noise dominates",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "tanggu",
+      "name_zh": "堂鼓",
+      "priority": 3,
+      "procurement_priority": "medium",
+      "priority_reason": "Tanggu must show skin drum center, edge color, and roll without sounding like generic taiko/library percussion.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/tanggu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/tanggu/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "tanggu_take1_center_hit.wav",
+          "content": "center hit with natural skin resonance",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "tanggu_take2_rim_or_edge_hit.wav",
+          "content": "rim or edge hit",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "tanggu_take3_short_roll.wav",
+          "content": "short roll or rhythmic gesture",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "sounds like sample library drum",
+        "hit velocities are identical",
+        "room noise or clipping is present",
+        "background accompaniment or backing track is present"
+      ]
+    },
+    {
+      "instrument_id": "paigu",
+      "name_zh": "排鼓",
+      "priority": 3,
+      "procurement_priority": "medium",
+      "priority_reason": "Paigu must capture multiple drum pitches and rolls across the instrument, not a single generic drum.",
+      "release_template": "Design/Source/VerifiedAudio/procurement/full_release_templates/paigu.release.template.json",
+      "delivery_folder": "Design/Source/VerifiedAudio/inbox/full/paigu/",
+      "take_specs": [
+        {
+          "take_id": "take1",
+          "filename": "paigu_take1_low_drum_hit.wav",
+          "content": "low drum hit",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take2",
+          "filename": "paigu_take2_high_drum_hit.wav",
+          "content": "high drum hit",
+          "minimum_clean_seconds": 6
+        },
+        {
+          "take_id": "take3",
+          "filename": "paigu_take3_short_roll_across_drums.wav",
+          "content": "short roll or phrase across at least three drum pitches",
+          "minimum_clean_seconds": 6
+        }
+      ],
+      "reject_if": [
+        "only one drum pitch is present",
+        "sounds like generic tom library",
+        "hit velocities are identical",
+        "background accompaniment or backing track is present"
+      ]
+    }
+  ]
+}

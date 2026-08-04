@@ -1,0 +1,24 @@
+{
+  "instrument_id": "erhu",
+  "instrument_name_zh": "二胡",
+  "source_title": "Erhu short phrase and open-string tones",
+  "source_type": "commissioned_real_recording",
+  "performer_or_source": "Performer or organization name",
+  "recording_date": "2026-06-15",
+  "source_url": "",
+  "original_source_url": "",
+  "license": "Direct commercial app distribution permission",
+  "license_url_or_document": "Design/Source/VerifiedAudio/releases/erhu-signed-release.pdf",
+  "license_review": "Signed release confirms commercial iOS app distribution, editing, conversion, and perpetual worldwide use.",
+  "composition_rights_status": "single_notes_or_original_improvisation",
+  "confirmations": {
+    "real_instrument_recording": true,
+    "commercial_app_distribution": true,
+    "derivative_processing_allowed": true,
+    "global_perpetual_use": true,
+    "not_ai_generated": true,
+    "not_vst_or_sample_library": true,
+    "not_ripped_from_streaming_or_video": true
+  },
+  "notes": "Replace this template before importing. Do not approve unless the original recording and rights are documented."
+}

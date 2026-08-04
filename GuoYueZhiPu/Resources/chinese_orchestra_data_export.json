@@ -1,11 +1,14 @@
 {
   "metadata": {
     "app_name": "國樂團練習室",
-    "version": "1.0.0",
-    "exported_date": "2026-05-10",
+    "version": "1.1.0",
+    "exported_date": "2026-08-04",
     "total_instruments": 23,
     "total_pieces": 9,
-    "languages": ["zh-TW", "en"]
+    "languages": [
+      "zh-TW",
+      "en"
+    ]
   },
   "sections": [
     {
@@ -63,8 +66,6 @@
       "description_full_zh": "笛是最具辨識度的中國吹管樂器之一。演奏時橫持，以氣流切入吹孔發聲，笛膜讓音色帶有明亮、帶沙感的震動。它既能表現江南小調的細緻，也能在北方樂曲中展現開闊、快速與帶裝飾性的旋律。",
       "range_zh": "約三個八度",
       "range_notation": "D4-D7",
-      "pitch_frequency_hz": 700,
-      "audio_waveform_type": "sine",
       "playing_technique_zh": "吐音、顫音、滑音、花舌、循環換氣",
       "tuning_zh": "常見 D、G、C 調笛",
       "famous_pieces_zh": "《姑蘇行》《牧民新歌》",
@@ -82,8 +83,6 @@
       "description_full_zh": "笙由多根簧管組成，透過吹吸皆可發音，能演奏和聲、持續音與快速音型。它的音色透明而帶金屬光澤，在樂團中常用來支撐和聲，也能以獨奏方式呈現古樸而現代的聲響。",
       "range_zh": "依笙型約兩至三個八度",
       "range_notation": "G3-C7",
-      "pitch_frequency_hz": 523,
-      "audio_waveform_type": "triangle",
       "playing_technique_zh": "和音、琶音、吐音、顫音、長音支撐",
       "tuning_zh": "傳統笙與鍵笙依編制配置",
       "famous_pieces_zh": "《鳳凰展翅》《晉調》",
@@ -101,8 +100,6 @@
       "description_full_zh": "嗩吶具有極強穿透力，是民間禮俗、戲曲與現代國樂團中最具戲劇性的聲音之一。它能表現熱烈、詼諧，也能透過控制氣息與唇壓呈現悲壯情緒。",
       "range_zh": "約兩個八度半",
       "range_notation": "A4-D7",
-      "pitch_frequency_hz": 880,
-      "audio_waveform_type": "sawtooth",
       "playing_technique_zh": "吐音、滑音、花舌、模仿人聲與鳥鳴",
       "tuning_zh": "常見 C、D、G 調",
       "famous_pieces_zh": "《百鳥朝鳳》《打棗》",
@@ -120,8 +117,6 @@
       "description_full_zh": "簫的聲音柔和、氣息感強，與古琴、詩詞和文人文化關係密切。相較於笛的明亮，簫更擅長留白、緩慢旋律與深沉情緒，在國樂團中常用於營造空間感。",
       "range_zh": "約兩個八度",
       "range_notation": "D4-G6",
-      "pitch_frequency_hz": 392,
-      "audio_waveform_type": "sine",
       "playing_technique_zh": "長音、滑音、氣震音、弱起控制",
       "tuning_zh": "常見 G、F、D 調",
       "famous_pieces_zh": "《平沙落雁》《梅花三弄》",
@@ -139,8 +134,6 @@
       "description_full_zh": "管子以雙簧發聲，聲音帶有鼻音與厚度，能呈現蒼勁、悲涼或粗獷的性格。它在北方鼓吹樂、戲曲與現代作品中常擔任情緒鮮明的旋律角色。",
       "range_zh": "約兩個八度",
       "range_notation": "G3-A5",
-      "pitch_frequency_hz": 330,
-      "audio_waveform_type": "sawtooth",
       "playing_technique_zh": "壓音、滑音、氣震音、顫指",
       "tuning_zh": "依樂曲調式配置",
       "famous_pieces_zh": "《江河水》《小開門》",
@@ -158,8 +151,6 @@
       "description_full_zh": "琵琶以右手彈挑、輪指與掃拂形成豐富音型，左手推拉吟揉塑造音高與表情。它可表現細膩歌唱性，也能以快速輪指與強烈節奏描繪戰場、風雨與戲劇場面。",
       "range_zh": "約三個半八度",
       "range_notation": "A2-E6",
-      "pitch_frequency_hz": 440,
-      "audio_waveform_type": "triangle",
       "playing_technique_zh": "輪指、掃弦、推拉、泛音、煞音",
       "tuning_zh": "A-D-E-A",
       "famous_pieces_zh": "《十面埋伏》《陽春白雪》",
@@ -177,8 +168,6 @@
       "description_full_zh": "古箏以右手彈奏、左手按弦修飾音高，能形成流水般的琶音、細緻滑音與寬廣和聲。現代箏曲拓展了快速指序與複調語彙，使古箏既古典又具舞台張力。",
       "range_zh": "約四個八度",
       "range_notation": "D2-D6",
-      "pitch_frequency_hz": 392,
-      "audio_waveform_type": "triangle",
       "playing_technique_zh": "刮奏、搖指、按滑、泛音、快速指序",
       "tuning_zh": "多用五聲音階，也可轉調定弦",
       "famous_pieces_zh": "《漁舟唱晚》《高山流水》",
@@ -196,8 +185,6 @@
       "description_full_zh": "揚琴雖歸於彈撥聲部，但實際以琴竹敲擊發聲。它能提供明亮顆粒、和聲支撐與快速流動，在小合奏與大型國樂團中都常扮演節奏與色彩的橋樑。",
       "range_zh": "約四個八度",
       "range_notation": "G2-C7",
-      "pitch_frequency_hz": 587,
-      "audio_waveform_type": "metallic",
       "playing_technique_zh": "輪竹、滾奏、頓音、和弦、泛音",
       "tuning_zh": "十二平均律排列",
       "famous_pieces_zh": "《林沖夜奔》《將軍令》",
@@ -215,8 +202,6 @@
       "description_full_zh": "柳琴常在國樂團中擔任高音彈撥聲部，音色清脆，反應靈敏。它可演奏快速旋律、節奏型與高音裝飾，使樂團上方聲部更有光澤。",
       "range_zh": "約三個半八度",
       "range_notation": "G3-D7",
-      "pitch_frequency_hz": 659,
-      "audio_waveform_type": "triangle",
       "playing_technique_zh": "彈挑、輪奏、掃弦、快速音階",
       "tuning_zh": "G-D-G-D 或依曲調整",
       "famous_pieces_zh": "《春到沂河》《劍器》",
@@ -234,8 +219,6 @@
       "description_full_zh": "中阮音域位於中音區，聲音圓潤，常用於分解和弦、節奏型與旋律伴奏。它讓彈撥聲部不只明亮，也有厚度與穩定的中層支撐。",
       "range_zh": "約三個八度",
       "range_notation": "G2-D6",
-      "pitch_frequency_hz": 294,
-      "audio_waveform_type": "triangle",
       "playing_technique_zh": "彈挑、掃弦、輪指、和弦分解",
       "tuning_zh": "G-D-G-D",
       "famous_pieces_zh": "《絲路駝鈴》《雲南回憶》",
@@ -253,8 +236,6 @@
       "description_full_zh": "三弦聲音富彈性與顆粒感，在說唱、戲曲與地方音樂中十分常見。它的滑音與彈挑能呈現語言般的節奏，為國樂團帶來粗獷而鮮明的民間色彩。",
       "range_zh": "約三個八度",
       "range_notation": "G2-G5",
-      "pitch_frequency_hz": 247,
-      "audio_waveform_type": "square",
       "playing_technique_zh": "彈挑、滑音、打弦、掃弦",
       "tuning_zh": "依地域與曲目配置",
       "famous_pieces_zh": "《大浪淘沙》《十八板》",
@@ -272,8 +253,6 @@
       "description_full_zh": "箜篌在古代文獻與壁畫中多有記載，現代箜篌經改良後能演奏雙手琶音、和聲與滑音。它的音色如水光般透明，適合描寫夢境、神話與廣闊空間。",
       "range_zh": "約五個八度",
       "range_notation": "C2-C7",
-      "pitch_frequency_hz": 523,
-      "audio_waveform_type": "sine",
       "playing_technique_zh": "雙手琶音、泛音、滑奏、和弦",
       "tuning_zh": "現代半音系統",
       "famous_pieces_zh": "《湘妃竹》《清明上河圖》",
@@ -291,8 +270,6 @@
       "description_full_zh": "二胡以弓毛置於兩弦之間拉奏，左手按弦沒有指板，能做出極細膩的滑音與揉弦。它能表現哀婉、深情、奔放與敘事，是現代國樂獨奏與合奏中的核心樂器。",
       "range_zh": "約三個八度",
       "range_notation": "D4-E7",
-      "pitch_frequency_hz": 440,
-      "audio_waveform_type": "sawtooth",
       "playing_technique_zh": "揉弦、滑音、快弓、跳弓、泛音",
       "tuning_zh": "D-A",
       "famous_pieces_zh": "《二泉映月》《賽馬》",
@@ -310,8 +287,6 @@
       "description_full_zh": "高胡比二胡音域更高，常夾於兩膝間演奏。它在廣東音樂中形成清麗、細膩、流動的旋律風格，也常在國樂團中負責高音拉弦線條。",
       "range_zh": "約三個八度",
       "range_notation": "G4-A7",
-      "pitch_frequency_hz": 660,
-      "audio_waveform_type": "sawtooth",
       "playing_technique_zh": "揉弦、滑音、快弓、裝飾音",
       "tuning_zh": "G-D",
       "famous_pieces_zh": "《步步高》《平湖秋月》",
@@ -329,8 +304,6 @@
       "description_full_zh": "中胡音域低於二胡，聲音更溫厚，在樂團中常與二胡、高胡形成聲部層次。它既能演奏旋律，也能提供中聲部和聲，使拉弦組更接近西方弦樂團的編制概念。",
       "range_zh": "約三個八度",
       "range_notation": "G3-A6",
-      "pitch_frequency_hz": 330,
-      "audio_waveform_type": "sawtooth",
       "playing_technique_zh": "長弓、揉弦、分弓、和聲支撐",
       "tuning_zh": "G-D",
       "famous_pieces_zh": "《草原上》《山村變了樣》",
@@ -348,8 +321,6 @@
       "description_full_zh": "板胡常用於梆子腔等北方戲曲，聲音尖亮、富穿透力。它能以快速弓法與強烈裝飾音表現熱烈、爽朗與舞台性格，是拉弦樂器中最具戲曲表情的成員之一。",
       "range_zh": "約兩個半八度",
       "range_notation": "G4-C7",
-      "pitch_frequency_hz": 740,
-      "audio_waveform_type": "square",
       "playing_technique_zh": "快弓、頓弓、滑音、戲曲腔韻",
       "tuning_zh": "依劇種與曲目配置",
       "famous_pieces_zh": "《大起板》《秦腔牌子曲》",
@@ -367,8 +338,6 @@
       "description_full_zh": "革胡是為現代國樂團低音需求而發展的拉弦樂器，外形與演奏姿勢接近低音提琴或大提琴。它讓國樂團的低音線條更穩固，也拓展了厚重、暗色與交響化的聲響。",
       "range_zh": "約三個八度",
       "range_notation": "C2-G5",
-      "pitch_frequency_hz": 131,
-      "audio_waveform_type": "sawtooth",
       "playing_technique_zh": "長弓、撥弦、低音節奏、和聲支撐",
       "tuning_zh": "C-G-D-A 或依型制配置",
       "famous_pieces_zh": "現代大型合奏與協奏作品",
@@ -386,8 +355,6 @@
       "description_full_zh": "編鐘是中國古代禮樂制度的重要象徵。成組鐘體可敲出不同音高，有些鐘可因敲擊位置不同產生雙音。現代舞台上，編鐘常用於營造歷史感、莊嚴感與青銅質地的聲響。",
       "range_zh": "依編鐘組數而定",
       "range_notation": "C3-C6",
-      "pitch_frequency_hz": 262,
-      "audio_waveform_type": "metallic",
       "playing_technique_zh": "槌擊、分層音色、節奏點染",
       "tuning_zh": "依複製或改良編鐘配置",
       "famous_pieces_zh": "《楚商》《編鐘樂舞》",
@@ -405,8 +372,6 @@
       "description_full_zh": "堂鼓在民俗、戲曲與國樂團中都十分常見。它能以不同擊打位置形成低沉鼓心與明亮鼓邊，也能透過滾奏、重音與節奏型塑造氣勢。",
       "range_zh": "無固定音高",
       "range_notation": "Unpitched",
-      "pitch_frequency_hz": 110,
-      "audio_waveform_type": "noise",
       "playing_technique_zh": "重擊、滾奏、邊擊、節奏型變化",
       "tuning_zh": "依鼓皮張力調整",
       "famous_pieces_zh": "《將軍令》《龍騰虎躍》",
@@ -424,8 +389,6 @@
       "description_full_zh": "鑼的種類繁多，音色可由低沉渾厚到尖銳明亮。它常用於戲曲場面、節慶與大型樂團高潮，能在一擊之間改變整體空間與情緒。",
       "range_zh": "有固定與無固定音高之分",
       "range_notation": "Pitched/Unpitched",
-      "pitch_frequency_hz": 196,
-      "audio_waveform_type": "metallic",
       "playing_technique_zh": "單擊、滾奏、悶音、強弱層次",
       "tuning_zh": "依鑼種配置",
       "famous_pieces_zh": "戲曲鑼鼓經與現代合奏作品",
@@ -443,8 +406,6 @@
       "description_full_zh": "鈸以兩片金屬互擊發聲，聲音明亮、爆發力強。它能強化節奏重點，也能以摩擦、悶音和輕擊創造細節，是打擊聲部中最直接的亮色。",
       "range_zh": "無固定音高",
       "range_notation": "Unpitched",
-      "pitch_frequency_hz": 600,
-      "audio_waveform_type": "metallic",
       "playing_technique_zh": "合擊、擦擊、悶音、滾奏",
       "tuning_zh": "依尺寸與厚薄選用",
       "famous_pieces_zh": "戲曲鑼鼓經與節慶樂曲",
@@ -462,8 +423,6 @@
       "description_full_zh": "木魚聲音短、乾、清楚，能在樂團中提供明確節奏點。它源自宗教與民間音樂脈絡，進入現代國樂團後常作為音色點綴與節奏提示。",
       "range_zh": "依大小有高低差",
       "range_notation": "Relative pitch",
-      "pitch_frequency_hz": 500,
-      "audio_waveform_type": "square",
       "playing_technique_zh": "單擊、交替擊、節奏型重複",
       "tuning_zh": "依尺寸選用",
       "famous_pieces_zh": "宗教音樂與現代打擊段落",
@@ -481,8 +440,6 @@
       "description_full_zh": "排鼓通常由多面可調音高的鼓組成，使演奏者能在節奏之外加入旋律性輪廓。它在現代國樂團中承擔獨奏、伴奏與高潮推進，是最具舞台效果的打擊樂器之一。",
       "range_zh": "依鼓組約一至兩個八度",
       "range_notation": "C3-C5",
-      "pitch_frequency_hz": 180,
-      "audio_waveform_type": "noise",
       "playing_technique_zh": "滾奏、重音、輪鼓、跨鼓節奏",
       "tuning_zh": "依樂曲需求調音",
       "famous_pieces_zh": "《鼓詩》《龍騰虎躍》",
@@ -507,9 +464,17 @@
       "description_zh": "二胡經典獨奏曲，以深沉旋律呈現坎坷生命與堅韌精神。",
       "history_zh": "《二泉映月》由無錫民間藝人華彥鈞所傳，後經錄音整理成為二胡藝術最重要的曲目之一。作品旋律不以炫技取勝，而以緩慢推進、反覆吟唱和細膩揉弦承載生命經驗。",
       "listening_guidance_zh": "可先聽開頭長音的氣息與揉弦，再注意旋律如何在低回與昂揚之間轉換。二胡的滑音不是裝飾，而像語氣中的停頓與嘆息。",
-      "related_musicians": ["abing"],
-      "related_pieces": ["saima"],
-      "themes": ["sorrow", "resilience", "narrative"],
+      "related_musicians": [
+        "abing"
+      ],
+      "related_pieces": [
+        "saima"
+      ],
+      "themes": [
+        "sorrow",
+        "resilience",
+        "narrative"
+      ],
       "audio_sample_url": "/audio/pieces/erquan.aac",
       "score_url_placeholder": "/scores/erquan.pdf"
     },
@@ -527,9 +492,17 @@
       "description_zh": "以江南水景與月夜意象構成的傳統名曲，旋律婉轉而層次豐富。",
       "history_zh": "此曲源於傳統琵琶曲與江南絲竹語彙，後被改編為民族管弦樂版本。作品常以段落變奏推進，呈現水波、花影、月色與夜行的流動感。",
       "listening_guidance_zh": "聆聽時可注意主題旋律如何在不同聲部間傳遞，以及彈撥與吹管如何共同塑造水面光影。",
-      "related_musicians": ["pengxiuwen"],
-      "related_pieces": ["caiyunzhuiyue"],
-      "themes": ["landscape", "lyric", "jiangnan"],
+      "related_musicians": [
+        "pengxiuwen"
+      ],
+      "related_pieces": [
+        "caiyunzhuiyue"
+      ],
+      "themes": [
+        "landscape",
+        "lyric",
+        "jiangnan"
+      ],
       "audio_sample_url": "/audio/pieces/jiangshanhuayue.aac",
       "score_url_placeholder": "/scores/jiangshanhuayue.pdf"
     },
@@ -547,9 +520,17 @@
       "description_zh": "以少數民族舞蹈意象構成的管弦樂作品，節奏鮮明、色彩明亮。",
       "history_zh": "《瑤族舞曲》以民歌素材與舞蹈節奏為基礎，經交響化手法擴展成大型合奏作品。它展現新中國民族管弦樂在旋律、配器與舞台性上的代表性風格。",
       "listening_guidance_zh": "可聽出慢板與快板的對比，特別是彈撥節奏和吹管旋律如何推動舞蹈感。",
-      "related_musicians": ["pengxiuwen"],
-      "related_pieces": ["caiyunzhuiyue"],
-      "themes": ["dance", "festival", "orchestral"],
+      "related_musicians": [
+        "pengxiuwen"
+      ],
+      "related_pieces": [
+        "caiyunzhuiyue"
+      ],
+      "themes": [
+        "dance",
+        "festival",
+        "orchestral"
+      ],
       "audio_sample_url": "/audio/pieces/yaozu.aac",
       "score_url_placeholder": "/scores/yaozu.pdf"
     },
@@ -567,9 +548,17 @@
       "description_zh": "旋律流暢親切，常以輕盈節奏描繪月夜與雲影。",
       "history_zh": "《彩雲追月》在二十世紀被整理與改編為多種版本，旋律廣為流傳。作品以明亮的五聲語彙與穩定節奏展現南方音樂的柔美。",
       "listening_guidance_zh": "注意主旋律的圓滑線條，以及伴奏如何維持輕盈前進感。",
-      "related_musicians": ["lvwencheng"],
-      "related_pieces": ["jiangshanhuayue"],
-      "themes": ["moon", "lyric", "southern"],
+      "related_musicians": [
+        "lvwencheng"
+      ],
+      "related_pieces": [
+        "jiangshanhuayue"
+      ],
+      "themes": [
+        "moon",
+        "lyric",
+        "southern"
+      ],
       "audio_sample_url": "/audio/pieces/caiyunzhuiyue.aac",
       "score_url_placeholder": "/scores/caiyunzhuiyue.pdf"
     },
@@ -587,9 +576,17 @@
       "description_zh": "節奏堅定、氣勢開闊，常以打擊與彈撥營造軍旅場面。",
       "history_zh": "《將軍令》源於傳統曲牌，常見於廣東音樂與民族器樂改編。作品以明確節奏、重音與層層推進形成莊重而有力量的氣氛。",
       "listening_guidance_zh": "可留意揚琴與打擊如何建立步伐感，旋律的短句如何形成命令式的語氣。",
-      "related_musicians": ["lvwencheng"],
-      "related_pieces": ["shimianmaifu"],
-      "themes": ["heroic", "rhythm", "ceremonial"],
+      "related_musicians": [
+        "lvwencheng"
+      ],
+      "related_pieces": [
+        "shimianmaifu"
+      ],
+      "themes": [
+        "heroic",
+        "rhythm",
+        "ceremonial"
+      ],
       "audio_sample_url": "/audio/pieces/jiangjunling.aac",
       "score_url_placeholder": "/scores/jiangjunling.pdf"
     },
@@ -607,9 +604,17 @@
       "description_zh": "琵琶武曲代表，描繪楚漢相爭的戰場場面。",
       "history_zh": "《十面埋伏》是琵琶武曲經典，透過掃弦、輪指、煞音與強烈節奏描寫戰鼓、兵戈與追擊。它展示琵琶高度敘事能力，也考驗演奏者的體力與控制。",
       "listening_guidance_zh": "先聽節奏密度如何逐步升高，再注意琵琶如何用音色模擬鼓聲、馬蹄與兵器。",
-      "related_musicians": ["liutianhua"],
-      "related_pieces": ["jiangjunling"],
-      "themes": ["battle", "virtuosic", "narrative"],
+      "related_musicians": [
+        "liutianhua"
+      ],
+      "related_pieces": [
+        "jiangjunling"
+      ],
+      "themes": [
+        "battle",
+        "virtuosic",
+        "narrative"
+      ],
       "audio_sample_url": "/audio/pieces/shimianmaifu.aac",
       "score_url_placeholder": "/scores/shimianmaifu.pdf"
     },
@@ -627,9 +632,17 @@
       "description_zh": "以山水意象與知音典故聞名，旋律清雅悠遠。",
       "history_zh": "《高山流水》與伯牙子期的知音故事相連，後在古琴、古箏等樂器中形成不同版本。它象徵自然、心志與理解之間的關係。",
       "listening_guidance_zh": "聆聽時可感受刮奏與泛音塑造的水流感，以及主題在高低音區的呼應。",
-      "related_musicians": ["minhuifen"],
-      "related_pieces": ["jiangshanhuayue"],
-      "themes": ["landscape", "friendship", "ancient"],
+      "related_musicians": [
+        "minhuifen"
+      ],
+      "related_pieces": [
+        "jiangshanhuayue"
+      ],
+      "themes": [
+        "landscape",
+        "friendship",
+        "ancient"
+      ],
       "audio_sample_url": "/audio/pieces/gaoshanliushui.aac",
       "score_url_placeholder": "/scores/gaoshanliushui.pdf"
     },
@@ -647,9 +660,17 @@
       "description_zh": "二胡炫技曲，模擬馬蹄、奔馳與草原競賽的熱烈場景。",
       "history_zh": "《賽馬》以蒙古族音樂素材為基礎，運用快弓、撥弦與模仿性技巧，成為二胡舞台曲目中最受歡迎的作品之一。",
       "listening_guidance_zh": "注意快弓的節奏穩定，以及撥弦模仿馬蹄時和旋律之間的切換。",
-      "related_musicians": ["minhuifen"],
-      "related_pieces": ["erquan"],
-      "themes": ["grassland", "virtuosic", "dance"],
+      "related_musicians": [
+        "minhuifen"
+      ],
+      "related_pieces": [
+        "erquan"
+      ],
+      "themes": [
+        "grassland",
+        "virtuosic",
+        "dance"
+      ],
       "audio_sample_url": "/audio/pieces/saima.aac",
       "score_url_placeholder": "/scores/saima.pdf"
     },
@@ -667,9 +688,17 @@
       "description_zh": "笛子名曲，以江南水鄉風格呈現細緻、流動與雅致。",
       "history_zh": "《姑蘇行》吸收崑曲與江南音樂語彙，旋律婉轉，裝飾音細膩，是笛子抒情曲的重要代表。作品使竹笛不只明亮熱烈，也能呈現文雅與含蓄。",
       "listening_guidance_zh": "可注意吐音與滑音如何模仿江南語調，旋律停頓處往往比快速音群更有味道。",
-      "related_musicians": ["zhaojiping"],
-      "related_pieces": ["jiangshanhuayue"],
-      "themes": ["jiangnan", "lyric", "flute"],
+      "related_musicians": [
+        "zhaojiping"
+      ],
+      "related_pieces": [
+        "jiangshanhuayue"
+      ],
+      "themes": [
+        "jiangnan",
+        "lyric",
+        "flute"
+      ],
       "audio_sample_url": "/audio/pieces/gusuxing.aac",
       "score_url_placeholder": "/scores/gusuxing.pdf"
     }
@@ -688,8 +717,12 @@
       "description_zh": "無錫民間音樂家，以二胡與琵琶演奏聞名，作品承載深沉生命經驗。",
       "full_bio_zh": "華彥鈞生於江蘇無錫，後因病失明，以街頭演奏維生。他的音樂經錄音整理保存下來，成為二十世紀中國民間音樂搶救保存的重要案例。",
       "significance_zh": "其作品讓二胡從民間語境進入現代舞台，也讓後人聽見個體生命與時代困境交會的聲音。",
-      "famous_works": ["erquan"],
-      "related_musicians": ["liutianhua"]
+      "famous_works": [
+        "erquan"
+      ],
+      "related_musicians": [
+        "liutianhua"
+      ]
     },
     {
       "id": "liutianhua",
@@ -704,8 +737,12 @@
       "description_zh": "推動二胡教學與創作現代化，使民族器樂進入專業教育體系。",
       "full_bio_zh": "劉天華活躍於二十世紀初，致力於民族器樂改革、記譜、教材與新作品創作。他借鑑西方音樂訓練方法，提升二胡作為獨奏樂器的表現力。",
       "significance_zh": "他建立的教學與創作觀念，深刻影響後來二胡與國樂教育的發展。",
-      "famous_works": ["shimianmaifu"],
-      "related_musicians": ["abing"]
+      "famous_works": [
+        "shimianmaifu"
+      ],
+      "related_musicians": [
+        "abing"
+      ]
     },
     {
       "id": "lvwencheng",
@@ -720,8 +757,13 @@
       "description_zh": "廣東音樂代表人物，推動高胡演奏與南方器樂風格傳播。",
       "full_bio_zh": "呂文成長期活躍於廣東與香港音樂圈，擅長高胡與作曲。他的作品旋律清麗、節奏明快，對廣東音樂舞台化與流行化有重要影響。",
       "significance_zh": "他使高胡成為南方器樂的標誌性音色之一，也讓廣東音樂進入更廣泛的聽眾視野。",
-      "famous_works": ["caiyunzhuiyue", "jiangjunling"],
-      "related_musicians": ["pengxiuwen"]
+      "famous_works": [
+        "caiyunzhuiyue",
+        "jiangjunling"
+      ],
+      "related_musicians": [
+        "pengxiuwen"
+      ]
     },
     {
       "id": "pengxiuwen",
@@ -736,8 +778,13 @@
       "description_zh": "推動大型民族管弦樂隊編制與配器語法，被視為現代國樂團重要奠基者。",
       "full_bio_zh": "彭修文在中央廣播民族樂團等團體推動民族管弦樂發展，改編大量傳統與民間素材，使國樂團形成更完整的聲部分工與交響化表達。",
       "significance_zh": "他的配器理念影響現代國樂團聲響，讓傳統器樂能承載大型舞台作品。",
-      "famous_works": ["jiangshanhuayue", "yaozu"],
-      "related_musicians": ["lvwencheng"]
+      "famous_works": [
+        "jiangshanhuayue",
+        "yaozu"
+      ],
+      "related_musicians": [
+        "lvwencheng"
+      ]
     },
     {
       "id": "hezhanshao",
@@ -752,8 +799,12 @@
       "description_zh": "以民族旋律與西方作曲技法結合聞名，代表作影響廣泛。",
       "full_bio_zh": "何占豪在二十世紀中國音樂創作中具有代表性。他善於將地方戲曲、民族旋律與管弦樂技法結合，創造兼具民族辨識度與現代舞台感的作品。",
       "significance_zh": "他的創作顯示民族素材可以透過新形式獲得更廣泛的表達。",
-      "famous_works": ["yaozu"],
-      "related_musicians": ["pengxiuwen"]
+      "famous_works": [
+        "yaozu"
+      ],
+      "related_musicians": [
+        "pengxiuwen"
+      ]
     },
     {
       "id": "minhuifen",
@@ -768,8 +819,13 @@
       "description_zh": "以深厚情感與舞台感染力著稱，拓展二胡演奏的歌唱性與戲劇性。",
       "full_bio_zh": "閔惠芬是二十世紀後半重要二胡演奏家。她的演奏注重音色層次、句法呼吸與情感張力，對二胡作品詮釋有深遠影響。",
       "significance_zh": "她讓二胡舞台語言更具戲劇性與人聲般的感染力。",
-      "famous_works": ["saima", "gaoshanliushui"],
-      "related_musicians": ["abing"]
+      "famous_works": [
+        "saima",
+        "gaoshanliushui"
+      ],
+      "related_musicians": [
+        "abing"
+      ]
     },
     {
       "id": "zhaojiping",
@@ -784,8 +840,12 @@
       "description_zh": "以民族音樂語彙與影像敘事結合聞名，作品具有鮮明地域色彩。",
       "full_bio_zh": "趙季平的創作橫跨影視、舞台與民族管弦樂。他善於從地域音樂和傳統聲腔中提煉素材，使音樂具有清楚的場景感與敘事性。",
       "significance_zh": "他的作品示範民族音樂如何進入當代影像與大型舞台敘事。",
-      "famous_works": ["gusuxing"],
-      "related_musicians": ["pengxiuwen"]
+      "famous_works": [
+        "gusuxing"
+      ],
+      "related_musicians": [
+        "pengxiuwen"
+      ]
     }
   ],
   "lessons": [
@@ -795,17 +855,41 @@
       "title_zh": "國樂的源流",
       "duration_minutes": 6,
       "difficulty_level": "beginner",
-      "learning_objectives_zh": ["了解國樂從禮樂、民間到現代樂團的脈絡", "辨認傳統器樂與現代國樂團的差異"],
+      "learning_objectives_zh": [
+        "了解國樂從禮樂、民間到現代樂團的脈絡",
+        "辨認傳統器樂與現代國樂團的差異"
+      ],
       "content_blocks": [
-        {"type": "intro", "text_zh": "國樂不是單一風格，而是禮樂、民間、戲曲、文人音樂與現代舞台共同累積的結果。"},
-        {"type": "section", "title_zh": "從禮樂到民間"},
-        {"type": "content", "text_zh": "早期樂器常與祭祀、典禮和宮廷制度相連；進入民間後，器樂與戲曲、節慶、說唱緊密結合。"},
-        {"type": "section", "title_zh": "現代國樂團"},
-        {"type": "content", "text_zh": "二十世紀後，國樂團逐漸形成吹管、彈撥、拉弦、打擊四大聲部分工，並吸收管弦樂配器概念。"},
-        {"type": "insight", "text_zh": "理解國樂，最好的入口不是年代，而是聽見不同聲部如何分工。"}
+        {
+          "type": "intro",
+          "text_zh": "國樂不是單一風格，而是禮樂、民間、戲曲、文人音樂與現代舞台共同累積的結果。"
+        },
+        {
+          "type": "section",
+          "title_zh": "從禮樂到民間"
+        },
+        {
+          "type": "content",
+          "text_zh": "早期樂器常與祭祀、典禮和宮廷制度相連；進入民間後，器樂與戲曲、節慶、說唱緊密結合。"
+        },
+        {
+          "type": "section",
+          "title_zh": "現代國樂團"
+        },
+        {
+          "type": "content",
+          "text_zh": "二十世紀後，國樂團逐漸形成吹管、彈撥、拉弦、打擊四大聲部分工，並吸收管弦樂配器概念。"
+        },
+        {
+          "type": "insight",
+          "text_zh": "理解國樂，最好的入口不是年代，而是聽見不同聲部如何分工。"
+        }
       ],
       "review_questions": [
-        {"q": "現代國樂團常見的四大聲部是什麼？", "a": "吹管、彈撥、拉弦、打擊。"}
+        {
+          "q": "現代國樂團常見的四大聲部是什麼？",
+          "a": "吹管、彈撥、拉弦、打擊。"
+        }
       ]
     },
     {
@@ -814,18 +898,45 @@
       "title_zh": "四大聲部",
       "duration_minutes": 8,
       "difficulty_level": "beginner",
-      "learning_objectives_zh": ["分辨四大聲部的主要發聲方式", "建立聽辨樂器音色的第一層分類"],
+      "learning_objectives_zh": [
+        "分辨四大聲部的主要發聲方式",
+        "建立聽辨樂器音色的第一層分類"
+      ],
       "content_blocks": [
-        {"type": "intro", "text_zh": "聲部分類能幫助你在聽樂團時快速定位音色來源。"},
-        {"type": "section", "title_zh": "吹管與拉弦"},
-        {"type": "content", "text_zh": "吹管以氣息驅動，常負責旋律與色彩；拉弦以弓摩擦琴弦，能做出接近人聲的長線條。"},
-        {"type": "section", "title_zh": "彈撥與打擊"},
-        {"type": "content", "text_zh": "彈撥提供顆粒、和聲與節奏；打擊掌握時間、場面與戲劇轉折。"},
-        {"type": "insight", "text_zh": "當你聽不出單一樂器時，先判斷它是吹、彈、拉、打哪一類。"}
+        {
+          "type": "intro",
+          "text_zh": "聲部分類能幫助你在聽樂團時快速定位音色來源。"
+        },
+        {
+          "type": "section",
+          "title_zh": "吹管與拉弦"
+        },
+        {
+          "type": "content",
+          "text_zh": "吹管以氣息驅動，常負責旋律與色彩；拉弦以弓摩擦琴弦，能做出接近人聲的長線條。"
+        },
+        {
+          "type": "section",
+          "title_zh": "彈撥與打擊"
+        },
+        {
+          "type": "content",
+          "text_zh": "彈撥提供顆粒、和聲與節奏；打擊掌握時間、場面與戲劇轉折。"
+        },
+        {
+          "type": "insight",
+          "text_zh": "當你聽不出單一樂器時，先判斷它是吹、彈、拉、打哪一類。"
+        }
       ],
       "review_questions": [
-        {"q": "二胡屬於哪一個聲部？", "a": "拉弦聲部。"},
-        {"q": "揚琴雖以敲擊發聲，在國樂團常歸入哪類？", "a": "彈撥聲部。"}
+        {
+          "q": "二胡屬於哪一個聲部？",
+          "a": "拉弦聲部。"
+        },
+        {
+          "q": "揚琴雖以敲擊發聲，在國樂團常歸入哪類？",
+          "a": "彈撥聲部。"
+        }
       ]
     },
     {
@@ -834,17 +945,41 @@
       "title_zh": "名曲聆聽",
       "duration_minutes": 7,
       "difficulty_level": "medium",
-      "learning_objectives_zh": ["用情緒、主奏樂器與段落推進聽懂名曲", "辨認獨奏曲與合奏曲的聆聽重點"],
+      "learning_objectives_zh": [
+        "用情緒、主奏樂器與段落推進聽懂名曲",
+        "辨認獨奏曲與合奏曲的聆聽重點"
+      ],
       "content_blocks": [
-        {"type": "intro", "text_zh": "聽名曲不必先背歷史，可以先問三件事：主奏是誰、情緒如何轉折、段落怎麼推進。"},
-        {"type": "section", "title_zh": "獨奏曲"},
-        {"type": "content", "text_zh": "像《二泉映月》《賽馬》《十面埋伏》這類作品，重點在主奏樂器的語氣、技巧與敘事。"},
-        {"type": "section", "title_zh": "合奏曲"},
-        {"type": "content", "text_zh": "像《瑤族舞曲》《春江花月夜》則要聽聲部輪替、配器色彩與段落層次。"},
-        {"type": "insight", "text_zh": "樂曲的故事常藏在音色切換，而不只在旋律本身。"}
+        {
+          "type": "intro",
+          "text_zh": "聽名曲不必先背歷史，可以先問三件事：主奏是誰、情緒如何轉折、段落怎麼推進。"
+        },
+        {
+          "type": "section",
+          "title_zh": "獨奏曲"
+        },
+        {
+          "type": "content",
+          "text_zh": "像《二泉映月》《賽馬》《十面埋伏》這類作品，重點在主奏樂器的語氣、技巧與敘事。"
+        },
+        {
+          "type": "section",
+          "title_zh": "合奏曲"
+        },
+        {
+          "type": "content",
+          "text_zh": "像《瑤族舞曲》《春江花月夜》則要聽聲部輪替、配器色彩與段落層次。"
+        },
+        {
+          "type": "insight",
+          "text_zh": "樂曲的故事常藏在音色切換，而不只在旋律本身。"
+        }
       ],
       "review_questions": [
-        {"q": "《十面埋伏》的主奏樂器是什麼？", "a": "琵琶。"}
+        {
+          "q": "《十面埋伏》的主奏樂器是什麼？",
+          "a": "琵琶。"
+        }
       ]
     },
     {
@@ -853,17 +988,41 @@
       "title_zh": "樂團編制與現代化",
       "duration_minutes": 9,
       "difficulty_level": "medium",
-      "learning_objectives_zh": ["理解現代國樂團如何借鑑管弦樂分工", "認識低音與和聲聲部在現代作品中的重要性"],
+      "learning_objectives_zh": [
+        "理解現代國樂團如何借鑑管弦樂分工",
+        "認識低音與和聲聲部在現代作品中的重要性"
+      ],
       "content_blocks": [
-        {"type": "intro", "text_zh": "現代國樂團的形成，是傳統器樂與大型舞台需求相互調整的結果。"},
-        {"type": "section", "title_zh": "聲部擴充"},
-        {"type": "content", "text_zh": "為了讓音域更完整，國樂團發展了中胡、革胡、低音聲部與多種改良樂器。"},
-        {"type": "section", "title_zh": "配器思維"},
-        {"type": "content", "text_zh": "作曲家會把旋律、節奏、和聲、音色分配給不同聲部，形成比小合奏更大的聲響建築。"},
-        {"type": "insight", "text_zh": "國樂現代化不是拋棄傳統，而是讓傳統音色能處理更大的形式。"}
+        {
+          "type": "intro",
+          "text_zh": "現代國樂團的形成，是傳統器樂與大型舞台需求相互調整的結果。"
+        },
+        {
+          "type": "section",
+          "title_zh": "聲部擴充"
+        },
+        {
+          "type": "content",
+          "text_zh": "為了讓音域更完整，國樂團發展了中胡、革胡、低音聲部與多種改良樂器。"
+        },
+        {
+          "type": "section",
+          "title_zh": "配器思維"
+        },
+        {
+          "type": "content",
+          "text_zh": "作曲家會把旋律、節奏、和聲、音色分配給不同聲部，形成比小合奏更大的聲響建築。"
+        },
+        {
+          "type": "insight",
+          "text_zh": "國樂現代化不是拋棄傳統，而是讓傳統音色能處理更大的形式。"
+        }
       ],
       "review_questions": [
-        {"q": "革胡在現代國樂團中的主要功能是什麼？", "a": "補足低音與厚度。"}
+        {
+          "q": "革胡在現代國樂團中的主要功能是什麼？",
+          "a": "補足低音與厚度。"
+        }
       ]
     }
   ],
@@ -873,102 +1032,208 @@
       "question_zh": "下列哪件樂器屬於「拉弦」聲部？",
       "difficulty": "easy",
       "options": [
-        {"text_zh": "琵琶", "text_en": "Pipa"},
-        {"text_zh": "二胡", "text_en": "Erhu"},
-        {"text_zh": "笙", "text_en": "Sheng"},
-        {"text_zh": "堂鼓", "text_en": "Tanggu"}
+        {
+          "text_zh": "琵琶",
+          "text_en": "Pipa"
+        },
+        {
+          "text_zh": "二胡",
+          "text_en": "Erhu"
+        },
+        {
+          "text_zh": "笙",
+          "text_en": "Sheng"
+        },
+        {
+          "text_zh": "堂鼓",
+          "text_en": "Tanggu"
+        }
       ],
       "correct_index": 1,
       "explanation_zh": "二胡以弓毛摩擦琴弦發聲，屬於拉弦聲部。",
-      "tags": ["instruments", "sections", "easy"]
+      "tags": [
+        "instruments",
+        "sections",
+        "easy"
+      ]
     },
     {
       "id": "q2",
       "question_zh": "哪一件樂器因笛膜共振而具有明亮顆粒感？",
       "difficulty": "easy",
       "options": [
-        {"text_zh": "笛", "text_en": "Dizi"},
-        {"text_zh": "簫", "text_en": "Xiao"},
-        {"text_zh": "管子", "text_en": "Guanzi"},
-        {"text_zh": "笙", "text_en": "Sheng"}
+        {
+          "text_zh": "笛",
+          "text_en": "Dizi"
+        },
+        {
+          "text_zh": "簫",
+          "text_en": "Xiao"
+        },
+        {
+          "text_zh": "管子",
+          "text_en": "Guanzi"
+        },
+        {
+          "text_zh": "笙",
+          "text_en": "Sheng"
+        }
       ],
       "correct_index": 0,
       "explanation_zh": "笛子的笛膜會隨氣流震動，形成明亮而帶沙感的音色。",
-      "tags": ["wind", "tone"]
+      "tags": [
+        "wind",
+        "tone"
+      ]
     },
     {
       "id": "q3",
       "question_zh": "《二泉映月》最常與哪位音樂家相連？",
       "difficulty": "easy",
       "options": [
-        {"text_zh": "呂文成", "text_en": "Lui Man Shing"},
-        {"text_zh": "華彥鈞（阿炳）", "text_en": "Abing"},
-        {"text_zh": "彭修文", "text_en": "Peng Xiuwen"},
-        {"text_zh": "趙季平", "text_en": "Zhao Jiping"}
+        {
+          "text_zh": "呂文成",
+          "text_en": "Lui Man Shing"
+        },
+        {
+          "text_zh": "華彥鈞（阿炳）",
+          "text_en": "Abing"
+        },
+        {
+          "text_zh": "彭修文",
+          "text_en": "Peng Xiuwen"
+        },
+        {
+          "text_zh": "趙季平",
+          "text_en": "Zhao Jiping"
+        }
       ],
       "correct_index": 1,
       "explanation_zh": "《二泉映月》由華彥鈞所傳，是二胡經典曲目。",
-      "tags": ["pieces", "musicians"]
+      "tags": [
+        "pieces",
+        "musicians"
+      ]
     },
     {
       "id": "q4",
       "question_zh": "揚琴在現代國樂團中通常歸入哪個聲部？",
       "difficulty": "medium",
       "options": [
-        {"text_zh": "吹管", "text_en": "Wind"},
-        {"text_zh": "彈撥", "text_en": "Plucked Strings"},
-        {"text_zh": "拉弦", "text_en": "Bowed Strings"},
-        {"text_zh": "人聲", "text_en": "Voice"}
+        {
+          "text_zh": "吹管",
+          "text_en": "Wind"
+        },
+        {
+          "text_zh": "彈撥",
+          "text_en": "Plucked Strings"
+        },
+        {
+          "text_zh": "拉弦",
+          "text_en": "Bowed Strings"
+        },
+        {
+          "text_zh": "人聲",
+          "text_en": "Voice"
+        }
       ],
       "correct_index": 1,
       "explanation_zh": "揚琴雖以琴竹敲擊琴弦，但在國樂團聲部分類中常歸入彈撥聲部。",
-      "tags": ["sections", "yangqin"]
+      "tags": [
+        "sections",
+        "yangqin"
+      ]
     },
     {
       "id": "q5",
       "question_zh": "《十面埋伏》主要展現哪件樂器的武曲敘事能力？",
       "difficulty": "medium",
       "options": [
-        {"text_zh": "琵琶", "text_en": "Pipa"},
-        {"text_zh": "古箏", "text_en": "Guzheng"},
-        {"text_zh": "二胡", "text_en": "Erhu"},
-        {"text_zh": "嗩吶", "text_en": "Suona"}
+        {
+          "text_zh": "琵琶",
+          "text_en": "Pipa"
+        },
+        {
+          "text_zh": "古箏",
+          "text_en": "Guzheng"
+        },
+        {
+          "text_zh": "二胡",
+          "text_en": "Erhu"
+        },
+        {
+          "text_zh": "嗩吶",
+          "text_en": "Suona"
+        }
       ],
       "correct_index": 0,
       "explanation_zh": "《十面埋伏》是琵琶武曲代表，常描繪戰場場面。",
-      "tags": ["pipa", "pieces"]
+      "tags": [
+        "pipa",
+        "pieces"
+      ]
     },
     {
       "id": "q6",
       "question_zh": "哪個聲部最直接負責節奏、場面轉折與戲劇張力？",
       "difficulty": "easy",
       "options": [
-        {"text_zh": "吹管", "text_en": "Wind"},
-        {"text_zh": "彈撥", "text_en": "Plucked"},
-        {"text_zh": "打擊", "text_en": "Percussion"},
-        {"text_zh": "拉弦", "text_en": "Bowed"}
+        {
+          "text_zh": "吹管",
+          "text_en": "Wind"
+        },
+        {
+          "text_zh": "彈撥",
+          "text_en": "Plucked"
+        },
+        {
+          "text_zh": "打擊",
+          "text_en": "Percussion"
+        },
+        {
+          "text_zh": "拉弦",
+          "text_en": "Bowed"
+        }
       ],
       "correct_index": 2,
       "explanation_zh": "打擊聲部掌握節奏、場面與戲劇效果，是樂團時間感的重要來源。",
-      "tags": ["percussion", "sections"]
+      "tags": [
+        "percussion",
+        "sections"
+      ]
     },
     {
       "id": "q7",
       "question_zh": "革胡在現代國樂團中的主要作用是什麼？",
       "difficulty": "hard",
       "options": [
-        {"text_zh": "模仿鳥鳴", "text_en": "Bird calls"},
-        {"text_zh": "補足低音厚度", "text_en": "Low-register support"},
-        {"text_zh": "演奏高音裝飾", "text_en": "High ornaments"},
-        {"text_zh": "提供笛膜共振", "text_en": "Membrane resonance"}
+        {
+          "text_zh": "模仿鳥鳴",
+          "text_en": "Bird calls"
+        },
+        {
+          "text_zh": "補足低音厚度",
+          "text_en": "Low-register support"
+        },
+        {
+          "text_zh": "演奏高音裝飾",
+          "text_en": "High ornaments"
+        },
+        {
+          "text_zh": "提供笛膜共振",
+          "text_en": "Membrane resonance"
+        }
       ],
       "correct_index": 1,
       "explanation_zh": "革胡是低音拉弦改良樂器，主要讓現代國樂團有更穩固的低音層。",
-      "tags": ["bowed", "modern_orchestra"]
+      "tags": [
+        "bowed",
+        "modern_orchestra"
+      ]
     }
   ],
   "export_notes": {
     "source": "Original local educational dataset generated for GuoYueZhiPu iOS",
-    "license": "Original app content. No third-party media is bundled."
+    "license": "Original educational text and app artwork are locally generated pending review. Approved third-party audio credits are disclosed in the app and tracked in Design/Source/VerifiedAudio/manifests/verified_audio_sources.json."
   }
 }

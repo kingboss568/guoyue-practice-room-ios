@@ -59,8 +59,6 @@ struct Instrument: Codable, Identifiable, Hashable {
     let descriptionFullZh: String
     let rangeZh: String
     let rangeNotation: String
-    let pitchFrequencyHz: Double
-    let audioWaveformType: String
     let playingTechniqueZh: String
     let tuningZh: String
     let famousPiecesZh: String
@@ -188,49 +186,49 @@ extension String {
 }
 
 enum PremiumFeature: String, Identifiable, CaseIterable {
-    case expertDrills
-    case concertMode
-    case studyPlan
-    case audioPack
+    case instrumentDrills
+    case foundationDrills
+    case realAudioDrills
+    case purchaseRestore
 
     var id: String { rawValue }
 
     var title: String {
         switch self {
-        case .expertDrills:
-            return "專家級聽辨題庫"
-        case .concertMode:
-            return "舞台編制與聲部分析"
-        case .studyPlan:
-            return "個人化練習路線"
-        case .audioPack:
-            return "23 件樂器離線聲音包"
+        case .instrumentDrills:
+            return "23 種樂器完整題庫"
+        case .foundationDrills:
+            return "230 題基礎知識"
+        case .realAudioDrills:
+            return "核准實器聽辨題"
+        case .purchaseRestore:
+            return "一次購買與恢復"
         }
     }
 
     var subtitle: String {
         switch self {
-        case .expertDrills:
-            return "從音色、技法、代表曲目三層次建立真正會聽的能力。"
-        case .concertMode:
-            return "用樂團座位、聲部功能與曲目情緒理解演出現場。"
-        case .studyPlan:
-            return "依收藏、課程與測驗結果整理下一步，不只是看資料。"
-        case .audioPack:
-            return "每件樂器都有本機生成聲音樣本，無網路也能練。"
+        case .instrumentDrills:
+            return "每件樂器由免費 5 題升級為完整 50 題，含作答、解析與重練。"
+        case .foundationDrills:
+            return "解鎖四大聲部、形制、發聲、音域與編制的完整基礎題庫。"
+        case .realAudioDrills:
+            return "解鎖所有已取得商用授權且通過來源稽核的實器聽辨題。"
+        case .purchaseRestore:
+            return "非消耗性一次購買；更換裝置或重新安裝後可恢復購買。"
         }
     }
 
     var systemImage: String {
         switch self {
-        case .expertDrills:
+        case .instrumentDrills:
+            return "list.number"
+        case .foundationDrills:
+            return "books.vertical"
+        case .realAudioDrills:
             return "ear.badge.waveform"
-        case .concertMode:
-            return "music.note.house"
-        case .studyPlan:
-            return "map"
-        case .audioPack:
-            return "waveform"
+        case .purchaseRestore:
+            return "arrow.clockwise.circle"
         }
     }
 }

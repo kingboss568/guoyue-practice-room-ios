@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "bundle_id": "com.yuhsiangjiang.GuoYueZhiPu",
+  "product_id": "com.yuhsiangjiang.GuoYueZhiPu.pro",
+  "status": "pending_app_store_connect_attachment",
+  "review_requirements": {
+    "app_store_connect_product_created": true,
+    "price_tier_confirmed": true,
+    "zh_hant_localization_confirmed": true,
+    "iap_attached_to_app_version": false,
+    "review_screenshot_current_after_redesign": true,
+    "paywall_shows_purchase_button": true,
+    "paywall_shows_restore_button": true,
+    "paywall_shows_product_id": true,
+    "paywall_handles_missing_product": true,
+    "paywall_does_not_claim_unfinished_audio_pack": true,
+    "full_offline_audio_pack_claim_waits_for_audio_gate": true
+  },
+  "expected_paywall_text": {
+    "display_name": "國樂團練習室 Pro",
+    "description": "解鎖23種樂器各50題、230題基礎知識與已授權實器聽辨；一次購買並支援恢復。",
+    "purchase_label": "一次購買解鎖 Pro",
+    "restore_label": "恢復購買",
+    "missing_product_state": "尚未連到 App Store Connect 商品"
+  },
+  "review_screenshot_plan": {
+    "locale": "zh-Hant",
+    "iphone69_roles": [
+      "pro",
+      "payment"
+    ],
+    "ipad13_roles": [
+      "pro",
+      "payment"
+    ],
+    "source_manifest": "fastlane/screenshots/zh-Hant/screenshot_manifest.json",
+    "current_status_required": "current_after_redesign"
+  },
+  "app_store_connect_manual_steps": [
+    "Confirm non-consumable IAP com.yuhsiangjiang.GuoYueZhiPu.pro remains APPROVED.",
+    "The correct zh-Hant localization is PREPARE_FOR_SUBMISSION; attach it with the IAP to app version 1.1 only after strict asset gates pass.",
+    "Replace the obsolete approved-product review note on the editable 1.1 review surface.",
+    "Use the current iPhone 6.9 and iPad 13 Pro/payment screenshots captured after verified-media checks.",
+    "Upload the current Pro/payment review screenshot to the 1.1 review surface.",
+    "Attach the IAP to the editable app version before final review submission."
+  ],
+  "notes": "ASC API verified the exact app, APPROVED non-consumable IAP, price schedule, and matching conservative zh-Hant localization on 2026-08-04. Current Simulator screenshots show the live $5.99 product connection, purchase and restore controls, 23 instruments x 50 questions, 230 foundation questions, and 48 questions derived only from 16 approved real-instrument recordings. Seven rarer instruments remain external-reference-only and are not bundled or quiz-eligible. Before final submission, attach the IAP and editable localization to app version 1.1 and upload the current review screenshot."
+}

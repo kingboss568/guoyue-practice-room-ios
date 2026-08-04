@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "draft_only": true,
+  "instrument_id": "gaohu",
+  "instrument_name_zh": "高胡",
+  "reviewed_at": "TO_BE_FILLED_YYYY-MM-DD",
+  "candidate_path": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+  "candidate_sha256": "ccaeae0168d37dfd9733ffb3af37a2732513834f828623f05f31170db27cf7e8",
+  "candidate_size": "900x900",
+  "reviewer": {
+    "name": "TO_BE_FILLED",
+    "role": "TO_BE_FILLED Chinese orchestra performer / teacher / instrument specialist",
+    "organization": "TO_BE_FILLED"
+  },
+  "reference_urls_reviewed": [
+    "https://wesomeka.wesleyan.edu/vim2/items/show/71",
+    "https://www.easonmusicschool.com/chinese-orchestra-instruments/huqin-chinese-string-instruments-bowed/gaohu/"
+  ],
+  "source_features_to_verify": [
+    "high-pitched huqin",
+    "developed from erhu",
+    "used in Cantonese music and opera",
+    "traditional Guangdong type may be held between knees",
+    "two-stringed fiddle",
+    "higher pitch than erhu",
+    "also called yuehu"
+  ],
+  "review_focus": "Confirm smaller high-register huqin visual difference from erhu.",
+  "approved_must_show": [
+    "small high-register huqin form",
+    "small resonator, visibly smaller than erhu",
+    "two strings",
+    "bow hair between strings",
+    "slender neck and compact proportions"
+  ],
+  "rejected_must_not_show": [
+    "same size as erhu without differentiation",
+    "larger zhonghu body",
+    "banhu wooden-board body",
+    "gehu bass silhouette"
+  ],
+  "relative_scale_rules_verified": [
+    "smallest body among erhu, gaohu, and zhonghu",
+    "brighter, lighter, higher-register visual character",
+    "may imply held-between-knees usage without adding a performer"
+  ],
+  "professional_review_questions": [
+    "Is it clearly smaller and higher-register than erhu?",
+    "Could it be mistaken for erhu if the label is removed?",
+    "Are the huqin features still correct?"
+  ],
+  "confirmations": {
+    "professional_reviewer_confirmed": true,
+    "matches_morphology_spec": true,
+    "no_wrong_instrument_substitution": true,
+    "no_fantasy_or_generated_detail_errors": true,
+    "no_visible_internal_text_labels": true,
+    "approved_for_app_store_submission": true
+  },
+  "notes": "TO_BE_FILLED reviewer comments; keep this draft blocked until every TO_BE_FILLED value is replaced and draft_only is removed or set false in the final approval copy."
+}

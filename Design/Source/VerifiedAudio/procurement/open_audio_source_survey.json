@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "status": "survey_current",
+  "scope": "Open web and public-license audio survey for every instrument that is still missing an approved real-instrument recording.",
+  "policy_summary": "Public audio may become a candidate only when the exact original file, performer/source, commercial redistribution license, and real-instrument identity can be audited. Candidate files are not app assets. Suno, AI music output, VST/sample-library playback, YouTube/CD/streaming extraction, and generic royalty-free background music are not valid core instrument sources.",
+  "latest_search_round": {
+    "date": "2026-08-04",
+    "method": "Wikimedia Commons API file namespace search plus web search for Freesound/open web audio candidates.",
+    "commons_api_terms": [
+      "yangqin sound",
+      "xiao flute sound",
+      "sanxian sound",
+      "liuqin sound",
+      "guanzi sound",
+      "konghou sound",
+      "gaohu sound",
+      "zhonghu sound",
+      "gehu sound",
+      "bianzhong sound",
+      "muyu sound",
+      "paigu sound"
+    ],
+    "commons_direct_file_checks": [
+      "File:Yangqin.ogg",
+      "File:Xiao.ogg",
+      "File:Sanxian.ogg",
+      "File:Liuqin.ogg",
+      "File:Guanzi.ogg",
+      "File:Konghou.ogg",
+      "File:Gaohu.ogg",
+      "File:Zhonghu.ogg",
+      "File:Gehu.ogg",
+      "File:Bianzhong.ogg",
+      "File:Muyu.ogg",
+      "File:Paigu.ogg"
+    ],
+    "new_candidate_count": 0,
+    "eligible_new_approved_source_count": 0,
+    "result_summary": "A commercially reusable real gaohu solo was approved from Wikimedia Commons. No additional clean, commercially redistributable, single-instrument source was approved for the seven remaining gaps. ChMusic overlaps only already-approved instruments; CCMusic CTIS is CC BY-NC-ND 4.0 and cannot be adapted or shipped in a paid app. Exact open-web searches still resolve to mixed performances, VST/sample libraries, stores, or non-redistributable reference media.",
+    "decision": "Keep commission_required instruments in real performer procurement; do not relax policy to use YouTube, VST, generic royalty-free loops, or mixed ensemble recordings."
+  },
+  "open_instrument_ids": [
+    "guanzi",
+    "konghou",
+    "zhonghu",
+    "gehu",
+    "bianzhong",
+    "tanggu",
+    "paigu"
+  ],
+  "banned_source_categories": [
+    "Suno/Udio/generative music output",
+    "AI-generated instrument tone",
+    "VST or sample library playback",
+    "YouTube/CD/streaming extraction",
+    "Pixabay/generic royalty-free background music without verifiable instrument stem",
+    "unknown performer or unknown license",
+    "background music with unclear composition rights",
+    "environmental noise that obscures the instrument"
+  ],
+  "evaluated_source_families": [
+    {
+      "name": "Wikimedia Commons instrument audio",
+      "urls": [
+        "https://commons.wikimedia.org/wiki/File:Pipa_-_sound.ogg",
+        "https://commons.wikimedia.org/wiki/File:Suona.ogg",
+        "https://commons.wikimedia.org/wiki/File:Zhongruan.ogg",
+        "https://commons.wikimedia.org/wiki/File:Banhu.ogg"
+      ],
+      "core_audio_decision": "candidate_only",
+      "reason": "Some files appear to be real-instrument demonstrations with named authors and CC BY-SA 4.0, but share-alike/attribution treatment and professional listening review must be resolved before any app bundle use."
+    },
+    {
+      "name": "Freesound single-instrument recordings",
+      "urls": [
+        "https://freesound.org/people/nanliu_music/sounds/847157/",
+        "https://freesound.org/people/Lenguaverde/sounds/423496/",
+        "https://freesound.org/people/sazanami12/sounds/856549/"
+      ],
+      "core_audio_decision": "candidate_only",
+      "reason": "Some pages describe clean or real recordings and compatible licenses, but original download, local hash capture, noise/instrument-fit review, and professional listening review are still required."
+    },
+    {
+      "name": "QMUL Beijing Opera percussion dataset via Freesound",
+      "urls": [
+        "https://freesound.org/people/ajaysm/sounds/222237/",
+        "https://freesound.org/people/ajaysm/sounds/222274/",
+        "https://compmusic.upf.edu/bo-perc-dataset"
+      ],
+      "core_audio_decision": "candidate_only",
+      "reason": "The dataset has useful studio one-shots for Daluo and Naobo, but app attribution, dataset citation, and fit against generic luo/bo entries must be reviewed before bundling."
+    },
+    {
+      "name": "YouTube demos, lessons, and performances",
+      "urls": [
+        "https://www.youtube.com/watch?v=_oMJ9LVrIVA",
+        "https://www.youtube.com/watch?v=sZZ_QxWcDf0",
+        "https://www.youtube.com/watch?v=7dkw94947S8"
+      ],
+      "core_audio_decision": "not_approved",
+      "reason": "YouTube audio cannot be ripped or redistributed in the app without direct written license from the rightsholder and performer. These links are reference-only."
+    },
+    {
+      "name": "VST/sample-library product demos",
+      "urls": [
+        "https://www.youtube.com/watch?v=ARQZO5odmdk",
+        "https://www.youtube.com/watch?v=01z9i2DdzUQ",
+        "https://www.youtube.com/watch?v=gPETK2Cf51c"
+      ],
+      "core_audio_decision": "not_approved",
+      "reason": "Plugin demos and sample libraries are not verified real-instrument performances for this app. They also create redistribution and authenticity risk."
+    },
+    {
+      "name": "Pixabay/generic royalty-free music and SFX search results",
+      "urls": [
+        "https://pixabay.com/music/search/yangqin/",
+        "https://pixabay.com/sound-effects/search/guzheng/"
+      ],
+      "core_audio_decision": "not_approved",
+      "reason": "Search results mix background music, community uploads, and possible synthesized or derivative tracks. They are not acceptable core sources unless a specific original real-instrument stem is separately audited."
+    },
+    {
+      "name": "Suno/Udio/generative music APIs",
+      "urls": [],
+      "core_audio_decision": "not_approved",
+      "reason": "Generative music output may be used only for non-core mockups or marketing ambience. It cannot be sold as a professional guoyue instrument training tone."
+    }
+  ],
+  "instrument_decisions": [
+    {
+      "instrument_id": "guanzi",
+      "name_zh": "管子",
+      "decision": "commission_required",
+      "candidate_urls": [],
+      "rationale": "No reliable open single-instrument guanzi recording with commercial redistribution evidence is currently approved.",
+      "next_action": "Commission double-reed sustained tone and short phrase takes."
+    },
+    {
+      "instrument_id": "konghou",
+      "name_zh": "箜篌",
+      "decision": "commission_required",
+      "candidate_urls": [],
+      "rationale": "No approved open konghou audio source has been identified.",
+      "next_action": "Commission pluck, arpeggio, and short phrase takes."
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "decision": "commission_required",
+      "candidate_urls": [],
+      "rationale": "No approved open zhonghu source has been identified; substituting erhu would fail professional review.",
+      "next_action": "Commission lower sustained tone and lyrical phrase takes."
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "decision": "commission_required",
+      "candidate_urls": [],
+      "rationale": "No approved open gehu source has been identified; substituting cello/bass or synthesized low strings is not acceptable.",
+      "next_action": "Commission low bowed sustain and bass gesture takes."
+    },
+    {
+      "instrument_id": "bianzhong",
+      "name_zh": "編鐘",
+      "decision": "commission_required",
+      "candidate_urls": [],
+      "rationale": "Museum/performance references are not clean redistributable single-bell stems. Rights and instrument identity are too risky.",
+      "next_action": "Commission or obtain a clearly licensed single bell strike with full decay."
+    },
+    {
+      "instrument_id": "tanggu",
+      "name_zh": "堂鼓",
+      "decision": "candidate_needs_review",
+      "candidate_urls": [
+        "https://freesound.org/people/sazanami12/sounds/856549/"
+      ],
+      "rationale": "A CC0 Taipei-recorded Chinese Bass Drum/Dagu one-shot candidate exists, but app needs multiple takes and must confirm fit against tanggu.",
+      "next_action": "Download original, audit, and supplement with commissioned center/rim/roll takes."
+    },
+    {
+      "instrument_id": "paigu",
+      "name_zh": "排鼓",
+      "decision": "commission_required",
+      "candidate_urls": [],
+      "rationale": "Open results tend to be mixed performances or generic drum content; app needs isolated drum-pitch takes.",
+      "next_action": "Commission three pitch levels and roll takes."
+    }
+  ]
+}

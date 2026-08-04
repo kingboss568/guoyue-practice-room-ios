@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "draft_only": true,
+  "instrument_id": "banhu",
+  "instrument_name_zh": "板胡",
+  "reviewed_at": "TO_BE_FILLED_YYYY-MM-DD",
+  "candidate_path": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+  "candidate_sha256": "c5a7e014334b0d9e2e3071b288455987846431caf4ec2652b1de2b747f308850",
+  "candidate_size": "900x900",
+  "reviewer": {
+    "name": "TO_BE_FILLED",
+    "role": "TO_BE_FILLED Chinese orchestra performer / teacher / instrument specialist",
+    "organization": "TO_BE_FILLED"
+  },
+  "reference_urls_reviewed": [
+    "https://chinesemusic.mtsu.edu/instrument-gallery/",
+    "https://www.britannica.com/art/banhu"
+  ],
+  "source_features_to_verify": [
+    "huqin family bowed instrument",
+    "two strings",
+    "bow hair passes between strings",
+    "soundbox often coconut shell",
+    "thin wooden board sound surface",
+    "vertical spike fiddle family",
+    "two strings and horizontal pegs",
+    "soundbox variations distinguish family members"
+  ],
+  "review_focus": "Confirm wooden board face/coconut or spherical soundbox and avoid generic erhu look.",
+  "approved_must_show": [
+    "huqin-family vertical bowed form",
+    "two strings",
+    "bow hair passing between strings",
+    "small resonator with wooden board sound surface",
+    "coconut shell or wood-shell body character"
+  ],
+  "rejected_must_not_show": [
+    "snakeskin-covered erhu resonator as the main identity",
+    "generic erhu with different label",
+    "western violin or lute body",
+    "large zhonghu or gehu body"
+  ],
+  "relative_scale_rules_verified": [
+    "resonator smaller and brighter than zhonghu",
+    "wooden soundboard identity must be visible",
+    "must visually differ from erhu/gaohu/zhonghu candidates"
+  ],
+  "professional_review_questions": [
+    "Is the wooden board/coconut-shell banhu identity clear?",
+    "Could this be mistaken for a standard erhu?",
+    "Are strings, pegs, neck, and bow plausible?"
+  ],
+  "confirmations": {
+    "professional_reviewer_confirmed": true,
+    "matches_morphology_spec": true,
+    "no_wrong_instrument_substitution": true,
+    "no_fantasy_or_generated_detail_errors": true,
+    "no_visible_internal_text_labels": true,
+    "approved_for_app_store_submission": true
+  },
+  "notes": "TO_BE_FILLED reviewer comments; keep this draft blocked until every TO_BE_FILLED value is replaced and draft_only is removed or set false in the final approval copy."
+}

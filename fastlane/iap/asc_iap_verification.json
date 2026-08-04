@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-03T18:31:07Z",
+  "bundle_id": "com.yuhsiangjiang.GuoYueZhiPu",
+  "product_id": "com.yuhsiangjiang.GuoYueZhiPu.pro",
+  "checks": {
+    "app_found": true,
+    "product_created": true,
+    "product_type_matches": true,
+    "zh_hant_localization_matches": true,
+    "price_schedule_present": true,
+    "iap_attached_to_app_version": false
+  },
+  "app": {
+    "id": "6772708738",
+    "name": "國樂團練習室",
+    "bundle_id": "com.yuhsiangjiang.GuoYueZhiPu"
+  },
+  "iap": {
+    "id": "6773302182",
+    "product_id": "com.yuhsiangjiang.GuoYueZhiPu.pro",
+    "reference_name": null,
+    "type": "NON_CONSUMABLE",
+    "state": "APPROVED"
+  },
+  "localizations": [
+    {
+      "id": "bc5a2e8e-cd5f-4427-8245-6d702a473590",
+      "locale": "zh-Hant",
+      "name": "國樂團練習室 Pro",
+      "description": "解鎖23種樂器各50題、230題基礎知識與已授權實器聽辨；一次購買並支援恢復。"
+    },
+    {
+      "id": "be2f71d4-74e3-4a23-9078-9c9b7cdd0837",
+      "locale": "zh-Hant",
+      "name": "國樂團練習室 Pro",
+      "description": "解鎖專家聽辨題庫、個人化練習路線、舞台編制分析與完整離線聲音包訓練提示。"
+    }
+  ],
+  "price_schedule": {
+    "id": "6773302182",
+    "type": "inAppPurchasePriceSchedules"
+  },
+  "app_store_versions_checked": [
+    {
+      "id": "5f90745b-366a-48ff-b577-28673b45974e",
+      "version_string": "1.0",
+      "app_store_state": "READY_FOR_SALE",
+      "platform": "IOS"
+    }
+  ],
+  "api_errors": [
+
+  ],
+  "manual_follow_up": [
+    "Confirm the IAP is attached to the current editable App Store version in the App Store Connect version page.",
+    "Upload the final Pro/payment review screenshot after verified audio and artwork gates pass."
+  ]
+}

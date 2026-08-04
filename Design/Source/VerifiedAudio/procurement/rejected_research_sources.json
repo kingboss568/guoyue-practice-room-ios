@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-04",
+  "policy": "A downloadable research dataset is not an App asset unless the recording, composition, performer, adaptation, commercial use, and redistribution rights are explicit and auditable.",
+  "sources": [
+    {
+      "name": "ChMusic: A Traditional Chinese Music Dataset for Evaluation of Instrument Recognition",
+      "paper_url": "https://arxiv.org/abs/2108.08470",
+      "repository_url": "https://github.com/HaoranWeiUTD/ChMusic",
+      "dataset_delivery": [
+        "Google Drive",
+        "Baidu Wangpan"
+      ],
+      "covered_instruments": [
+        "erhu",
+        "pipa",
+        "sanxian",
+        "dizi",
+        "suona",
+        "zhuiqin",
+        "zhongruan",
+        "liuqin",
+        "guzheng",
+        "yangqin",
+        "sheng"
+      ],
+      "decision": "research_link_only_not_approved_for_app_redistribution",
+      "reasons": [
+        "The dataset does not fill any of the app's eight remaining instrument-audio gaps.",
+        "The repository MIT license clearly covers repository software and documentation, while the 530 MB audio is delivered through external links.",
+        "The paper and README do not explicitly grant commercial app redistribution rights for the recordings, performances, and musical works."
+      ],
+      "next_action": "Do not download or bundle. Reconsider only after written rights evidence explicitly covers commercial app redistribution."
+    },
+    {
+      "name": "CCMusic Database — Chinese Traditional Instrument Sound Dataset (CTIS)",
+      "dataset_url": "https://huggingface.co/datasets/ccmusic-database/CTIS",
+      "application_url": "https://ccmusic-database.github.io/en/download.html",
+      "declared_license": "CC BY-NC-ND 4.0",
+      "decision": "research_link_only_not_approved_for_commercial_app",
+      "reasons": [
+        "The NonCommercial restriction is incompatible with a paid app and in-app purchases.",
+        "The NoDerivatives restriction is incompatible with trimming, normalizing, converting, or otherwise preparing listening clips for the app.",
+        "The database download page requires an application and separate authorization for complete files; public dataset visibility is not commercial redistribution permission."
+      ],
+      "next_action": "Do not download, edit, or bundle. Reconsider only if the rights holder provides separate written permission for commercial redistribution and audio adaptation."
+    }
+  ]
+}

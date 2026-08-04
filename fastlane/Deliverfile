@@ -5,7 +5,7 @@ team_id "7H7ZUG2WX8"
 metadata_path "./metadata"
 screenshots_path "./screenshots"
 
-app_version "1.0"
+app_version "1.1"
 copyright "Copyright © 2026 Yu Shiung Jiang"
 primary_category "EDUCATION"
 secondary_category "MUSIC"

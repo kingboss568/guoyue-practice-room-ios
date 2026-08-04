@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 import json
 import math
-import os
-import wave
+import shutil
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageOps
@@ -12,8 +11,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "GuoYueZhiPu" / "Resources" / "chinese_orchestra_data_export.json"
 ASSET_ROOT = ROOT / "GuoYueZhiPu" / "Assets.xcassets"
 AUDIO_ROOT = ROOT / "GuoYueZhiPu" / "Resources" / "Audio" / "Instruments"
-POSTER_SOURCE = ROOT / "Design" / "Source" / "guoyue-gptimage-poster.png"
-INSTRUMENT_SOURCE_ROOT = ROOT / "Design" / "Source" / "GeneratedInstruments"
+ICON_SOURCE = ROOT / "Design" / "Source" / "GPTImage" / "guoyue-app-icon-master.png"
+BANNER_SOURCE = ROOT / "Design" / "Source" / "GPTImage" / "guoyue-brand-banner-master.png"
+INSTRUMENT_SOURCE_ROOT = ROOT / "Design" / "Source" / "VerifiedPhotos" / "originals"
+VERIFIED_AUDIO_SOURCE_ROOT = ROOT / "Design" / "Source" / "VerifiedAudio" / "Instruments"
 RESAMPLE = getattr(Image, "Resampling", Image).LANCZOS
 
 PALETTE = {
@@ -301,16 +302,18 @@ def draw_app_icon(size):
 
 
 def poster_art(size):
-    source = Image.open(POSTER_SOURCE).convert("RGB")
+    if not ICON_SOURCE.exists():
+        raise FileNotFoundError(f"Missing required GPT Image icon master: {ICON_SOURCE}")
+    source = Image.open(ICON_SOURCE).convert("RGB")
     return ImageOps.fit(source, (size, size), method=RESAMPLE, centering=(0.5, 0.5))
 
 
 def instrument_source_art(instrument_id, size=900):
-    source = INSTRUMENT_SOURCE_ROOT / f"instrument_{instrument_id}.png"
+    source = INSTRUMENT_SOURCE_ROOT / f"{instrument_id}.jpg"
     if not source.exists():
         return None
     image = Image.open(source).convert("RGB")
-    return ImageOps.fit(image, (size, size), method=RESAMPLE, centering=(0.5, 0.5))
+    return ImageOps.pad(image, (size, size), method=RESAMPLE, color=(242, 238, 228))
 
 
 def write_app_icons():
@@ -319,7 +322,7 @@ def write_app_icons():
     images = []
     for idiom, point_size, scale, filename in ICON_IMAGES:
         pixels = int(float(point_size.split("x")[0]) * scale)
-        icon = poster_art(pixels) if POSTER_SOURCE.exists() else draw_app_icon(pixels)
+        icon = poster_art(pixels)
         icon.save(appicon / filename)
         entry = {
             "idiom": idiom,
@@ -333,50 +336,24 @@ def write_app_icons():
         f.write("\n")
 
 
-def waveform_value(kind, phase, idx):
-    if kind == "sawtooth":
-        normalized = phase / (2 * math.pi)
-        return 2.0 * (normalized - math.floor(normalized + 0.5))
-    if kind == "triangle":
-        normalized = phase / (2 * math.pi)
-        return 2.0 * abs(2.0 * (normalized - math.floor(normalized + 0.5))) - 1.0
-    if kind == "square":
-        return 1.0 if math.sin(phase) >= 0 else -1.0
-    if kind == "metallic":
-        return 0.56 * math.sin(phase) + 0.26 * math.sin(phase * 2.67) + 0.14 * math.sin(phase * 5.31)
-    if kind == "noise":
-        pseudo = math.sin(idx * 12.9898 + 78.233) * 43758.5453
-        return (pseudo - math.floor(pseudo)) * 2 - 1
-    return math.sin(phase)
-
-
 def write_audio(instrument):
     ensure_dir(AUDIO_ROOT)
-    sample_rate = 44100
-    duration = 2.15
-    frames = int(sample_rate * duration)
-    freq = float(instrument["pitch_frequency_hz"])
-    kind = instrument["audio_waveform_type"]
+    verified_source = VERIFIED_AUDIO_SOURCE_ROOT / f"{instrument['id']}.wav"
     path = AUDIO_ROOT / f"{instrument['id']}.wav"
 
-    with wave.open(str(path), "wb") as wav:
-        wav.setnchannels(1)
-        wav.setsampwidth(2)
-        wav.setframerate(sample_rate)
-        raw = bytearray()
-        for i in range(frames):
-            t = i / sample_rate
-            attack = min(t / 0.05, 1.0)
-            release = min((duration - t) / 0.45, 1.0)
-            pulse = 0.86 + 0.14 * math.sin(2 * math.pi * 5.3 * t)
-            envelope = max(0.0, min(attack, release)) * pulse
-            phase = 2 * math.pi * freq * t
-            value = waveform_value(kind, phase, i)
-            value += 0.18 * waveform_value(kind, phase * 2.01, i + 3)
-            value += 0.08 * math.sin(2 * math.pi * freq * 0.5 * t)
-            sample = int(max(-1, min(1, value * envelope * 0.36)) * 32767)
-            raw.extend(sample.to_bytes(2, "little", signed=True))
-        wav.writeframes(raw)
+    if verified_source.exists():
+        shutil.copy2(verified_source, path)
+        return True
+
+    if path.exists():
+        raise RuntimeError(
+            f"Unverified bundled audio exists for {instrument['id']}: {path}. "
+            "Remove it or provide an approved real-instrument master."
+        )
+    print(
+        f"Skipped audio for {instrument['id']}; no approved real-instrument master exists."
+    )
+    return False
 
 
 def main():
@@ -387,20 +364,34 @@ def main():
 
     brand_set = ASSET_ROOT / "brand_hero.imageset"
     ensure_dir(brand_set)
-    brand_art = poster_art(1800) if POSTER_SOURCE.exists() else draw_brand_art(1600)
+    if not BANNER_SOURCE.exists():
+        raise FileNotFoundError(f"Missing required GPT Image banner master: {BANNER_SOURCE}")
+    brand_art = Image.open(BANNER_SOURCE).convert("RGB")
     brand_art.save(brand_set / "brand_hero.png")
     write_asset_contents(brand_set, "brand_hero.png")
 
+    photo_count = 0
+    audio_count = 0
     for instrument in data["instruments"]:
         image_name = f"instrument_{instrument['id']}"
-        imageset = ASSET_ROOT / f"{image_name}.imageset"
-        ensure_dir(imageset)
-        art = instrument_source_art(instrument["id"]) or draw_instrument_image(instrument)
-        art.save(imageset / f"{image_name}.png")
-        write_asset_contents(imageset, f"{image_name}.png")
-        write_audio(instrument)
+        art = instrument_source_art(instrument["id"])
+        if art is None:
+            print(
+                f"Skipped photo for {instrument['id']}; no licensed exact-instrument source exists."
+            )
+        else:
+            imageset = ASSET_ROOT / f"{image_name}.imageset"
+            ensure_dir(imageset)
+            filename = f"{image_name}.jpg"
+            art.save(imageset / filename, quality=92, optimize=True)
+            write_asset_contents(imageset, filename)
+            photo_count += 1
+        audio_count += int(write_audio(instrument))
 
-    print(f"Generated {len(data['instruments'])} instrument images, audio samples, and app icons.")
+    print(
+        f"Prepared GPT Image branding, {photo_count} licensed real photos, "
+        f"and {audio_count} approved real-instrument audio files."
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "policy_note": "All bundled sources identify a real instrument, permit commercial reuse, preserve attribution and source hashes, and are never AI, VST, sample-library, MIDI, or streaming extractions.",
+  "entries": [
+    {
+      "instrument_id": "banhu",
+      "instrument_name_zh": "板胡",
+      "source_title": "Banhu.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Banhu.ogg",
+      "author": "Francesc Fort",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_note": "Real banhu sound published on Wikimedia Commons.",
+      "source_file": "Design/Source/VerifiedAudio/originals/commons/banhu.Banhu.ogg",
+      "source_sha256": "c90f2a98d673a9ea8c5cbe2f144ee52878480ded7a3ff22724c2712fa73d0f64",
+      "selected_excerpt": {
+        "start_seconds": 2.0,
+        "duration_seconds": 3.0
+      },
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/banhu.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/banhu.wav",
+      "master_wav_sha256": "37730a581d8adac3d564027fb7750b57e33dc3ecc413d511049b19427b05e57d",
+      "duration_seconds": 3.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected a short representative excerpt",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied short start and end fades"
+      ],
+      "status": "approved_source_license_format",
+      "source_identity_review": "source_page_instrument_label_verified"
+    },
+    {
+      "instrument_id": "gaohu",
+      "instrument_name_zh": "高胡",
+      "source_title": "連環扣（高胡獨奏）",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E8%BF%9E%E7%8E%AF%E6%89%A3.ogg",
+      "author": "張沛堅 (Zhang Peijian)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_note": "Real gaohu solo performance published on Wikimedia Commons with a VRT permission ticket.",
+      "source_file": "Design/Source/VerifiedAudio/originals/commons/gaohu.Lianhuankou.ogg",
+      "source_sha256": "7d039d8a9b720237e900ba1c6c244ba307eb0af5ae78b9e9b78d795410010a0d",
+      "selected_excerpt": {
+        "start_seconds": 12.0,
+        "duration_seconds": 5.0
+      },
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/gaohu.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/gaohu.wav",
+      "master_wav_sha256": "0f202689dddfe0163a871cb7dc0fb66a8cee37d216a5891be45183ce43fea32e",
+      "duration_seconds": 5.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected a short representative excerpt",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied short start and end fades"
+      ],
+      "status": "approved_source_license_format",
+      "source_identity_review": "source_page_instrument_label_verified"
+    },
+    {
+      "instrument_id": "luo",
+      "instrument_name_zh": "鑼",
+      "source_title": "Chinese Gong finish session",
+      "source_url": "https://commons.wikimedia.org/wiki/File:240382_the-very-real-horst_chinese-gong-finish-session-2014-06-10-29-143.wav",
+      "author": "the_very_Real_Horst",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_note": "Recording of a large Chinese gong, mirrored from Freesound to Wikimedia Commons.",
+      "source_file": "Design/Source/VerifiedAudio/originals/commons/luo.Chinese_Gong.wav",
+      "source_sha256": "1308853971d526f605669eb32bd7c9b6863ad3c1ebabc3104e62625d9a0fa39f",
+      "selected_excerpt": {
+        "start_seconds": 0.45,
+        "duration_seconds": 5.0
+      },
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/luo.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/luo.wav",
+      "master_wav_sha256": "809f2b3326b889f535bd10790173cb05bd86beab8a1274ef7c09c42388e7b190",
+      "duration_seconds": 5.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected a short representative excerpt",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied short start and end fades"
+      ],
+      "status": "approved_source_license_format",
+      "source_identity_review": "source_page_instrument_label_verified"
+    },
+    {
+      "instrument_id": "muyu",
+      "instrument_name_zh": "木魚",
+      "source_title": "Fischtrommel_Muyu.mp3",
+      "source_url": "https://freesound.org/people/the_very_Real_Horst/sounds/205999/",
+      "author": "the_very_Real_Horst",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_note": "Real Chinese wooden fish recording; high-quality Freesound preview indexed by Openverse.",
+      "source_file": "Design/Source/VerifiedAudio/originals/freesound/muyu.205999.hq-preview.mp3",
+      "source_sha256": "d5e36aa80c09f4beb96ff32294cd61b0907b3c269090cf842f4646528735aeb2",
+      "selected_excerpt": {
+        "start_seconds": 3.8,
+        "duration_seconds": 5.0
+      },
+      "master_wav_path": "Design/Source/VerifiedAudio/Instruments/muyu.wav",
+      "bundle_wav_path": "GuoYueZhiPu/Resources/Audio/Instruments/muyu.wav",
+      "master_wav_sha256": "e5998c4e50bdb043209b10ae5d6cb901711d765a5cab1e04d01eef781ac18206",
+      "duration_seconds": 5.0,
+      "format": {
+        "codec": "pcm_s16le",
+        "sample_rate_hz": 44100,
+        "channels": 1,
+        "bit_depth": 16
+      },
+      "derivative_actions": [
+        "selected a short representative excerpt",
+        "converted to mono 44100 Hz 16-bit PCM WAV",
+        "normalized to -18 LUFS / -1.5 dBTP target",
+        "applied short start and end fades"
+      ],
+      "status": "approved_source_license_format",
+      "source_identity_review": "source_page_instrument_label_verified"
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "source_record": "https://zenodo.org/records/8012071",
+  "source_archive": "https://zenodo.org/records/8012071/files/FolkMusic.zip?download=1",
+  "source_archive_md5": "2cc1146dbf48dd014a0d698dd743b71d",
+  "license": "CC BY 4.0",
+  "samples": [
+    {
+      "instrument_id": "bo",
+      "dataset_folder": "ba",
+      "archive_member": "ba/audio_1.mp3",
+      "compressed_size": 503878,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/bo/audio_1.mp3"
+    },
+    {
+      "instrument_id": "bo",
+      "dataset_folder": "ba",
+      "archive_member": "ba/audio_245.mp3",
+      "compressed_size": 494630,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/bo/audio_245.mp3"
+    },
+    {
+      "instrument_id": "bo",
+      "dataset_folder": "ba",
+      "archive_member": "ba/audio_390.mp3",
+      "compressed_size": 507345,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/bo/audio_390.mp3"
+    },
+    {
+      "instrument_id": "bo",
+      "dataset_folder": "ba",
+      "archive_member": "ba/audio_535.mp3",
+      "compressed_size": 487713,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/bo/audio_535.mp3"
+    },
+    {
+      "instrument_id": "bo",
+      "dataset_folder": "ba",
+      "archive_member": "ba/audio_99.mp3",
+      "compressed_size": 491614,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/bo/audio_99.mp3"
+    },
+    {
+      "instrument_id": "xiao",
+      "dataset_folder": "dongxiao",
+      "archive_member": "dongxiao/audio_1.mp3",
+      "compressed_size": 326898,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/xiao/audio_1.mp3"
+    },
+    {
+      "instrument_id": "xiao",
+      "dataset_folder": "dongxiao",
+      "archive_member": "dongxiao/audio_300.mp3",
+      "compressed_size": 497711,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/xiao/audio_300.mp3"
+    },
+    {
+      "instrument_id": "xiao",
+      "dataset_folder": "dongxiao",
+      "archive_member": "dongxiao/audio_533.mp3",
+      "compressed_size": 500500,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/xiao/audio_533.mp3"
+    },
+    {
+      "instrument_id": "xiao",
+      "dataset_folder": "dongxiao",
+      "archive_member": "dongxiao/audio_766.mp3",
+      "compressed_size": 471201,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/xiao/audio_766.mp3"
+    },
+    {
+      "instrument_id": "xiao",
+      "dataset_folder": "dongxiao",
+      "archive_member": "dongxiao/audio_999.mp3",
+      "compressed_size": 443155,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/xiao/audio_999.mp3"
+    },
+    {
+      "instrument_id": "erhu",
+      "dataset_folder": "erhu",
+      "archive_member": "erhu/audio_1.mp3",
+      "compressed_size": 514367,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/erhu/audio_1.mp3"
+    },
+    {
+      "instrument_id": "erhu",
+      "dataset_folder": "erhu",
+      "archive_member": "erhu/audio_142.mp3",
+      "compressed_size": 442570,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/erhu/audio_142.mp3"
+    },
+    {
+      "instrument_id": "erhu",
+      "dataset_folder": "erhu",
+      "archive_member": "erhu/audio_186.mp3",
+      "compressed_size": 517079,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/erhu/audio_186.mp3"
+    },
+    {
+      "instrument_id": "erhu",
+      "dataset_folder": "erhu",
+      "archive_member": "erhu/audio_55.mp3",
+      "compressed_size": 517113,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/erhu/audio_55.mp3"
+    },
+    {
+      "instrument_id": "erhu",
+      "dataset_folder": "erhu",
+      "archive_member": "erhu/audio_99.mp3",
+      "compressed_size": 514248,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/erhu/audio_99.mp3"
+    },
+    {
+      "instrument_id": "guzheng",
+      "dataset_folder": "guzheng",
+      "archive_member": "guzheng/audio_1.mp3",
+      "compressed_size": 477438,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/guzheng/audio_1.mp3"
+    },
+    {
+      "instrument_id": "guzheng",
+      "dataset_folder": "guzheng",
+      "archive_member": "guzheng/audio_137.mp3",
+      "compressed_size": 462378,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/guzheng/audio_137.mp3"
+    },
+    {
+      "instrument_id": "guzheng",
+      "dataset_folder": "guzheng",
+      "archive_member": "guzheng/audio_424.mp3",
+      "compressed_size": 454325,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/guzheng/audio_424.mp3"
+    },
+    {
+      "instrument_id": "guzheng",
+      "dataset_folder": "guzheng",
+      "archive_member": "guzheng/audio_711.mp3",
+      "compressed_size": 474791,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/guzheng/audio_711.mp3"
+    },
+    {
+      "instrument_id": "guzheng",
+      "dataset_folder": "guzheng",
+      "archive_member": "guzheng/audio_999.mp3",
+      "compressed_size": 453774,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/guzheng/audio_999.mp3"
+    },
+    {
+      "instrument_id": "liuqin",
+      "dataset_folder": "liuqin",
+      "archive_member": "liuqin/audio_1.mp3",
+      "compressed_size": 492746,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/liuqin/audio_1.mp3"
+    },
+    {
+      "instrument_id": "liuqin",
+      "dataset_folder": "liuqin",
+      "archive_member": "liuqin/audio_16.mp3",
+      "compressed_size": 347756,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/liuqin/audio_16.mp3"
+    },
+    {
+      "instrument_id": "liuqin",
+      "dataset_folder": "liuqin",
+      "archive_member": "liuqin/audio_43.mp3",
+      "compressed_size": 501901,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/liuqin/audio_43.mp3"
+    },
+    {
+      "instrument_id": "liuqin",
+      "dataset_folder": "liuqin",
+      "archive_member": "liuqin/audio_71.mp3",
+      "compressed_size": 481691,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/liuqin/audio_71.mp3"
+    },
+    {
+      "instrument_id": "liuqin",
+      "dataset_folder": "liuqin",
+      "archive_member": "liuqin/audio_99.mp3",
+      "compressed_size": 419636,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/liuqin/audio_99.mp3"
+    },
+    {
+      "instrument_id": "pipa",
+      "dataset_folder": "pipa",
+      "archive_member": "pipa/audio_1.mp3",
+      "compressed_size": 414152,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/pipa/audio_1.mp3"
+    },
+    {
+      "instrument_id": "pipa",
+      "dataset_folder": "pipa",
+      "archive_member": "pipa/audio_1314.mp3",
+      "compressed_size": 467028,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/pipa/audio_1314.mp3"
+    },
+    {
+      "instrument_id": "pipa",
+      "dataset_folder": "pipa",
+      "archive_member": "pipa/audio_366.mp3",
+      "compressed_size": 416884,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/pipa/audio_366.mp3"
+    },
+    {
+      "instrument_id": "pipa",
+      "dataset_folder": "pipa",
+      "archive_member": "pipa/audio_682.mp3",
+      "compressed_size": 478503,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/pipa/audio_682.mp3"
+    },
+    {
+      "instrument_id": "pipa",
+      "dataset_folder": "pipa",
+      "archive_member": "pipa/audio_999.mp3",
+      "compressed_size": 368059,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/pipa/audio_999.mp3"
+    },
+    {
+      "instrument_id": "sanxian",
+      "dataset_folder": "sanxian",
+      "archive_member": "sanxian/audio_1.mp3",
+      "compressed_size": 444650,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/sanxian/audio_1.mp3"
+    },
+    {
+      "instrument_id": "sanxian",
+      "dataset_folder": "sanxian",
+      "archive_member": "sanxian/audio_29.mp3",
+      "compressed_size": 482209,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/sanxian/audio_29.mp3"
+    },
+    {
+      "instrument_id": "sanxian",
+      "dataset_folder": "sanxian",
+      "archive_member": "sanxian/audio_48.mp3",
+      "compressed_size": 462219,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/sanxian/audio_48.mp3"
+    },
+    {
+      "instrument_id": "sanxian",
+      "dataset_folder": "sanxian",
+      "archive_member": "sanxian/audio_67.mp3",
+      "compressed_size": 475130,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/sanxian/audio_67.mp3"
+    },
+    {
+      "instrument_id": "sanxian",
+      "dataset_folder": "sanxian",
+      "archive_member": "sanxian/audio_9.mp3",
+      "compressed_size": 456217,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/sanxian/audio_9.mp3"
+    },
+    {
+      "instrument_id": "suona",
+      "dataset_folder": "suona",
+      "archive_member": "suona/audio_1.mp3",
+      "compressed_size": 469055,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/suona/audio_1.mp3"
+    },
+    {
+      "instrument_id": "suona",
+      "dataset_folder": "suona",
+      "archive_member": "suona/audio_208.mp3",
+      "compressed_size": 481768,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/suona/audio_208.mp3"
+    },
+    {
+      "instrument_id": "suona",
+      "dataset_folder": "suona",
+      "archive_member": "suona/audio_471.mp3",
+      "compressed_size": 468224,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/suona/audio_471.mp3"
+    },
+    {
+      "instrument_id": "suona",
+      "dataset_folder": "suona",
+      "archive_member": "suona/audio_735.mp3",
+      "compressed_size": 468587,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/suona/audio_735.mp3"
+    },
+    {
+      "instrument_id": "suona",
+      "dataset_folder": "suona",
+      "archive_member": "suona/audio_999.mp3",
+      "compressed_size": 406872,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/suona/audio_999.mp3"
+    },
+    {
+      "instrument_id": "yangqin",
+      "dataset_folder": "yangqin",
+      "archive_member": "yangqin/audio_1.mp3",
+      "compressed_size": 483873,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/yangqin/audio_1.mp3"
+    },
+    {
+      "instrument_id": "yangqin",
+      "dataset_folder": "yangqin",
+      "archive_member": "yangqin/audio_298.mp3",
+      "compressed_size": 447455,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/yangqin/audio_298.mp3"
+    },
+    {
+      "instrument_id": "yangqin",
+      "dataset_folder": "yangqin",
+      "archive_member": "yangqin/audio_497.mp3",
+      "compressed_size": 490951,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/yangqin/audio_497.mp3"
+    },
+    {
+      "instrument_id": "yangqin",
+      "dataset_folder": "yangqin",
+      "archive_member": "yangqin/audio_696.mp3",
+      "compressed_size": 468211,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/yangqin/audio_696.mp3"
+    },
+    {
+      "instrument_id": "yangqin",
+      "dataset_folder": "yangqin",
+      "archive_member": "yangqin/audio_99.mp3",
+      "compressed_size": 59492,
+      "uncompressed_size": 468208,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/yangqin/audio_99.mp3"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "dataset_folder": "zhongruan",
+      "archive_member": "zhongruan/audio_1.mp3",
+      "compressed_size": 457578,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/zhongruan/audio_1.mp3"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "dataset_folder": "zhongruan",
+      "archive_member": "zhongruan/audio_135.mp3",
+      "compressed_size": 478427,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/zhongruan/audio_135.mp3"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "dataset_folder": "zhongruan",
+      "archive_member": "zhongruan/audio_25.mp3",
+      "compressed_size": 497788,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/zhongruan/audio_25.mp3"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "dataset_folder": "zhongruan",
+      "archive_member": "zhongruan/audio_62.mp3",
+      "compressed_size": 505067,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/zhongruan/audio_62.mp3"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "dataset_folder": "zhongruan",
+      "archive_member": "zhongruan/audio_99.mp3",
+      "compressed_size": 461568,
+      "uncompressed_size": 529244,
+      "local_path": "Design/Source/VerifiedAudio/originals/zenodo8012071/zhongruan/audio_99.mp3"
+    }
+  ]
+}

@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "source": "Wikimedia Commons API and Openverse/Flickr source metadata",
+  "results": [
+    {
+      "instrument_id": "dizi",
+      "name_zh": "笛",
+      "commons_title": "File:Dizi (笛子 ) MET 89.4.61 slide.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dizi_(%E7%AC%9B%E5%AD%90_)_MET_89.4.61_slide.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Dizi_%28%E7%AC%9B%E5%AD%90_%29_MET_89.4.61_slide.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Dizi_%28%E7%AC%9B%E5%AD%90_%29_MET_89.4.61_slide.jpg",
+      "author": "",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+      "description": "Chinese; Dizi; Aerophone-Blow Hole-side-blown flute (transverse)",
+      "date": "late 19th century",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 1075,
+        "height": 520
+      },
+      "commons_sha1": "0e3075257c7d2b93abf0b81e2c3276368f005c90",
+      "download_sha256": "e5f96ac7137c96bd6b77dbebdb8701bc746eeec2447e48fbdec62911af2f8e85",
+      "app_asset_sha256": "bc5d271d47fc2ff89ae5da0574c43dd0203ad8f0a64cf7e697521102314bc3a4",
+      "local_original": "Design/Source/VerifiedPhotos/originals/dizi.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_dizi.imageset/instrument_dizi.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "commons_title": "File:Sheng MET DP216617.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sheng_MET_DP216617.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Sheng_MET_DP216617.jpg/1920px-Sheng_MET_DP216617.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sheng_MET_DP216617.jpg",
+      "author": "",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+      "description": "Chinese; Sheng; Aerophone-Free Reed-mouth organ",
+      "date": "circa 1850 date QS:P571,+1850-00-00T00:00:00Z/9,P1480,Q5727902 –89",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 3000,
+        "height": 4000
+      },
+      "commons_sha1": "549f3033a9f8195112a2f6a7b63a70b385d03d10",
+      "download_sha256": "a0c66c03a7d54c96333df2245856ea0ba27717bc98ea47b0f1f1896582877caa",
+      "app_asset_sha256": "e520e42397cd4cd5b787c34850228ef5bc9c30d79a07ca3fe2b63e7f0231d042",
+      "local_original": "Design/Source/VerifiedPhotos/originals/sheng.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_sheng.imageset/instrument_sheng.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "commons_title": "File:Musical instruments in the Yunnan Nationalities Museum - DSC03842.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Musical_instruments_in_the_Yunnan_Nationalities_Museum_-_DSC03842.JPG",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Musical_instruments_in_the_Yunnan_Nationalities_Museum_-_DSC03842.JPG/1920px-Musical_instruments_in_the_Yunnan_Nationalities_Museum_-_DSC03842.JPG",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Musical_instruments_in_the_Yunnan_Nationalities_Museum_-_DSC03842.JPG",
+      "author": "Daderot",
+      "credit": "Self-photographed",
+      "description": "Tibetan (and partial view of Miao) \"suona\" horns. Musical instruments in the Yunnan Nationalities Museum, Kunming, Yunnan, China.",
+      "date": "2011-08-12 23:16:16",
+      "license": "Public domain",
+      "license_url": "",
+      "copyrighted": "False",
+      "source_dimensions": {
+        "width": 3240,
+        "height": 4320
+      },
+      "commons_sha1": "af3d743ffbc203c49469c5cdca6eb52bda0608e1",
+      "download_sha256": "ad4c1bf5717f54c7eb0aa37de06d17c958b34932e5ead94f60379e0095d6859e",
+      "app_asset_sha256": "44179002dcb35a532b2b8936954dd31fc106a3cd1b51ed8eab38a0f25ef68d67",
+      "local_original": "Design/Source/VerifiedPhotos/originals/suona.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_suona.imageset/instrument_suona.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "xiao",
+      "name_zh": "簫",
+      "commons_title": "File:Xiao MET DP216557.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xiao_MET_DP216557.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Xiao_MET_DP216557.jpg/1920px-Xiao_MET_DP216557.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Xiao_MET_DP216557.jpg",
+      "author": "",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+      "description": "Chinese; Xiao; Aerophone-Blow Hole-end-blown flute (vertical)",
+      "date": "18th–19th century",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 3000,
+        "height": 4000
+      },
+      "commons_sha1": "e2002c7b0efbb4149bf114cc665ca040a1105181",
+      "download_sha256": "c7fc30c6f59951c48b1b8213eba58156f159f516824ee07737ca6e0fec4bac10",
+      "app_asset_sha256": "6081e54350072f0301c36221a0385fa2bbfbab8d80412512f3af028e184169ab",
+      "local_original": "Design/Source/VerifiedPhotos/originals/xiao.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_xiao.imageset/instrument_xiao.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "guanzi",
+      "name_zh": "管子",
+      "commons_title": "File:Guanzi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guanzi.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Guanzi.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Guanzi.jpg",
+      "author": "",
+      "credit": "",
+      "description": "",
+      "date": "2006-05-25 21:41:32",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 223,
+        "height": 791
+      },
+      "commons_sha1": "53bdc4341210bd78b1f7b3b8de2661be790dea04",
+      "download_sha256": "36e02fc23446a5656cbcf72b4a1f37c1371f849a7f03e02ce2cdb5938acb4530",
+      "app_asset_sha256": "ed31086648f44ccb41b60f38f592aad9d67fb28cb28696cc50024ab73b5c6ab3",
+      "local_original": "Design/Source/VerifiedPhotos/originals/guanzi.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_guanzi.imageset/instrument_guanzi.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "pipa",
+      "name_zh": "琵琶",
+      "commons_title": "File:Pipa MET DP216711.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pipa_MET_DP216711.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pipa_MET_DP216711.jpg/1920px-Pipa_MET_DP216711.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Pipa_MET_DP216711.jpg",
+      "author": "",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+      "description": "Pipa (琵琶) Chordophone-lute-plucked-fretted The spectacular back and sides of this unique Ming-dynasty instrument feature more than 110 hexagonal ivory plaques, with thinner bone plaques on the neck. Each plaque is carved with Taoist, Confucian, or Buddhist figures and symbols signifying prosperity, happiness, and good luck. These include images of various gods and immortals, such as Shou Lao, the Daoist god of longevity, who is shown with a prominent forehead on the single plaque at the very top. When the instrument is played, this expert workmanship remains unseen by the listener, as the back faces the player. The front is relatively plain but shows signs of use. The ivory string holder bears a scene featuring four figures and a bridge; an archaic cursive inscription; and, at the lip, a bat motif with leafy tendrils. Above the lower frets, two small insets depict a spider and a bird, and just before the rounded upper frets, a trapezoidal plaque portrays two men, one with a fish. The finial repeats the bat (good luck) motif.",
+      "date": "Late 16th – early 17th century",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 2513,
+        "height": 4000
+      },
+      "commons_sha1": "9f2f61023d7a5e36011dd747fb25f64114a51581",
+      "download_sha256": "e80de3639b9c9d0b5ff5f374ff5059061b42cb73cfb3e01306607412137ea4c3",
+      "app_asset_sha256": "9582c1ab9b197a57b573599a3eb2a9aa812c83b3f352132a3775556b25e92fb1",
+      "local_original": "Design/Source/VerifiedPhotos/originals/pipa.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_pipa.imageset/instrument_pipa.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "guzheng",
+      "name_zh": "古箏",
+      "commons_title": "File:2008 Summer Olympics Musical Instrument- Guzheng.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2008_Summer_Olympics_Musical_Instrument-_Guzheng.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/2008_Summer_Olympics_Musical_Instrument-_Guzheng.jpg/1920px-2008_Summer_Olympics_Musical_Instrument-_Guzheng.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/2008_Summer_Olympics_Musical_Instrument-_Guzheng.jpg",
+      "author": "Gary Todd",
+      "credit": "https://www.flickr.com/photos/101561334@N08/10219498395/",
+      "description": "Beijing 2008 Olympics, Kaifeng Museum, Kaifeng, Henan Province. Complete indexed photo collection at WorldHistoryPics.com.",
+      "date": "2010-11-12 10:29:39",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 4752,
+        "height": 3168
+      },
+      "commons_sha1": "b1ad8a53cf6023358b6e589917678e66955a5ec7",
+      "download_sha256": "722723255c87060fd39c965d66a2b0d2e3f99cda5982589ec9961a930181e294",
+      "app_asset_sha256": "79bd9a3d0ee83039fd7b82f4043fe75d35683a1eb074faf2a2a7278e81eb87ba",
+      "local_original": "Design/Source/VerifiedPhotos/originals/guzheng.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_guzheng.imageset/instrument_guzheng.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "yangqin",
+      "name_zh": "揚琴",
+      "commons_title": "File:Yangqin, MIM PHX.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yangqin,_MIM_PHX.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Yangqin%2C_MIM_PHX.jpg/1920px-Yangqin%2C_MIM_PHX.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Yangqin%2C_MIM_PHX.jpg",
+      "author": "jowcol61",
+      "credit": "DSCF0564",
+      "description": "Musical Instrument Museum in Phoenix",
+      "date": "2014-01-20 00:54",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 4608,
+        "height": 3456
+      },
+      "commons_sha1": "06b73e4e17fdd798c3b61ac9d16d5cacc746eada",
+      "download_sha256": "cdea8a1ce7d0a11d36f4e76cf940a9f302bb5ba4f351805e6703b0efbb75ff03",
+      "app_asset_sha256": "36000c03b197dd3bd580a90de1113250c8ee882042cd3557141c0969170b02dd",
+      "local_original": "Design/Source/VerifiedPhotos/originals/yangqin.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_yangqin.imageset/instrument_yangqin.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "liuqin",
+      "name_zh": "柳琴",
+      "commons_title": "File:Liuqin.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Liuqin.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Liuqin.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Liuqin.jpg",
+      "author": "Sun Tzu2",
+      "credit": "Transferred from en.wikipedia to Commons.",
+      "description": "Chinese instrument liuqin",
+      "date": "2007-10-12",
+      "license": "Public domain",
+      "license_url": "",
+      "copyrighted": "False",
+      "source_dimensions": {
+        "width": 480,
+        "height": 640
+      },
+      "commons_sha1": "403b02d431284fb1bf779efd3b80bd92d83cbdca",
+      "download_sha256": "bd38a8835814c7f1cc4b6794414594102020a2f85e67e34ae95f43bdc5355e45",
+      "app_asset_sha256": "2eba3c1ce3a5ec05dab1c857b26a1896332cbd934b5c8903fa61b55021d5f519",
+      "local_original": "Design/Source/VerifiedPhotos/originals/liuqin.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_liuqin.imageset/instrument_liuqin.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "zhongruan",
+      "name_zh": "中阮",
+      "commons_title": "File:Zhongruan.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zhongruan.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Zhongruan.jpg/1920px-Zhongruan.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Zhongruan.jpg",
+      "author": "Nariz",
+      "credit": "Own work",
+      "description": "​中阮的演奏",
+      "date": "2012-10-03 19:22:24",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 3072,
+        "height": 2304
+      },
+      "commons_sha1": "449ac5665e8cf73f1f9878d5fb102cb662147b0b",
+      "download_sha256": "cc3fc09ab4989f698c0b184f539ce07a1ac704210833415301af42325fbae35d",
+      "app_asset_sha256": "91c1b8f3f509ebf1260f5ccf661c927512e2db3f5600b07822a5712349095f08",
+      "local_original": "Design/Source/VerifiedPhotos/originals/zhongruan.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_zhongruan.imageset/instrument_zhongruan.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "sanxian",
+      "name_zh": "三弦",
+      "commons_title": "File:Phoenix-Musical Instrument Museum-Sanxian-China.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix-Musical_Instrument_Museum-Sanxian-China.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Phoenix-Musical_Instrument_Museum-Sanxian-China.jpg/1920px-Phoenix-Musical_Instrument_Museum-Sanxian-China.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Phoenix-Musical_Instrument_Museum-Sanxian-China.jpg",
+      "author": "Marine 69-71",
+      "credit": "Own work",
+      "description": "A Sanxian from China on exhibit in the Musical Instrument Museum in Phoenix.",
+      "date": "2017-02-16",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 2594,
+        "height": 5938
+      },
+      "commons_sha1": "df32e803263806ea4e1e1978beac9e15d0ff9f97",
+      "download_sha256": "07670e6ec315a18ed6996033868723a4e9a249449bee469d641648dd33b77b31",
+      "app_asset_sha256": "bbd63521275f83936f9e424ccc9029945cac06183ad68b66dd63a5e313935562",
+      "local_original": "Design/Source/VerifiedPhotos/originals/sanxian.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_sanxian.imageset/instrument_sanxian.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "konghou",
+      "name_zh": "箜篌",
+      "commons_title": "File:Vertical Konghou (10096201556).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Vertical_Konghou_(10096201556).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Vertical_Konghou_%2810096201556%29.jpg/1920px-Vertical_Konghou_%2810096201556%29.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Vertical_Konghou_%2810096201556%29.jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "credit": "Vertical Konghou",
+      "description": "Gansu Provincial Museum, Lanzhou. Complete indexed photo collection at WorldHistoryPics.com.",
+      "date": "2013-05-10 09:53",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 3456,
+        "height": 5184
+      },
+      "commons_sha1": "36af340d582e8ce1a5a5a12ce7a5eeb9558c5997",
+      "download_sha256": "95e8c048e1699950f662abb181151d9f9e262b9c4dfedf0bbf733623561da5c1",
+      "app_asset_sha256": "fd4527824b61b30c9360a7b33513e4a2918629701270f3f71014b0c610f05ee5",
+      "local_original": "Design/Source/VerifiedPhotos/originals/konghou.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_konghou.imageset/instrument_konghou.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "commons_title": "File:Erhu in the Mets.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Erhu_in_the_Mets.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Erhu_in_the_Mets.jpg/1920px-Erhu_in_the_Mets.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Erhu_in_the_Mets.jpg",
+      "author": "Unknown author Unknown author",
+      "credit": "Metropolitan Museum of Art",
+      "description": "Erhu in the Mets",
+      "date": "19 th century date QS:P,+1850-00-00T00:00:00Z/7",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 2766,
+        "height": 4000
+      },
+      "commons_sha1": "df28a493e5b56de0e2805934c37588418d7740ed",
+      "download_sha256": "dca78f1a603d8fc5b2080ec72bee885001c7b735a99b9de25f379a34ee42f26a",
+      "app_asset_sha256": "94a08d23ca16504384a8a54602b04b37c2a8e4d4400ec68a41c1d6d4198b8677",
+      "local_original": "Design/Source/VerifiedPhotos/originals/erhu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_erhu.imageset/instrument_erhu.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "commons_title": "File:Gaohu 1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gaohu_1.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Gaohu_1.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Gaohu_1.jpg",
+      "author": "LDHan at English Wikipedia",
+      "credit": "Transferred from en.wikipedia to Commons.",
+      "description": "Picture of gaohu .",
+      "date": "23 November 2006 (original upload date)",
+      "license": "Public domain",
+      "license_url": "",
+      "copyrighted": "False",
+      "source_dimensions": {
+        "width": 972,
+        "height": 1296
+      },
+      "commons_sha1": "175cb2daa2f9ba166cee9038f2ba0ca39500f080",
+      "download_sha256": "be9d9ab6de74f8becb0df0e16e5ff4530448f5bde451d69a208c0af2effee622",
+      "app_asset_sha256": "394454f5459e1ada3d09197f3acd6e3749977c10fb7525906ea741522a133800",
+      "local_original": "Design/Source/VerifiedPhotos/originals/gaohu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_gaohu.imageset/instrument_gaohu.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "commons_title": "File:中胡.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E8%83%A1.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%E4%B8%AD%E8%83%A1.jpg/1920px-%E4%B8%AD%E8%83%A1.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/%E4%B8%AD%E8%83%A1.jpg",
+      "author": "三猎",
+      "credit": "Own work",
+      "description": "​中胡。女子越剧时期开始使用。上海越剧院捐赠，嵊州越剧博物馆藏。",
+      "date": "2017-04-02 16:06:01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 5456,
+        "height": 3632
+      },
+      "commons_sha1": "7035a2935d7e0ef424ecaffa7cde1b085b4f213b",
+      "download_sha256": "b31b47b3877f4799e25983261602be17239ac2e9fc64bfe9e4c60189e678de5d",
+      "app_asset_sha256": "13f74303df7975192e14969a3918a92eb583fe2b86ac705eb372e1f8f119907f",
+      "local_original": "Design/Source/VerifiedPhotos/originals/zhonghu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_zhonghu.imageset/instrument_zhonghu.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "commons_title": "File:Banhu, Tengwangge (Prince of Teng Pavilion) (30730619533).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Banhu,_Tengwangge_(Prince_of_Teng_Pavilion)_(30730619533).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Banhu%2C_Tengwangge_%28Prince_of_Teng_Pavilion%29_%2830730619533%29.jpg/1920px-Banhu%2C_Tengwangge_%28Prince_of_Teng_Pavilion%29_%2830730619533%29.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Banhu%2C_Tengwangge_%28Prince_of_Teng_Pavilion%29_%2830730619533%29.jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "credit": "Banhu, Tengwangge (Prince of Teng Pavilion)",
+      "description": "Nanchang, Jiangxi, China. Complete indexed photo collection at WorldHistoryPics.com.",
+      "date": "2016-12-09 11:49",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 3456,
+        "height": 5184
+      },
+      "commons_sha1": "0d1a6565978ddeda24091f3bdf863a0e7458f21c",
+      "download_sha256": "17f9d2eca67830d1ca468dc145f0811484143a6a613a5b13a26edae56c9e9b2c",
+      "app_asset_sha256": "756943f093731c107365edf6e56cf75fb006c6289acfbda65f71710bbe2526c4",
+      "local_original": "Design/Source/VerifiedPhotos/originals/banhu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_banhu.imageset/instrument_banhu.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "commons_title": null,
+      "source_provider": "Flickr indexed by Openverse",
+      "openverse_id": "d5af0bfd-0dc9-4709-9f0a-b9d8ac8a75aa",
+      "source_page": "https://www.flickr.com/photos/quinet/29924626624/",
+      "download_url": "https://live.staticflickr.com/5328/29924626624_e0ce5b10c1_b.jpg",
+      "original_file_url": "https://live.staticflickr.com/5328/29924626624_e0ce5b10c1_b.jpg",
+      "author": "quinet",
+      "credit": "\"Antique Gehu Chinese bass\" by quinet",
+      "description": "Antique Gehu Chinese bass photographed as a museum display.",
+      "date": "",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 683,
+        "height": 1024
+      },
+      "source_sha1": "e1397f69251054be6862ca758d1110bdebf5a1c4",
+      "download_sha256": "690897e1914013305b27d276f276dedf9499cb0e8007eeed5c3f2fd3050ef319",
+      "app_asset_sha256": "e02f228ece8f9c19a3fe05b62e27af24525cf51c5c9f55bbeaa4524bf6bc603e",
+      "local_original": "Design/Source/VerifiedPhotos/originals/gehu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_gehu.imageset/instrument_gehu.jpg",
+      "derivative_actions": [
+        "downloaded the original Flickr image through its stable static URL",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "bianzhong",
+      "name_zh": "編鐘",
+      "commons_title": "File:Bianzhong.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bianzhong.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Bianzhong.jpg/1920px-Bianzhong.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Bianzhong.jpg",
+      "author": "The original uploader was Zzjgbc at Chinese Wikipedia .",
+      "credit": "Transferred from zh.wikipedia to Commons. From the Tomb of Marquis Yi of Zeng, dated 433 BC, during the interregnum between the Spring and Autumn Period and Warring States Period of ancient China.",
+      "description": "Bianzhong - traditional chinese percussion instrument",
+      "date": "29 January 2005 (original upload date)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 4768,
+        "height": 2752
+      },
+      "commons_sha1": "d496080ace77790990454ab2eefed9fe6d71e245",
+      "download_sha256": "eb6b65a66b4d9a56ee025c764fb4505fd3e893992c7daa85ced7219211490a6c",
+      "app_asset_sha256": "771078c1162a3a37215dd3b02572ddbad138e7fcea9ebbe559b5962765eba6ad",
+      "local_original": "Design/Source/VerifiedPhotos/originals/bianzhong.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_bianzhong.imageset/instrument_bianzhong.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "tanggu",
+      "name_zh": "堂鼓",
+      "commons_title": "File:Tánggǔ (堂鼓) MET DP219344.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:T%C3%A1ngg%C7%94_(%E5%A0%82%E9%BC%93)_MET_DP219344.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/T%C3%A1ngg%C7%94_%28%E5%A0%82%E9%BC%93%29_MET_DP219344.jpg/1920px-T%C3%A1ngg%C7%94_%28%E5%A0%82%E9%BC%93%29_MET_DP219344.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/T%C3%A1ngg%C7%94_%28%E5%A0%82%E9%BC%93%29_MET_DP219344.jpg",
+      "author": "Creator:Elevated Tone Workshop, Guangzhou (Canton)",
+      "credit": "This file was donated to Wikimedia Commons as part of a project by the Metropolitan Museum of Art . See the Image and Data Resources Open Access Policy",
+      "description": "",
+      "date": "19 th century date QS:P571,+1850-00-00T00:00:00Z/7",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 3000,
+        "height": 4000
+      },
+      "commons_sha1": "b2a48b0701b24e896de0d95419854b2485094245",
+      "download_sha256": "5ffb60f2ab5fb18fca6fa532ba5c29dc3f9654916b62dd0e5a3c62775c0dc524",
+      "app_asset_sha256": "eed0051ffe56c5e1cd650af7fabe6a233ba04f4ef0db59dd036268f73b13ac6e",
+      "local_original": "Design/Source/VerifiedPhotos/originals/tanggu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_tanggu.imageset/instrument_tanggu.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "luo",
+      "name_zh": "鑼",
+      "commons_title": "File:Chinese gongs (34474311844).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chinese_gongs_(34474311844).jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chinese_gongs_%2834474311844%29.jpg/1920px-Chinese_gongs_%2834474311844%29.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Chinese_gongs_%2834474311844%29.jpg",
+      "author": "Thomas Quine",
+      "credit": "Chinese gongs",
+      "description": "Brussels 2015",
+      "date": "Taken on 19 July 2015, 14:24",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 5472,
+        "height": 3648
+      },
+      "commons_sha1": "6a0e7f5adfe32c9bc0eca96cd2773424b5f87c13",
+      "download_sha256": "315dd96a13994c8c39c9bc6cf1b2465605ed522a67d22f5d0bc62304480c3085",
+      "app_asset_sha256": "d8f10d452f2797c2063956b9acca0ef8301af36cedd6379a8cb48a618108a52a",
+      "local_original": "Design/Source/VerifiedPhotos/originals/luo.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_luo.imageset/instrument_luo.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "bo",
+      "name_zh": "鈸",
+      "commons_title": "File:Aachinaclash.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Aachinaclash.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Aachinaclash.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Aachinaclash.jpg",
+      "author": "",
+      "credit": "",
+      "description": "",
+      "date": "2007-02-23 03:50:23",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 1437,
+        "height": 845
+      },
+      "commons_sha1": "bfcf744ee49a2d03321e71a74a92655efa580a49",
+      "download_sha256": "3925ab016155181e6f1a89ce85b423e11ba29693b2a08283bb6b6695ef774d16",
+      "app_asset_sha256": "90681de1ae209e68afe9dcaf12e9ba4c5bea66cfde8177b30eb2aa767316ef6b",
+      "local_original": "Design/Source/VerifiedPhotos/originals/bo.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_bo.imageset/instrument_bo.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    },
+    {
+      "instrument_id": "muyu",
+      "name_zh": "木魚",
+      "commons_title": "File:Chinese Muyu QM r.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chinese_Muyu_QM_r.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Chinese_Muyu_QM_r.jpg/1920px-Chinese_Muyu_QM_r.jpg",
+      "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Chinese_Muyu_QM_r.jpg",
+      "author": "Queensland Museum",
+      "credit": "Own work",
+      "description": "This is a set of muyus or Chinese wooden slit drums. The sound produced is affected by the instrument’s size, type of wood, and how hollow it is. Today muyus are often used in sets of five. In a Chinese Orchestra they are used to convey a solemn and religious feel to the music. They are also used in battle scenes and played in fast and lively pieces. Object description: This is a set of four wooden slit drums or idiophones. Sound is produced without the use of strings or membranes. A wooden stick with a tear-shaped knob is used to beat against the drum to produce sound. Each drum is shaped like a triangular prism with a slit along the bottom. Heart shapes are carved into both faces with a hole at the point. Four grooves are carved across the top. They are painted red with two gold fish on each side. History: The muyu is also called a ‘wooden fish’ and was first used by Buddhist monks. The fish was a symbol of wakefulness as fish were not thought to sleep. The symbol reminded Buddhist followers to remain awake and concentrate on their prayers. The striking of the muyu provided the rhythm as they chanted their scriptures. Mention of muyus has been found in writings from the Ming dynasty (1368-1644 AD).",
+      "date": "2009-09-23",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "copyrighted": "True",
+      "source_dimensions": {
+        "width": 2560,
+        "height": 1691
+      },
+      "commons_sha1": "10614b77cfb5caa997f6c3dd3d137d80075d7fe2",
+      "download_sha256": "253b7112dcd1f6d95db8dafd5471561cfc74e110ddec9df713b2435f3f2df3e3",
+      "app_asset_sha256": "9926b498e4358b220f93999a6790278730b67ffe7b6ac4b909eb9d3df935f5b6",
+      "local_original": "Design/Source/VerifiedPhotos/originals/muyu.jpg",
+      "app_asset": "GuoYueZhiPu/Assets.xcassets/instrument_muyu.imageset/instrument_muyu.jpg",
+      "derivative_actions": [
+        "downloaded a 1600-pixel Wikimedia Commons preview",
+        "auto-oriented and converted to JPEG",
+        "resized to fit within 1000 pixels",
+        "padded to 1080 by 1080 without cropping"
+      ],
+      "status": "approved_after_source_and_internal_visual_qc"
+    }
+  ],
+  "blocked": [
+    {
+      "instrument_id": "paigu",
+      "name_zh": "排鼓",
+      "commons_title": null,
+      "status": "blocked_no_reusable_real_photo",
+      "reference_url": "https://www.lcsd.gov.hk/en/mo/musicguide/en/chinese_musical.html",
+      "note": "Official reference exists, but government non-text media requires written permission for commercial reuse."
+    }
+  ]
+}

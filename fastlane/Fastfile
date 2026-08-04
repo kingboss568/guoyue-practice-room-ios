@@ -19,11 +19,7 @@ end
 platform :ios do
   ROOT = ROOT_PATH
   APP_IDENTIFIER = "com.yuhsiangjiang.GuoYueZhiPu"
-  TEAM_ID = "7H7ZUG2WX8"
-  SCHEME = "GuoYueZhiPu"
-  PROJECT = File.join(ROOT, "GuoYueZhiPu.xcodeproj")
-  VERSION = "1.0"
-  IPA_OUTPUT = File.join(ROOT, "Build/AppStore")
+  VERSION = "1.1"
   METADATA_PATH = File.join(ROOT, "fastlane/metadata")
   SCREENSHOTS_PATH = File.join(ROOT, "fastlane/screenshots")
   VALIDATION_SCRIPT = File.join(ROOT, "fastlane/scripts/validate_submission_ready.sh")
@@ -50,19 +46,19 @@ platform :ios do
     end
   end
 
-  desc "Local preflight: plist, JSON, IAP manifest, and screenshot dimensions. Allows known missing sixth screenshots."
+  desc "Local preflight: plist, JSON, IAP, asset, and screenshot manifest checks. Allows in-progress warnings."
   lane :validate_local do
     sh("STRICT_READY=0 #{Shellwords.escape(VALIDATION_SCRIPT)}")
   end
 
-  desc "Strict pre-submit gate. Fails if screenshots, git push, or required files are incomplete."
+  desc "Strict pre-submit gate. Fails if assets, screenshots, git push, or required files are incomplete."
   lane :validate_submission do
     sh("STRICT_READY=1 #{Shellwords.escape(VALIDATION_SCRIPT)}")
   end
 
-  desc "Upload App Store metadata and screenshots only. Does not upload a binary or submit review."
+  desc "Strict-gated upload of App Store metadata and screenshots only. Does not upload a binary or submit review."
   lane :upload_metadata do
-    validate_local
+    validate_submission
     deliver(
       **api_key_options,
       app_identifier: APP_IDENTIFIER,
@@ -81,59 +77,17 @@ platform :ios do
     )
   end
 
-  desc "Build an App Store IPA using Xcode automatic signing."
-  lane :build_ipa do
-    validate_local
-    increment_build_number(
-      xcodeproj: PROJECT,
-      build_number: ENV.fetch("GYZP_BUILD_NUMBER", Time.now.strftime("%Y%m%d%H%M")),
-      skip_info_plist: true
-    )
-    build_app(
-      project: PROJECT,
-      scheme: SCHEME,
-      clean: true,
-      configuration: "Release",
-      export_method: "app-store",
-      export_team_id: TEAM_ID,
-      output_directory: IPA_OUTPUT,
-      output_name: "GuoYueZhiPu.ipa",
-      xcargs: "-allowProvisioningUpdates DEVELOPMENT_TEAM=#{TEAM_ID}",
-      export_xcargs: "-allowProvisioningUpdates"
-    )
-  end
-
-  desc "Upload the IPA only. Requires a built IPA at Build/AppStore/GuoYueZhiPu.ipa unless IPA_PATH is set."
-  lane :upload_ipa do
-    validate_local
-    ipa_path = ENV.fetch("IPA_PATH", File.join(IPA_OUTPUT, "GuoYueZhiPu.ipa"))
-    UI.user_error!("IPA not found: #{ipa_path}") unless File.exist?(ipa_path)
-
-    deliver(
-      **api_key_options,
-      app_identifier: APP_IDENTIFIER,
-      ipa: ipa_path,
-      skip_binary_upload: false,
-      skip_metadata: true,
-      skip_screenshots: true,
-      submit_for_review: false,
-      automatic_release: true,
-      force: true,
-      run_precheck_before_submit: true,
-      precheck_include_in_app_purchases: false
-    )
-  end
-
-  desc "Build and upload metadata, screenshots, and IPA, but stop before final App Review submission."
-  lane :release_candidate do
+  desc "Strict-gated App Store listing preparation for Xcode Cloud. Never creates or uploads a local binary."
+  lane :prepare_cloud_submission do
     upload_metadata
-    build_ipa
-    upload_ipa
+    UI.success("Metadata and screenshots uploaded. Create Archive -> App Store Connect in Xcode Cloud, wait for VALID, then run submit_review with ASC_BUILD_NUMBER.")
   end
 
-  desc "Final strict submit for review. Requires CONFIRM_SUBMIT_FOR_REVIEW=yes and strict readiness."
+  desc "Select an existing VALID Xcode Cloud build and submit. Requires ASC_BUILD_NUMBER and explicit confirmation."
   lane :submit_review do
     UI.user_error!("Set CONFIRM_SUBMIT_FOR_REVIEW=yes to submit for App Review.") unless ENV["CONFIRM_SUBMIT_FOR_REVIEW"] == "yes"
+    cloud_build_number = ENV["ASC_BUILD_NUMBER"].to_s.strip
+    UI.user_error!("Set ASC_BUILD_NUMBER to the exact VALID Xcode Cloud build. Fastlane will not create or upload a binary.") if cloud_build_number.empty?
     validate_submission
     deliver(
       **api_key_options,
@@ -141,6 +95,7 @@ platform :ios do
       app_version: VERSION,
       metadata_path: METADATA_PATH,
       screenshots_path: SCREENSHOTS_PATH,
+      build_number: cloud_build_number,
       skip_binary_upload: true,
       skip_metadata: true,
       skip_screenshots: true,

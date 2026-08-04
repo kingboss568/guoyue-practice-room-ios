@@ -1,0 +1,131 @@
+{
+  "app": "GuoYueZhiPu",
+  "locale": "zh-Hant",
+  "review_target": "App Store Connect resubmission after verified-audio, corrected-artwork, and StoreKit paywall update",
+  "status": "current_after_redesign",
+  "generated_after_asset_gate": true,
+  "generated_after_paywall_redesign": true,
+  "notes": [
+    "Recaptured on the Xcode 27 beta iOS 26.5 simulators after the verified-media and paywall gates passed.",
+    "The payment screenshots show the live App Store product connection, product ID, purchase control, restore control, and actual $5.99 storefront price.",
+    "Both device sets were visually reviewed after full data loading; no loading-state screenshot is included."
+  ],
+  "required_devices": [
+    {
+      "device": "iphone69",
+      "required_size": [1320, 2868],
+      "required_count": 6
+    },
+    {
+      "device": "ipad13",
+      "required_size": [2064, 2752],
+      "required_count": 6
+    }
+  ],
+  "required_screen_roles": [
+    "dashboard",
+    "instruments",
+    "library",
+    "practice",
+    "pro",
+    "payment"
+  ],
+  "screenshots": [
+    {
+      "file": "iphone69_01-dashboard.png",
+      "device": "iphone69",
+      "screen_role": "dashboard",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "7ddc13ac42402ad53bbb17f10d16374cb75dd18e3f9431757419e2aeccc47aa0"
+    },
+    {
+      "file": "iphone69_02-instruments.png",
+      "device": "iphone69",
+      "screen_role": "instruments",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "0392a4f16cf8e16dbe7712fb2c017f7f3b0876e7f1a01a47322b8c3089387fff"
+    },
+    {
+      "file": "iphone69_03-library.png",
+      "device": "iphone69",
+      "screen_role": "library",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "6c91f46dcda5cd6ee9e7a3647e194bbbf1f5853fde50fe73e5e29f00e3828fba"
+    },
+    {
+      "file": "iphone69_04-practice.png",
+      "device": "iphone69",
+      "screen_role": "practice",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "424b56e4cc849d64f5913a47df113fb534d1f60d0fb92402d5506a9182d21562"
+    },
+    {
+      "file": "iphone69_05-pro.png",
+      "device": "iphone69",
+      "screen_role": "pro",
+      "contains_payment_or_iap": true,
+      "status": "current_after_redesign",
+      "sha256": "6b63d6c44df9a2b6d27ec2187ac00f507fd80e140ad8e9a57a436fb8d162186a"
+    },
+    {
+      "file": "iphone69_06-payment.png",
+      "device": "iphone69",
+      "screen_role": "payment",
+      "contains_payment_or_iap": true,
+      "status": "current_after_redesign",
+      "sha256": "fae4ee8dae54e51ce9d41d012fcdc89fb2472c619180c59c418fee3252bd87f5"
+    },
+    {
+      "file": "ipad13_01-dashboard.png",
+      "device": "ipad13",
+      "screen_role": "dashboard",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "6a652ebf8ba39c582a3f43b8cad35755d5ab5cf965b39eafd2db52ced86252e1"
+    },
+    {
+      "file": "ipad13_02-instruments.png",
+      "device": "ipad13",
+      "screen_role": "instruments",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "98a239f7c5a149265484fc5991ced5a1f00f0bcb15913f948b94d7f8a0ad1c16"
+    },
+    {
+      "file": "ipad13_03-library.png",
+      "device": "ipad13",
+      "screen_role": "library",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "f7bb3d30dbdc959435bf588295a0d94b0c1c6e0651d174ac083388aa04f584bf"
+    },
+    {
+      "file": "ipad13_04-practice.png",
+      "device": "ipad13",
+      "screen_role": "practice",
+      "contains_payment_or_iap": false,
+      "status": "current_after_redesign",
+      "sha256": "1ea96aaa4a71eef5a01137d17392bf1f706eb85ee6f4a68ba1229d0d076d95a8"
+    },
+    {
+      "file": "ipad13_05-pro.png",
+      "device": "ipad13",
+      "screen_role": "pro",
+      "contains_payment_or_iap": true,
+      "status": "current_after_redesign",
+      "sha256": "9811f4313d8b173ccca23b327fa0facff618012f2547e815ff91e5f3de15010b"
+    },
+    {
+      "file": "ipad13_06-payment.png",
+      "device": "ipad13",
+      "screen_role": "payment",
+      "contains_payment_or_iap": true,
+      "status": "current_after_redesign",
+      "sha256": "e784cc72affdb9ccccebcc9a62c5b00c429536f731a78fb9e5e0817d0e8ab9f7"
+    }
+  ]
+}

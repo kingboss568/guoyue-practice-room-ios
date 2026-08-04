@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-15",
+  "status": "textless_candidates_pending_professional_review",
+  "note": "These are morphology-correction candidates only. They are not app bundle replacements until reviewed and explicitly approved.",
+  "contact_sheet": {
+    "path": "Design/Review/ArtworkCandidates/candidate_contact_sheet.png",
+    "sha256": "e86dd43ca7d0bb923fc2ddf70e08cf99da6d7f7cd5b48e3968e4aed894ae1ae8",
+    "size": "1000x600"
+  },
+  "items": [
+    {
+      "instrument_id": "banhu",
+      "name_zh": "板胡",
+      "path": "Design/Review/ArtworkCandidates/candidate_banhu.png",
+      "sha256": "c5a7e014334b0d9e2e3071b288455987846431caf4ec2652b1de2b747f308850",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm wooden board face/coconut or spherical soundbox and avoid generic erhu look.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_banhu_annotated_reference.png"
+    },
+    {
+      "instrument_id": "erhu",
+      "name_zh": "二胡",
+      "path": "Design/Review/ArtworkCandidates/candidate_erhu.png",
+      "sha256": "7d7c55724c4543c9996b3917fa6ec693023be152594b7269abee9169e016521b",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm standard erhu proportions as the middle reference for gaohu and zhonghu.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_erhu_annotated_reference.png"
+    },
+    {
+      "instrument_id": "gaohu",
+      "name_zh": "高胡",
+      "path": "Design/Review/ArtworkCandidates/candidate_gaohu.png",
+      "sha256": "ccaeae0168d37dfd9733ffb3af37a2732513834f828623f05f31170db27cf7e8",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm smaller high-register huqin visual difference from erhu.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_gaohu_annotated_reference.png"
+    },
+    {
+      "instrument_id": "gehu",
+      "name_zh": "革胡",
+      "path": "Design/Review/ArtworkCandidates/candidate_gehu.png",
+      "sha256": "38e861290673bea9ae7afd7a33bed6584bd18922b4d62eb9a48152d8a884adca",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm large cello-like low bowed gehu body and reject small huqin proportions.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_gehu_annotated_reference.png"
+    },
+    {
+      "instrument_id": "sheng",
+      "name_zh": "笙",
+      "path": "Design/Review/ArtworkCandidates/candidate_sheng.png",
+      "sha256": "7af8aeabfe3f258bec16e98577751e48f98714a92438c495e858b74a8191cc63",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm pipe cluster, wind chest, and angled mouthpiece; reject panpipe-like forms.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_sheng_annotated_reference.png"
+    },
+    {
+      "instrument_id": "suona",
+      "name_zh": "嗩吶",
+      "path": "Design/Review/ArtworkCandidates/candidate_suona.png",
+      "sha256": "c9d64f0aa9d1c4a15e3ea46f10b30190d50892c536e27372272f3d0e46029d21",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm conical wooden body, small reed/bocal, and flared metal bell; reject trumpet-like forms.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_suona_annotated_reference.png"
+    },
+    {
+      "instrument_id": "zhonghu",
+      "name_zh": "中胡",
+      "path": "Design/Review/ArtworkCandidates/candidate_zhonghu.png",
+      "sha256": "f9e4d21addcee7928a5eb2cf7891f134a5c45926202a061ff648c9e333c47a83",
+      "size": "900x900",
+      "annotation_status": "no_internal_text_labels",
+      "review_focus": "Confirm larger alto huqin proportions versus erhu, but not gehu-sized.",
+      "annotated_reference_path": "Design/Review/ArtworkCandidates/candidate_zhonghu_annotated_reference.png"
+    }
+  ]
+}

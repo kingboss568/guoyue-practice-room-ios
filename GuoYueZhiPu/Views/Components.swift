@@ -63,7 +63,11 @@ struct AppSurface<Content: View>: View {
         content
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(18)
-            .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: 8))
+            .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+            .overlay {
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .stroke(Color(.separator).opacity(0.12), lineWidth: 0.5)
+            }
     }
 }
 
@@ -71,19 +75,55 @@ struct InstrumentArtwork: View {
     let instrument: Instrument
     var cornerRadius: CGFloat = 8
 
+    private var reviewRecord: ArtworkReviewRecord? {
+        ArtworkReviewCatalog.record(for: instrument)
+    }
+
+    private var hasVerifiedRealPhoto: Bool {
+        PhotoSourceCatalog.source(for: instrument) != nil
+    }
+
     var body: some View {
-        Image(instrument.artworkAssetName)
-            .resizable()
-            .scaledToFill()
-            .overlay(alignment: .bottomLeading) {
-                LinearGradient(
-                    colors: [.clear, .black.opacity(0.56)],
-                    startPoint: .center,
-                    endPoint: .bottom
-                )
+        Group {
+            if hasVerifiedRealPhoto {
+                Image(instrument.artworkAssetName)
+                    .resizable()
+                    .scaledToFill()
+            } else {
+                ZStack {
+                    AppTheme.paper
+                    VStack(spacing: 9) {
+                        Image(systemName: "photo.badge.exclamationmark")
+                            .font(.system(size: 34, weight: .semibold))
+                        Text("實拍授權待補")
+                            .font(.caption.weight(.bold))
+                    }
+                    .foregroundStyle(AppTheme.cinnabar)
+                }
             }
-            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
-            .accessibilityHidden(true)
+        }
+        .overlay(alignment: .bottomLeading) {
+            LinearGradient(
+                colors: [.clear, .black.opacity(0.56)],
+                startPoint: .center,
+                endPoint: .bottom
+            )
+        }
+        .overlay(alignment: .topTrailing) {
+            if let reviewRecord, !reviewRecord.status.isApproved {
+                Text(reviewRecord.status.title)
+                    .font(.caption2.weight(.bold))
+                    .foregroundStyle(.white)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.72)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 5)
+                    .background(AppTheme.cinnabar.opacity(0.88), in: Capsule())
+                    .padding(8)
+            }
+        }
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+        .accessibilityHidden(true)
     }
 }
 
