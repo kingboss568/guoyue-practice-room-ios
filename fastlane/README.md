@@ -21,7 +21,7 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 [bundle exec] fastlane ios validate_local
 ```
 
-Local preflight: plist, JSON, IAP manifest, and screenshot dimensions. Allows known missing sixth screenshots.
+Local preflight: plist, JSON, IAP, asset, and screenshot manifest checks. Allows in-progress warnings.
 
 ### ios validate_submission
 
@@ -29,7 +29,7 @@ Local preflight: plist, JSON, IAP manifest, and screenshot dimensions. Allows kn
 [bundle exec] fastlane ios validate_submission
 ```
 
-Strict pre-submit gate. Fails if screenshots, git push, or required files are incomplete.
+Strict pre-submit gate. Fails if assets, screenshots, git push, or required files are incomplete.
 
 ### ios upload_metadata
 
@@ -45,7 +45,7 @@ Strict-gated upload of App Store metadata and screenshots only. Does not upload 
 [bundle exec] fastlane ios prepare_cloud_submission
 ```
 
-Run the strict gate, then upload metadata and screenshots for the Xcode Cloud route. Never creates or uploads a local binary.
+Strict-gated App Store listing preparation for Xcode Cloud. Never creates or uploads a local binary.
 
 ### ios submit_review
 
@@ -53,7 +53,7 @@ Run the strict gate, then upload metadata and screenshots for the Xcode Cloud ro
 [bundle exec] fastlane ios submit_review
 ```
 
-Select an existing VALID Xcode Cloud build and submit. Requires ASC_BUILD_NUMBER, CONFIRM_SUBMIT_FOR_REVIEW=yes, and strict readiness.
+Select an existing VALID Xcode Cloud build and submit. Requires ASC_BUILD_NUMBER and explicit confirmation.
 
 ----
 
