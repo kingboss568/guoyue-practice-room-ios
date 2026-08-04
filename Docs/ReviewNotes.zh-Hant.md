@@ -14,7 +14,7 @@ Pro 付費功能使用 Apple StoreKit：
 
 若審查環境尚未載入商品，App 會顯示「尚未連到 App Store Connect 商品」並保留恢復購買入口，不會閃退或阻擋免費內容。
 
-App Store Connect 已確認 `com.yuhsiangjiang.GuoYueZhiPu.pro` 為 APPROVED 非消耗性項目且已有價格排程。送審前仍須將 IAP 與正確繁中 localization 附加到 1.1、換上新版 review screenshot，並完成 Sandbox 購買／恢復驗證。
+App Store Connect 已確認 `com.yuhsiangjiang.GuoYueZhiPu.pro` 為非消耗性項目且已有價格排程。正確繁中 localization、付款頁審查截圖與 IAP 已和 App `1.1 (2)` 一起加入 submission `e206011f-7c63-4729-9070-a112a91178f2`，目前兩項均為 `WAITING_FOR_REVIEW`。
 
 ## Demo Flow
 
